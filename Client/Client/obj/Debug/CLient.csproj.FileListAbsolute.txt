@@ -1,0 +1,10 @@
+C:\Users\DELL\Desktop\CLient\CLient\bin\Debug\CLient.exe.config
+C:\Users\DELL\Desktop\CLient\CLient\bin\Debug\CLient.exe
+C:\Users\DELL\Desktop\CLient\CLient\bin\Debug\CLient.pdb
+C:\Users\DELL\Desktop\CLient\CLient\obj\Debug\CLient.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Desktop\CLient\CLient\obj\Debug\CLient.Properties.Resources.resources
+C:\Users\DELL\Desktop\CLient\CLient\obj\Debug\CLient.csproj.GenerateResource.Cache
+C:\Users\DELL\Desktop\CLient\CLient\obj\Debug\CLient.exe
+C:\Users\DELL\Desktop\CLient\CLient\obj\Debug\CLient.pdb
+C:\Users\DELL\Desktop\CLient\CLient\obj\Debug\CLient.Admin.resources
+C:\Users\DELL\Desktop\CLient\CLient\obj\Debug\CLient.frmAdminLogin.resources
