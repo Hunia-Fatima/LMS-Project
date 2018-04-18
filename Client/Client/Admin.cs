@@ -23,5 +23,12 @@ namespace CLient
             this.Hide();
             form.Show();
         }
+
+        private void cmdRegisterUser_Click(object sender, EventArgs e)
+        {
+            frmRegisterUser form = new frmRegisterUser();
+            this.Hide();
+            form.Show();
+        }
     }
 }

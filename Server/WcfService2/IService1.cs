@@ -13,6 +13,8 @@ namespace WcfService2
     public interface IService1
     {
         [OperationContract]
+        void registerUser(string username, string password, string email, string user);
+        [OperationContract]
         bool IsValid(string username,string password);
         [OperationContract]
         string GetData(int value);

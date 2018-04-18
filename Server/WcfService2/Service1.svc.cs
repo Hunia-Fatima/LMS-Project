@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
@@ -23,6 +24,25 @@ namespace WcfService2
             else
             {
                 return false;
+            }
+        }
+        public void registerUser(string username, string password, string email, string user)
+        {
+            if (user == "Teacher")
+            {
+                Teacher teacher = new Teacher();
+                teacher.setname(username);
+                teacher.setpassword(password);
+                teacher.setemail(email);
+                TeacherDL.teachers.Add(teacher);
+            }
+            else if (user == "Student")
+            {
+                Student student = new Student();
+                student.setname(username);
+                student.setpassword(password);
+                student.setemail(email);
+                StudentDL.students.Add(student);
             }
         }
         public string GetData(int value)

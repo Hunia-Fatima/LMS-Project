@@ -29,6 +29,8 @@ namespace CLient.server {
     [System.Web.Services.WebServiceBindingAttribute(Name="BasicHttpBinding_IService1", Namespace="http://tempuri.org/")]
     public partial class Service1 : System.Web.Services.Protocols.SoapHttpClientProtocol {
         
+        private System.Threading.SendOrPostCallback registerUserOperationCompleted;
+        
         private System.Threading.SendOrPostCallback IsValidOperationCompleted;
         
         private System.Threading.SendOrPostCallback GetDataOperationCompleted;
@@ -74,6 +76,9 @@ namespace CLient.server {
         }
         
         /// <remarks/>
+        public event registerUserCompletedEventHandler registerUserCompleted;
+        
+        /// <remarks/>
         public event IsValidCompletedEventHandler IsValidCompleted;
         
         /// <remarks/>
@@ -81,6 +86,40 @@ namespace CLient.server {
         
         /// <remarks/>
         public event GetDataUsingDataContractCompletedEventHandler GetDataUsingDataContractCompleted;
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/registerUser", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void registerUser([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string username, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string password, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string email, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string user) {
+            this.Invoke("registerUser", new object[] {
+                        username,
+                        password,
+                        email,
+                        user});
+        }
+        
+        /// <remarks/>
+        public void registerUserAsync(string username, string password, string email, string user) {
+            this.registerUserAsync(username, password, email, user, null);
+        }
+        
+        /// <remarks/>
+        public void registerUserAsync(string username, string password, string email, string user, object userState) {
+            if ((this.registerUserOperationCompleted == null)) {
+                this.registerUserOperationCompleted = new System.Threading.SendOrPostCallback(this.OnregisterUserOperationCompleted);
+            }
+            this.InvokeAsync("registerUser", new object[] {
+                        username,
+                        password,
+                        email,
+                        user}, this.registerUserOperationCompleted, userState);
+        }
+        
+        private void OnregisterUserOperationCompleted(object arg) {
+            if ((this.registerUserCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.registerUserCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/IsValid", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -241,6 +280,10 @@ namespace CLient.server {
             }
         }
     }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.33440")]
+    public delegate void registerUserCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.33440")]

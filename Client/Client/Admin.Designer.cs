@@ -43,6 +43,7 @@
             this.cmdRegisterUser.TabIndex = 0;
             this.cmdRegisterUser.Text = "Register Users";
             this.cmdRegisterUser.UseVisualStyleBackColor = true;
+            this.cmdRegisterUser.Click += new System.EventHandler(this.cmdRegisterUser_Click);
             // 
             // cmdViewData
             // 
