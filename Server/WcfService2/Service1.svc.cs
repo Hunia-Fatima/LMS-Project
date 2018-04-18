@@ -26,7 +26,7 @@ namespace WcfService2
                 return false;
             }
         }
-        public void registerUser(string username, string password, string email, string user)
+        public void registerUser(string username, string password, string email,string pincode, string user)
         {
             if (user == "Teacher")
             {
@@ -34,6 +34,7 @@ namespace WcfService2
                 teacher.setname(username);
                 teacher.setpassword(password);
                 teacher.setemail(email);
+                teacher.setpincode(pincode);
                 TeacherDL.teachers.Add(teacher);
             }
             else if (user == "Student")
@@ -42,7 +43,36 @@ namespace WcfService2
                 student.setname(username);
                 student.setpassword(password);
                 student.setemail(email);
+                student.setpincode(pincode);
                 StudentDL.students.Add(student);
+            }
+        }
+        public bool resetpaswrd(string name, string pincode, string user)
+        {
+            string password = "1234asdf";
+            if (user == "Student")
+            {
+                foreach (Student st in StudentDL.students)
+                {
+                    if (st.getname() == name && st.getpincode() == pincode)
+                    {
+                        st.setpassword(password);
+                        return true;
+                    }
+                }
+                return false;
+            }
+            else
+            {
+                foreach (Teacher t in TeacherDL.teachers)
+                {
+                    if (t.getname() == name && t.getpincode() == pincode)
+                    {
+                        t.setpassword(password);
+                        return true;
+                    }
+                }
+                return false;
             }
         }
         public bool IsValidTeacher(string username, string password)

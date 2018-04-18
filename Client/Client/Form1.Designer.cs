@@ -36,6 +36,7 @@
             this.cmdLogin = new System.Windows.Forms.Button();
             this.chkTeacher = new System.Windows.Forms.CheckBox();
             this.chkStudent = new System.Windows.Forms.CheckBox();
+            this.lnkforgetpassword = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // txtName
@@ -47,7 +48,7 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(99, 84);
+            this.txtPassword.Location = new System.Drawing.Point(99, 94);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(173, 20);
@@ -65,7 +66,7 @@
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(12, 91);
+            this.lblPassword.Location = new System.Drawing.Point(12, 94);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(53, 13);
             this.lblPassword.TabIndex = 3;
@@ -112,11 +113,23 @@
             this.chkStudent.Text = "Student";
             this.chkStudent.UseVisualStyleBackColor = true;
             // 
+            // lnkforgetpassword
+            // 
+            this.lnkforgetpassword.AutoSize = true;
+            this.lnkforgetpassword.Location = new System.Drawing.Point(156, 212);
+            this.lnkforgetpassword.Name = "lnkforgetpassword";
+            this.lnkforgetpassword.Size = new System.Drawing.Size(86, 13);
+            this.lnkforgetpassword.TabIndex = 8;
+            this.lnkforgetpassword.TabStop = true;
+            this.lnkforgetpassword.Text = "Forget Password";
+            this.lnkforgetpassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkforgetpassword_LinkClicked);
+            // 
             // frmAdminLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.lnkforgetpassword);
             this.Controls.Add(this.chkStudent);
             this.Controls.Add(this.chkTeacher);
             this.Controls.Add(this.cmdLogin);
@@ -142,6 +155,7 @@
         private System.Windows.Forms.Button cmdLogin;
         private System.Windows.Forms.CheckBox chkTeacher;
         private System.Windows.Forms.CheckBox chkStudent;
+        private System.Windows.Forms.LinkLabel lnkforgetpassword;
     }
 }
 

@@ -30,12 +30,13 @@ namespace CLient
             else
             {
                 server.Service1 server = new server.Service1();
-                server.registerUser(txtUserName.Text, txtPassword.Text, txtEmail.Text, cmbRegisterAs.Text);
+                server.registerUser(txtUserName.Text, txtPassword.Text, txtEmail.Text,txtpincode.Text, cmbRegisterAs.Text);
                 MessageBox.Show("User Registered");
                 txtPassword.Text = "";
                 txtUserName.Text = "";
                 txtEmail.Text = "";
                 cmbRegisterAs.Text = "";
+                txtpincode.Text = "";
             }
         }
 

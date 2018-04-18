@@ -19,6 +19,12 @@
   <wsdl:message name="IService1_IsValid_OutputMessage">
     <wsdl:part name="parameters" element="tns:IsValidResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_resetpaswrd_InputMessage">
+    <wsdl:part name="parameters" element="tns:resetpaswrd" />
+  </wsdl:message>
+  <wsdl:message name="IService1_resetpaswrd_OutputMessage">
+    <wsdl:part name="parameters" element="tns:resetpaswrdResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_GetData_InputMessage">
     <wsdl:part name="parameters" element="tns:GetData" />
   </wsdl:message>
@@ -52,6 +58,10 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/IsValid" message="tns:IService1_IsValid_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/IsValidResponse" message="tns:IService1_IsValid_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="resetpaswrd">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/resetpaswrd" message="tns:IService1_resetpaswrd_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/resetpaswrdResponse" message="tns:IService1_resetpaswrd_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="GetData">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataResponse" message="tns:IService1_GetData_OutputMessage" />
@@ -82,6 +92,15 @@
     </wsdl:operation>
     <wsdl:operation name="IsValid">
       <soap:operation soapAction="http://tempuri.org/IService1/IsValid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="resetpaswrd">
+      <soap:operation soapAction="http://tempuri.org/IService1/resetpaswrd" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

@@ -10,6 +10,7 @@ namespace WcfService2
         string name;
         string password;
         string email;
+        string pincode;
         public string getname()
         {
             return name;
@@ -17,6 +18,14 @@ namespace WcfService2
         public void setname(string s)
         {
             name = s;
+        }
+        public string getpincode()
+        {
+            return pincode;
+        }
+        public void setpincode(string s)
+        {
+            pincode = s;
         }
         public string getpassword()
         {

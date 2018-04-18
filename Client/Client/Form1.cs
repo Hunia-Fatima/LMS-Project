@@ -81,5 +81,12 @@ namespace CLient
         {
 
         }
+
+        private void lnkforgetpassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmreset frm = new frmreset();
+            this.Hide();
+            frm.Show();
+        }
     }
 }
