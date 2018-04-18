@@ -19,7 +19,7 @@ namespace CLient
 
         private void cmdresetpassword_Click(object sender, EventArgs e)
         {
-            string password = "1234asdf";
+            string password = "1234abcd";
             bool isvalid;
             bool isvalidacces;
             string user = "user";
@@ -35,11 +35,11 @@ namespace CLient
             server.resetpaswrd(txtusername.Text, txtpincode.Text, user, out isvalid, out isvalidacces);
             if (isvalid)
             {
-                MessageBox.Show("password has been reset");
+                MessageBox.Show("Password has been reset to 1234abcd");
             }
             else
             {
-                MessageBox.Show("Please Enter correct pincode");
+                MessageBox.Show("Enter correct pincode ");
 
             }
         }
