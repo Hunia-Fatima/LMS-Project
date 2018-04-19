@@ -19,3 +19,16 @@ C:\Users\DELL\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.frmA
 C:\Users\DELL\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.Properties.Resources.resources
 C:\Users\DELL\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.csproj.GenerateResource.Cache
 C:\Users\DELL\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.frmRegisterUser.resources
+C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\bin\Debug\CLient.exe.config
+C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.exe
+C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.pdb
+C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\bin\Debug\CLient.exe
+C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\bin\Debug\CLient.pdb
+C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.csprojResolveAssemblyReference.cache
+C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.Admin.resources
+C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.frmAdminLogin.resources
+C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.frmRegisterUser.resources
+C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.Properties.Resources.resources
+C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.csproj.GenerateResource.Cache
+C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.Teacher.resources
+C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.Student.resources

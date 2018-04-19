@@ -25,6 +25,18 @@
   <wsdl:message name="IService1_GetData_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetDataResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_IsValidTeacher_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsValidTeacher" />
+  </wsdl:message>
+  <wsdl:message name="IService1_IsValidTeacher_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsValidTeacherResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_IsValidStu_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsValidStu" />
+  </wsdl:message>
+  <wsdl:message name="IService1_IsValidStu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsValidStuResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_GetDataUsingDataContract_InputMessage">
     <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
   </wsdl:message>
@@ -43,6 +55,14 @@
     <wsdl:operation name="GetData">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataResponse" message="tns:IService1_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsValidTeacher">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/IsValidTeacher" message="tns:IService1_IsValidTeacher_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/IsValidTeacherResponse" message="tns:IService1_IsValidTeacher_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsValidStu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/IsValidStu" message="tns:IService1_IsValidStu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/IsValidStuResponse" message="tns:IService1_IsValidStu_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetDataUsingDataContract">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContract" message="tns:IService1_GetDataUsingDataContract_InputMessage" />
@@ -71,6 +91,24 @@
     </wsdl:operation>
     <wsdl:operation name="GetData">
       <soap:operation soapAction="http://tempuri.org/IService1/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsValidTeacher">
+      <soap:operation soapAction="http://tempuri.org/IService1/IsValidTeacher" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsValidStu">
+      <soap:operation soapAction="http://tempuri.org/IService1/IsValidStu" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

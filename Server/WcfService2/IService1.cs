@@ -18,7 +18,10 @@ namespace WcfService2
         bool IsValid(string username,string password);
         [OperationContract]
         string GetData(int value);
-
+        [OperationContract]
+        bool IsValidTeacher(string username, string password);
+        [OperationContract]
+        bool IsValidStu(string username, string password);
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
 

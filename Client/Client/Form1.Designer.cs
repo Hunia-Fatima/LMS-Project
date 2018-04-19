@@ -34,6 +34,8 @@
             this.lblPassword = new System.Windows.Forms.Label();
             this.chkAdmin = new System.Windows.Forms.CheckBox();
             this.cmdLogin = new System.Windows.Forms.Button();
+            this.chkTeacher = new System.Windows.Forms.CheckBox();
+            this.chkStudent = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // txtName
@@ -47,6 +49,7 @@
             // 
             this.txtPassword.Location = new System.Drawing.Point(99, 84);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(173, 20);
             this.txtPassword.TabIndex = 1;
             // 
@@ -77,6 +80,7 @@
             this.chkAdmin.TabIndex = 4;
             this.chkAdmin.Text = "Admin";
             this.chkAdmin.UseVisualStyleBackColor = true;
+            this.chkAdmin.CheckedChanged += new System.EventHandler(this.chkAdmin_CheckedChanged);
             // 
             // cmdLogin
             // 
@@ -88,11 +92,33 @@
             this.cmdLogin.UseVisualStyleBackColor = true;
             this.cmdLogin.Click += new System.EventHandler(this.cmdLogin_Click);
             // 
+            // chkTeacher
+            // 
+            this.chkTeacher.AutoSize = true;
+            this.chkTeacher.Location = new System.Drawing.Point(32, 184);
+            this.chkTeacher.Name = "chkTeacher";
+            this.chkTeacher.Size = new System.Drawing.Size(66, 17);
+            this.chkTeacher.TabIndex = 6;
+            this.chkTeacher.Text = "Teacher";
+            this.chkTeacher.UseVisualStyleBackColor = true;
+            // 
+            // chkStudent
+            // 
+            this.chkStudent.AutoSize = true;
+            this.chkStudent.Location = new System.Drawing.Point(32, 207);
+            this.chkStudent.Name = "chkStudent";
+            this.chkStudent.Size = new System.Drawing.Size(63, 17);
+            this.chkStudent.TabIndex = 7;
+            this.chkStudent.Text = "Student";
+            this.chkStudent.UseVisualStyleBackColor = true;
+            // 
             // frmAdminLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.chkStudent);
+            this.Controls.Add(this.chkTeacher);
             this.Controls.Add(this.cmdLogin);
             this.Controls.Add(this.chkAdmin);
             this.Controls.Add(this.lblPassword);
@@ -100,7 +126,7 @@
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtName);
             this.Name = "frmAdminLogin";
-            this.Text = "Admin Login";
+            this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -114,6 +140,8 @@
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.CheckBox chkAdmin;
         private System.Windows.Forms.Button cmdLogin;
+        private System.Windows.Forms.CheckBox chkTeacher;
+        private System.Windows.Forms.CheckBox chkStudent;
     }
 }
 

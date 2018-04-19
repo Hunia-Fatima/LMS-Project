@@ -41,7 +41,7 @@ namespace CLient
 
         private void lnkGoBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            frmRegisterUser form = new frmRegisterUser();
+            Admin form = new Admin();
             this.Hide();
             form.Show();
         }

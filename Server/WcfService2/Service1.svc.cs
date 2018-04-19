@@ -45,6 +45,32 @@ namespace WcfService2
                 StudentDL.students.Add(student);
             }
         }
+        public bool IsValidTeacher(string username, string password)
+        {
+            bool found = false;
+            foreach (Teacher t in TeacherDL.teachers)
+            {
+                if (t.getname() == username && t.getpassword() == password)
+                {
+                    found = true;
+                    return found;
+                }               
+            }
+            return found; 
+        }
+        public bool IsValidStu(string username, string password)
+        {
+            foreach (Student s in StudentDL.students)
+            {
+                if (s.getname() == username && s.getpassword() == password)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        
+        
         public string GetData(int value)
         {
             return string.Format("You entered: {0}", value);

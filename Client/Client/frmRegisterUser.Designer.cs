@@ -80,12 +80,13 @@
             // 
             // cmdRegister
             // 
+            this.cmdRegister.BackColor = System.Drawing.SystemColors.Info;
             this.cmdRegister.Location = new System.Drawing.Point(216, 276);
             this.cmdRegister.Name = "cmdRegister";
             this.cmdRegister.Size = new System.Drawing.Size(130, 38);
             this.cmdRegister.TabIndex = 4;
             this.cmdRegister.Text = "Register";
-            this.cmdRegister.UseVisualStyleBackColor = true;
+            this.cmdRegister.UseVisualStyleBackColor = false;
             this.cmdRegister.Click += new System.EventHandler(this.cmdRegister_Click);
             // 
             // txtEmail

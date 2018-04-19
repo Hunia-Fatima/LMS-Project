@@ -37,31 +37,34 @@
             // 
             // cmdRegisterUser
             // 
-            this.cmdRegisterUser.Location = new System.Drawing.Point(12, 50);
+            this.cmdRegisterUser.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.cmdRegisterUser.Location = new System.Drawing.Point(58, 52);
             this.cmdRegisterUser.Name = "cmdRegisterUser";
             this.cmdRegisterUser.Size = new System.Drawing.Size(129, 40);
             this.cmdRegisterUser.TabIndex = 0;
             this.cmdRegisterUser.Text = "Register Users";
-            this.cmdRegisterUser.UseVisualStyleBackColor = true;
+            this.cmdRegisterUser.UseVisualStyleBackColor = false;
             this.cmdRegisterUser.Click += new System.EventHandler(this.cmdRegisterUser_Click);
             // 
             // cmdViewData
             // 
-            this.cmdViewData.Location = new System.Drawing.Point(12, 108);
+            this.cmdViewData.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.cmdViewData.Location = new System.Drawing.Point(58, 98);
             this.cmdViewData.Name = "cmdViewData";
             this.cmdViewData.Size = new System.Drawing.Size(129, 40);
             this.cmdViewData.TabIndex = 1;
             this.cmdViewData.Text = "View Data";
-            this.cmdViewData.UseVisualStyleBackColor = true;
+            this.cmdViewData.UseVisualStyleBackColor = false;
             // 
             // cmdUpdateResult
             // 
-            this.cmdUpdateResult.Location = new System.Drawing.Point(12, 165);
+            this.cmdUpdateResult.BackColor = System.Drawing.Color.Beige;
+            this.cmdUpdateResult.Location = new System.Drawing.Point(58, 144);
             this.cmdUpdateResult.Name = "cmdUpdateResult";
             this.cmdUpdateResult.Size = new System.Drawing.Size(129, 40);
             this.cmdUpdateResult.TabIndex = 2;
             this.cmdUpdateResult.Text = "Update Result";
-            this.cmdUpdateResult.UseVisualStyleBackColor = true;
+            this.cmdUpdateResult.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
