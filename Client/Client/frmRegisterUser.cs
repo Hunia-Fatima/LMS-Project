@@ -27,6 +27,10 @@ namespace CLient
             {
                 MessageBox.Show("PASSWORD MUST BE ALPHANUMERIC AND 8 CHARACTERS LONG");
             }
+            else if (txtpincode.Text.Any(Char.IsLetter) || txtpincode.Text.Length < 4)
+            {
+                MessageBox.Show("pincode must be numeric and has min length 4");
+            }
             else
             {
                 server.Service1 server = new server.Service1();
