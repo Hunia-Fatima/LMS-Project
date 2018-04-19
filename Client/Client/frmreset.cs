@@ -19,29 +19,53 @@ namespace CLient
 
         private void cmdresetpassword_Click(object sender, EventArgs e)
         {
-            string password = "1234abcd";
+           
             bool isvalid;
             bool isvalidacces;
             string user = "user";
-            if (chkstudent.Checked == true)
+            if (chkstudent.Checked == true && chkteacher.Checked == false)
             {
                 user = "Student";
             }
-            else if (chkteacher.Checked == true)
+            else if (chkteacher.Checked == true && chkstudent.Checked == false)
             {
                 user = "Teacher";
             }
+            else if (chkteacher.Checked == true && chkstudent.Checked == true)
+            {
+                user = "Nobody";
+            }
+            else if (chkteacher.Checked == false && chkstudent.Checked == false)
+            {
+                user = "nobody";
+            }
             server.Service1 server = new server.Service1();
             server.resetpaswrd(txtusername.Text, txtpincode.Text, user, out isvalid, out isvalidacces);
-            if (isvalid)
+            
+            if (user == "Nobody")
             {
-                MessageBox.Show("Password has been reset to 1234abcd");
+                MessageBox.Show("Please check only one check box");
+            }
+            else if (user == "nobody")
+            {
+                MessageBox.Show("Select the user through checkbox first");
             }
             else
             {
-                MessageBox.Show("Enter correct pincode ");
+                if (isvalid)
+                {
+                    MessageBox.Show("Password has been reset to 1234asdf");
+                }
+                else if (!isvalid)
+                {
+                    MessageBox.Show("Please Enter correct pincode");
+
+                }
 
             }
+           
+
+
         }
         private void lbllogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {

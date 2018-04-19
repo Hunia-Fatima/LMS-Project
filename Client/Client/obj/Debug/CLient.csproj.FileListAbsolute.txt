@@ -56,17 +56,42 @@ C:\Users\DELL\Desktop\Client\CLient\obj\Debug\CLient.Teacher.resources
 C:\Users\DELL\Desktop\lms\LMS-Project\Client\CLient\bin\Debug\CLient.exe.config
 C:\Users\DELL\Desktop\lms\LMS-Project\Client\CLient\obj\Debug\CLient.exe
 C:\Users\DELL\Desktop\lms\LMS-Project\Client\CLient\obj\Debug\CLient.pdb
-C:\Users\Admin\Desktop\LMS\LMS-Project\Client\CLient\bin\Debug\CLient.exe.config
-C:\Users\Admin\Desktop\LMS\LMS-Project\Client\CLient\obj\Debug\CLient.exe
-C:\Users\Admin\Desktop\LMS\LMS-Project\Client\CLient\obj\Debug\CLient.pdb
-C:\Users\Admin\Desktop\LMS\LMS-Project\Client\CLient\bin\Debug\CLient.exe
-C:\Users\Admin\Desktop\LMS\LMS-Project\Client\CLient\bin\Debug\CLient.pdb
-C:\Users\Admin\Desktop\LMS\LMS-Project\Client\CLient\obj\Debug\CLient.csprojResolveAssemblyReference.cache
-C:\Users\Admin\Desktop\LMS\LMS-Project\Client\CLient\obj\Debug\CLient.Admin.resources
-C:\Users\Admin\Desktop\LMS\LMS-Project\Client\CLient\obj\Debug\CLient.frmAdminLogin.resources
-C:\Users\Admin\Desktop\LMS\LMS-Project\Client\CLient\obj\Debug\CLient.frmRegisterUser.resources
-C:\Users\Admin\Desktop\LMS\LMS-Project\Client\CLient\obj\Debug\CLient.frmreset.resources
-C:\Users\Admin\Desktop\LMS\LMS-Project\Client\CLient\obj\Debug\CLient.Properties.Resources.resources
-C:\Users\Admin\Desktop\LMS\LMS-Project\Client\CLient\obj\Debug\CLient.Student.resources
-C:\Users\Admin\Desktop\LMS\LMS-Project\Client\CLient\obj\Debug\CLient.Teacher.resources
-C:\Users\Admin\Desktop\LMS\LMS-Project\Client\CLient\obj\Debug\CLient.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\zuuhha\Client\CLient\bin\Debug\CLient.exe.config
+C:\Users\Admin\Desktop\zuuhha\Client\CLient\obj\Debug\CLient.exe
+C:\Users\Admin\Desktop\zuuhha\Client\CLient\obj\Debug\CLient.pdb
+C:\Users\Admin\Desktop\Client\CLient\bin\Debug\CLient.exe
+C:\Users\Admin\Desktop\Client\CLient\bin\Debug\CLient.pdb
+C:\Users\Admin\Desktop\Client\CLient\obj\Debug\CLient.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\Client\CLient\obj\Debug\CLient.Admin.resources
+C:\Users\Admin\Desktop\Client\CLient\obj\Debug\CLient.frmAdminLogin.resources
+C:\Users\Admin\Desktop\Client\CLient\obj\Debug\CLient.frmRegisterUser.resources
+C:\Users\Admin\Desktop\Client\CLient\obj\Debug\CLient.frmreset.resources
+C:\Users\Admin\Desktop\Client\CLient\obj\Debug\CLient.Properties.Resources.resources
+C:\Users\Admin\Desktop\Client\CLient\obj\Debug\CLient.Student.resources
+C:\Users\Admin\Desktop\Client\CLient\obj\Debug\CLient.Teacher.resources
+C:\Users\Admin\Desktop\Client\CLient\obj\Debug\CLient.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\zuuhha\Client\CLient\bin\Debug\CLient.exe
+C:\Users\Admin\Desktop\zuuhha\Client\CLient\bin\Debug\CLient.pdb
+C:\Users\Admin\Desktop\zuuhha\Client\CLient\obj\Debug\CLient.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\zuuhha\Client\CLient\obj\Debug\CLient.Admin.resources
+C:\Users\Admin\Desktop\zuuhha\Client\CLient\obj\Debug\CLient.frmAdminLogin.resources
+C:\Users\Admin\Desktop\zuuhha\Client\CLient\obj\Debug\CLient.frmRegisterUser.resources
+C:\Users\Admin\Desktop\zuuhha\Client\CLient\obj\Debug\CLient.frmreset.resources
+C:\Users\Admin\Desktop\zuuhha\Client\CLient\obj\Debug\CLient.Properties.Resources.resources
+C:\Users\Admin\Desktop\zuuhha\Client\CLient\obj\Debug\CLient.Student.resources
+C:\Users\Admin\Desktop\zuuhha\Client\CLient\obj\Debug\CLient.Teacher.resources
+C:\Users\Admin\Desktop\zuuhha\Client\CLient\obj\Debug\CLient.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\zuuhha - Copy\Client\CLient\bin\Debug\CLient.exe.config
+C:\Users\Admin\Desktop\zuuhha - Copy\Client\CLient\obj\Debug\CLient.exe
+C:\Users\Admin\Desktop\zuuhha - Copy\Client\CLient\obj\Debug\CLient.pdb
+C:\Users\Admin\Desktop\zuuhha - Copy\Client\CLient\bin\Debug\CLient.exe
+C:\Users\Admin\Desktop\zuuhha - Copy\Client\CLient\bin\Debug\CLient.pdb
+C:\Users\Admin\Desktop\zuuhha - Copy\Client\CLient\obj\Debug\CLient.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\zuuhha - Copy\Client\CLient\obj\Debug\CLient.Admin.resources
+C:\Users\Admin\Desktop\zuuhha - Copy\Client\CLient\obj\Debug\CLient.frmAdminLogin.resources
+C:\Users\Admin\Desktop\zuuhha - Copy\Client\CLient\obj\Debug\CLient.frmRegisterUser.resources
+C:\Users\Admin\Desktop\zuuhha - Copy\Client\CLient\obj\Debug\CLient.frmreset.resources
+C:\Users\Admin\Desktop\zuuhha - Copy\Client\CLient\obj\Debug\CLient.Properties.Resources.resources
+C:\Users\Admin\Desktop\zuuhha - Copy\Client\CLient\obj\Debug\CLient.Student.resources
+C:\Users\Admin\Desktop\zuuhha - Copy\Client\CLient\obj\Debug\CLient.Teacher.resources
+C:\Users\Admin\Desktop\zuuhha - Copy\Client\CLient\obj\Debug\CLient.csproj.GenerateResource.Cache
