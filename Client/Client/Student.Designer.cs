@@ -65,6 +65,7 @@
             this.cmdRegS.TabIndex = 5;
             this.cmdRegS.Text = "Register Subjects";
             this.cmdRegS.UseVisualStyleBackColor = false;
+            this.cmdRegS.Click += new System.EventHandler(this.cmdRegS_Click);
             // 
             // cmdVDMC
             // 

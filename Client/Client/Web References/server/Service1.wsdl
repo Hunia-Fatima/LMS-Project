@@ -7,11 +7,17 @@
       <xsd:import schemaLocation="http://localhost:7187/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfService2" />
     </xsd:schema>
   </wsdl:types>
-  <wsdl:message name="IService1_registerUser_InputMessage">
-    <wsdl:part name="parameters" element="tns:registerUser" />
+  <wsdl:message name="IService1_registerStudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:registerStudent" />
   </wsdl:message>
-  <wsdl:message name="IService1_registerUser_OutputMessage">
-    <wsdl:part name="parameters" element="tns:registerUserResponse" />
+  <wsdl:message name="IService1_registerStudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registerStudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_registerTeacher_InputMessage">
+    <wsdl:part name="parameters" element="tns:registerTeacher" />
+  </wsdl:message>
+  <wsdl:message name="IService1_registerTeacher_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registerTeacherResponse" />
   </wsdl:message>
   <wsdl:message name="IService1_IsValid_InputMessage">
     <wsdl:part name="parameters" element="tns:IsValid" />
@@ -61,16 +67,44 @@
   <wsdl:message name="IService1_ShowAll_OutputMessage">
     <wsdl:part name="parameters" element="tns:ShowAllResponse" />
   </wsdl:message>
-  <wsdl:message name="IService1_GetDataUsingDataContract_InputMessage">
-    <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
+  <wsdl:message name="IService1_registerSubject_InputMessage">
+    <wsdl:part name="parameters" element="tns:registerSubject" />
   </wsdl:message>
-  <wsdl:message name="IService1_GetDataUsingDataContract_OutputMessage">
-    <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
+  <wsdl:message name="IService1_registerSubject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registerSubjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_unregisterSubject_InputMessage">
+    <wsdl:part name="parameters" element="tns:unregisterSubject" />
+  </wsdl:message>
+  <wsdl:message name="IService1_unregisterSubject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:unregisterSubjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getSubjects_InputMessage">
+    <wsdl:part name="parameters" element="tns:getSubjects" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getSubjects_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getSubjectsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_loggedInStudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:loggedInStudent" />
+  </wsdl:message>
+  <wsdl:message name="IService1_loggedInStudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:loggedInStudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_loggedInStudentSubject_InputMessage">
+    <wsdl:part name="parameters" element="tns:loggedInStudentSubject" />
+  </wsdl:message>
+  <wsdl:message name="IService1_loggedInStudentSubject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:loggedInStudentSubjectResponse" />
   </wsdl:message>
   <wsdl:portType name="IService1">
-    <wsdl:operation name="registerUser">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/registerUser" message="tns:IService1_registerUser_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/registerUserResponse" message="tns:IService1_registerUser_OutputMessage" />
+    <wsdl:operation name="registerStudent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/registerStudent" message="tns:IService1_registerStudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/registerStudentResponse" message="tns:IService1_registerStudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="registerTeacher">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/registerTeacher" message="tns:IService1_registerTeacher_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/registerTeacherResponse" message="tns:IService1_registerTeacher_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="IsValid">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/IsValid" message="tns:IService1_IsValid_InputMessage" />
@@ -104,15 +138,40 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/ShowAll" message="tns:IService1_ShowAll_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/ShowAllResponse" message="tns:IService1_ShowAll_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="GetDataUsingDataContract">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContract" message="tns:IService1_GetDataUsingDataContract_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContractResponse" message="tns:IService1_GetDataUsingDataContract_OutputMessage" />
+    <wsdl:operation name="registerSubject">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/registerSubject" message="tns:IService1_registerSubject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/registerSubjectResponse" message="tns:IService1_registerSubject_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="unregisterSubject">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/unregisterSubject" message="tns:IService1_unregisterSubject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/unregisterSubjectResponse" message="tns:IService1_unregisterSubject_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getSubjects">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getSubjects" message="tns:IService1_getSubjects_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getSubjectsResponse" message="tns:IService1_getSubjects_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="loggedInStudent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/loggedInStudent" message="tns:IService1_loggedInStudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/loggedInStudentResponse" message="tns:IService1_loggedInStudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="loggedInStudentSubject">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/loggedInStudentSubject" message="tns:IService1_loggedInStudentSubject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/loggedInStudentSubjectResponse" message="tns:IService1_loggedInStudentSubject_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="registerUser">
-      <soap:operation soapAction="http://tempuri.org/IService1/registerUser" style="document" />
+    <wsdl:operation name="registerStudent">
+      <soap:operation soapAction="http://tempuri.org/IService1/registerStudent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registerTeacher">
+      <soap:operation soapAction="http://tempuri.org/IService1/registerTeacher" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -192,8 +251,44 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="GetDataUsingDataContract">
-      <soap:operation soapAction="http://tempuri.org/IService1/GetDataUsingDataContract" style="document" />
+    <wsdl:operation name="registerSubject">
+      <soap:operation soapAction="http://tempuri.org/IService1/registerSubject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="unregisterSubject">
+      <soap:operation soapAction="http://tempuri.org/IService1/unregisterSubject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSubjects">
+      <soap:operation soapAction="http://tempuri.org/IService1/getSubjects" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loggedInStudent">
+      <soap:operation soapAction="http://tempuri.org/IService1/loggedInStudent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loggedInStudentSubject">
+      <soap:operation soapAction="http://tempuri.org/IService1/loggedInStudentSubject" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

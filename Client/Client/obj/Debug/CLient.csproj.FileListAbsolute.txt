@@ -111,3 +111,8 @@ C:\Users\Admin\Desktop\ppp\LMS-Project\Client\CLient\obj\Debug\CLient.Teacher.re
 C:\Users\Admin\Desktop\ppp\LMS-Project\Client\CLient\obj\Debug\CLient.csproj.GenerateResource.Cache
 C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.frmreset.resources
 C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.Student_Data.resources
+C:\Users\DELL\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.frmRegisterSubject.resources
+C:\Users\DELL\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.frmreset.resources
+C:\Users\DELL\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.Student_Data.resources
+C:\Users\DELL\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.Student.resources
+C:\Users\DELL\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.Teacher.resources

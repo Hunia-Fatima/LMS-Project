@@ -19,6 +19,7 @@ namespace WcfService2
         string Pincode;
         [DataMember]
         string Section;
+        public List<Subject> subjects = new List<Subject>();
 
         public string getSection()
         { 
@@ -59,6 +60,14 @@ namespace WcfService2
         public void setemail(string s)
         {
             Email = s;
+        }
+        public string getSec()
+        {
+            return Section;
+        }
+        public void setSec(string s)
+        {
+            Section = s;
         }
     }
 }

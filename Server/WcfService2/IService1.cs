@@ -14,7 +14,9 @@ namespace WcfService2
     {
 
         [OperationContract]
-        void registerUser(string username, string password, string email,string pincode, string sec, string user);
+        void registerStudent(string username, string password, string email, string pincode,string section);
+        [OperationContract]
+        void registerTeacher(string username, string password, string email, string pincode, string subject);
         [OperationContract]
         bool IsValid(string username,string password);
         [OperationContract]
@@ -32,6 +34,15 @@ namespace WcfService2
         [OperationContract]
         List<Student> ShowAll();
         [OperationContract]
+        void registerSubject(Student student, Subject subject);
+        [OperationContract]
+        void unregisterSubject(Student student, Subject subject);
+        [OperationContract]
+        List<Subject> getSubjects();
+        [OperationContract]
+        Student loggedInStudent();
+        [OperationContract]
+        List<Subject> loggedInStudentSubject();
         CompositeType GetDataUsingDataContract(CompositeType composite);
 
         // TODO: Add your service operations here

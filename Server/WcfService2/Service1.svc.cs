@@ -13,6 +13,7 @@ namespace WcfService2
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class Service1 : IService1
     {
+        public static Student st = null;
 
         public bool IsValid(string username, string password)
         {
@@ -26,27 +27,29 @@ namespace WcfService2
                 return false;
             }
         }
-        public void registerUser(string username, string password, string email,string pincode, string sec, string user)
+        public void registerTeacher(string username, string password, string email, string pincode, string subject)
         {
-            if (user == "Teacher")
-            {
-                Teacher teacher = new Teacher();
-                teacher.setname(username);
-                teacher.setpassword(password);
-                teacher.setemail(email);
-                teacher.setpincode(pincode);
-                TeacherDL.teachers.Add(teacher);
-            }
-            else if (user == "Student")
-            {
-                Student student = new Student();
-                student.setname(username);
-                student.setpassword(password);
-                student.setemail(email);
-                student.setpincode(pincode);
-                student.setSection(sec);
-                StudentDL.students.Add(student);
-            }
+            Teacher teacher = new Teacher();
+            teacher.setname(username);
+            teacher.setpassword(password);
+            teacher.setemail(email);
+            teacher.setpincode(pincode);
+            teacher.setsubject(subject);
+            Subject s = new Subject();
+            s.setname(subject);
+            s.setteacher(teacher.getname());
+            SubjectDL.subjects.Add(s);
+            TeacherDL.teachers.Add(teacher);
+        }
+        public void registerStudent(string username, string password, string email, string pincode,string section)
+        {
+            Student student = new Student();
+            student.setname(username);
+            student.setpassword(password);
+            student.setemail(email);
+            student.setpincode(pincode);
+            student.setSec(section);
+            StudentDL.students.Add(student);
         }
 
         public List<Student> ShowAll()
@@ -100,6 +103,7 @@ namespace WcfService2
             {
                 if (s.getname() == username && s.getpassword() == password)
                 {
+                    st = s;
                     return true;
                 }
             }
@@ -130,6 +134,29 @@ namespace WcfService2
             }
             return stu;
  
+        }
+        public List<Subject> getSubjects()
+        {
+            List<Subject> subjects = SubjectDL.subjects;
+            return subjects;
+        }
+
+        public void registerSubject(Student student, Subject subject)
+        {
+            student.subjects.Add(subject);
+        }
+        public void unregisterSubject(Student student, Subject subject)
+        {
+            student.subjects.Remove(subject);
+        }
+        public Student loggedInStudent()
+        {
+            return st;
+        }
+        public List<Subject> loggedInStudentSubject()
+        {
+            List<Subject> s = st.subjects;
+            return s;
         }
         
         public string GetData(int value)

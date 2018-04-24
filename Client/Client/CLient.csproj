@@ -58,6 +58,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRegisterSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegisterSubject.Designer.cs">
+      <DependentUpon>frmRegisterSubject.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRegisterUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmRegisterSubject.resx">
+      <DependentUpon>frmRegisterSubject.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRegisterUser.resx">
       <DependentUpon>frmRegisterUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,9 +143,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Web References\server\CompositeType.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
     <None Include="Web References\server\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
@@ -152,6 +158,9 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Web References\server\Student.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\server\Subject.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
   </ItemGroup>

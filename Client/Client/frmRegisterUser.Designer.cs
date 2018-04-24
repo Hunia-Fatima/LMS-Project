@@ -41,7 +41,9 @@
             this.txtpincode = new System.Windows.Forms.TextBox();
             this.lblpincode = new System.Windows.Forms.Label();
             this.txtSec = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblSec = new System.Windows.Forms.Label();
+            this.cmbSubject = new System.Windows.Forms.ComboBox();
+            this.lblSubject = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtUserName
@@ -66,7 +68,7 @@
             this.cmbRegisterAs.Items.AddRange(new object[] {
             "Student",
             "Teacher"});
-            this.cmbRegisterAs.Location = new System.Drawing.Point(132, 224);
+            this.cmbRegisterAs.Location = new System.Drawing.Point(132, 231);
             this.cmbRegisterAs.Name = "cmbRegisterAs";
             this.cmbRegisterAs.Size = new System.Drawing.Size(214, 21);
             this.cmbRegisterAs.TabIndex = 2;
@@ -74,7 +76,7 @@
             // lnkGoBack
             // 
             this.lnkGoBack.AutoSize = true;
-            this.lnkGoBack.Location = new System.Drawing.Point(13, 301);
+            this.lnkGoBack.Location = new System.Drawing.Point(12, 408);
             this.lnkGoBack.Name = "lnkGoBack";
             this.lnkGoBack.Size = new System.Drawing.Size(49, 13);
             this.lnkGoBack.TabIndex = 3;
@@ -85,7 +87,7 @@
             // cmdRegister
             // 
             this.cmdRegister.BackColor = System.Drawing.SystemColors.Info;
-            this.cmdRegister.Location = new System.Drawing.Point(216, 276);
+            this.cmdRegister.Location = new System.Drawing.Point(226, 383);
             this.cmdRegister.Name = "cmdRegister";
             this.cmdRegister.Size = new System.Drawing.Size(130, 38);
             this.cmdRegister.TabIndex = 4;
@@ -95,14 +97,14 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(132, 67);
+            this.txtEmail.Location = new System.Drawing.Point(132, 77);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(214, 20);
             this.txtEmail.TabIndex = 5;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(132, 134);
+            this.txtPassword.Location = new System.Drawing.Point(132, 132);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(214, 20);
@@ -111,7 +113,7 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(33, 70);
+            this.lblEmail.Location = new System.Drawing.Point(33, 89);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(32, 13);
             this.lblEmail.TabIndex = 7;
@@ -120,7 +122,7 @@
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(33, 137);
+            this.lblPassword.Location = new System.Drawing.Point(29, 135);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(53, 13);
             this.lblPassword.TabIndex = 8;
@@ -129,7 +131,7 @@
             // lblRegisterAs
             // 
             this.lblRegisterAs.AutoSize = true;
-            this.lblRegisterAs.Location = new System.Drawing.Point(33, 232);
+            this.lblRegisterAs.Location = new System.Drawing.Point(29, 231);
             this.lblRegisterAs.Name = "lblRegisterAs";
             this.lblRegisterAs.Size = new System.Drawing.Size(61, 13);
             this.lblRegisterAs.TabIndex = 9;
@@ -137,7 +139,7 @@
             // 
             // txtpincode
             // 
-            this.txtpincode.Location = new System.Drawing.Point(132, 171);
+            this.txtpincode.Location = new System.Drawing.Point(132, 180);
             this.txtpincode.Name = "txtpincode";
             this.txtpincode.PasswordChar = '*';
             this.txtpincode.Size = new System.Drawing.Size(214, 20);
@@ -146,7 +148,7 @@
             // lblpincode
             // 
             this.lblpincode.AutoSize = true;
-            this.lblpincode.Location = new System.Drawing.Point(33, 178);
+            this.lblpincode.Location = new System.Drawing.Point(29, 180);
             this.lblpincode.Name = "lblpincode";
             this.lblpincode.Size = new System.Drawing.Size(50, 13);
             this.lblpincode.TabIndex = 11;
@@ -154,26 +156,53 @@
             // 
             // txtSec
             // 
-            this.txtSec.Location = new System.Drawing.Point(132, 97);
+            this.txtSec.Location = new System.Drawing.Point(132, 275);
             this.txtSec.Name = "txtSec";
-            this.txtSec.Size = new System.Drawing.Size(214, 20);
+            this.txtSec.Size = new System.Drawing.Size(212, 20);
             this.txtSec.TabIndex = 12;
             // 
-            // label1
+            // lblSec
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 104);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Section";
+            this.lblSec.AutoSize = true;
+            this.lblSec.Location = new System.Drawing.Point(36, 282);
+            this.lblSec.Name = "lblSec";
+            this.lblSec.Size = new System.Drawing.Size(43, 13);
+            this.lblSec.TabIndex = 13;
+            this.lblSec.Text = "Section";
+            // 
+            // cmbSubject
+            // 
+            this.cmbSubject.FormattingEnabled = true;
+            this.cmbSubject.Items.AddRange(new object[] {
+            "Subject1",
+            "Subject2",
+            "Subject3",
+            "Subject4",
+            "Subject5",
+            "Subject6",
+            "Subject7"});
+            this.cmbSubject.Location = new System.Drawing.Point(132, 321);
+            this.cmbSubject.Name = "cmbSubject";
+            this.cmbSubject.Size = new System.Drawing.Size(214, 21);
+            this.cmbSubject.TabIndex = 14;
+            // 
+            // lblSubject
+            // 
+            this.lblSubject.AutoSize = true;
+            this.lblSubject.Location = new System.Drawing.Point(36, 321);
+            this.lblSubject.Name = "lblSubject";
+            this.lblSubject.Size = new System.Drawing.Size(43, 13);
+            this.lblSubject.TabIndex = 15;
+            this.lblSubject.Text = "Subject";
             // 
             // frmRegisterUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(358, 338);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(368, 433);
+            this.Controls.Add(this.lblSubject);
+            this.Controls.Add(this.cmbSubject);
+            this.Controls.Add(this.lblSec);
             this.Controls.Add(this.txtSec);
             this.Controls.Add(this.lblpincode);
             this.Controls.Add(this.txtpincode);
@@ -189,6 +218,7 @@
             this.Controls.Add(this.txtUserName);
             this.Name = "frmRegisterUser";
             this.Text = "frmRegisterUser";
+            this.Load += new System.EventHandler(this.frmRegisterUser_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,6 +239,8 @@
         private System.Windows.Forms.TextBox txtpincode;
         private System.Windows.Forms.Label lblpincode;
         private System.Windows.Forms.TextBox txtSec;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblSec;
+        private System.Windows.Forms.ComboBox cmbSubject;
+        private System.Windows.Forms.Label lblSubject;
     }
 }

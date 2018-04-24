@@ -23,5 +23,12 @@ namespace CLient
             L.Show();
             this.Hide();
         }
+
+        private void cmdRegS_Click(object sender, EventArgs e)
+        {
+            frmRegisterSubject form = new frmRegisterSubject();
+            this.Hide();
+            form.Show();
+        }
     }
 }

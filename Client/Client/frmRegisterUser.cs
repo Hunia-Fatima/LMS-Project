@@ -15,6 +15,10 @@ namespace CLient
         public frmRegisterUser()
         {
             InitializeComponent();
+            cmbSubject.Hide();
+            lblSubject.Hide();
+            txtSec.Hide();
+            lblSec.Hide();
         }
 
         private void cmdRegister_Click(object sender, EventArgs e)
@@ -31,18 +35,29 @@ namespace CLient
             {
                 MessageBox.Show("pincode must be numeric and has min length 4");
             }
+            else if (cmbRegisterAs.Text == "Teacher")
+            {
+                server.Service1 server = new server.Service1();
+                server.registerTeacher(txtUserName.Text, txtPassword.Text, txtEmail.Text, txtpincode.Text, lblSubject.Text);
+
+            }
             else
             {
                 server.Service1 server = new server.Service1();
-                server.registerUser(txtUserName.Text, txtPassword.Text, txtEmail.Text,txtpincode.Text,txtSec.Text, cmbRegisterAs.Text);
-                MessageBox.Show("User Registered");
-                txtPassword.Text = "";
-                txtSec.Text = "";
-                txtUserName.Text = "";
-                txtEmail.Text = "";
-                cmbRegisterAs.Text = "";
-                txtpincode.Text = "";
+                server.registerStudent(txtUserName.Text, txtPassword.Text, txtEmail.Text, txtpincode.Text,txtSec.Text);
             }
+            MessageBox.Show("User Registered");
+            txtPassword.Text = "";
+            txtUserName.Text = "";
+            txtEmail.Text = "";
+            cmbRegisterAs.Text = "";
+            txtpincode.Text = "";
+            cmbSubject.Text = "";
+            lblSubject.Hide();
+            cmbSubject.Hide();
+            txtSec.Text = "";
+            txtSec.Hide();
+            lblSec.Hide();
         }
 
         private void lnkGoBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -50,6 +65,25 @@ namespace CLient
             Admin form = new Admin();
             this.Hide();
             form.Show();
+        }
+
+        protected void cmbRegisterAs_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbRegisterAs.Text == "Teacher")
+            {
+                cmbSubject.Show();
+                lblSubject.Show();
+            }
+            if (cmbRegisterAs.Text == "Student")
+            {
+                txtSec.Show();
+                lblSec.Show();
+            }
+        }
+
+        private void frmRegisterUser_Load(object sender, EventArgs e)
+        {
+            cmbRegisterAs.TextChanged += new EventHandler(cmbRegisterAs_TextChanged);
         }
     }
 }
