@@ -40,6 +40,8 @@
             this.lblRegisterAs = new System.Windows.Forms.Label();
             this.txtpincode = new System.Windows.Forms.TextBox();
             this.lblpincode = new System.Windows.Forms.Label();
+            this.txtSec = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtUserName
@@ -100,7 +102,7 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(132, 123);
+            this.txtPassword.Location = new System.Drawing.Point(132, 134);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(214, 20);
@@ -109,7 +111,7 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(33, 74);
+            this.lblEmail.Location = new System.Drawing.Point(33, 70);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(32, 13);
             this.lblEmail.TabIndex = 7;
@@ -118,7 +120,7 @@
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(33, 123);
+            this.lblPassword.Location = new System.Drawing.Point(33, 137);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(53, 13);
             this.lblPassword.TabIndex = 8;
@@ -144,17 +146,35 @@
             // lblpincode
             // 
             this.lblpincode.AutoSize = true;
-            this.lblpincode.Location = new System.Drawing.Point(41, 178);
+            this.lblpincode.Location = new System.Drawing.Point(33, 178);
             this.lblpincode.Name = "lblpincode";
             this.lblpincode.Size = new System.Drawing.Size(50, 13);
             this.lblpincode.TabIndex = 11;
             this.lblpincode.Text = "Pin Code";
+            // 
+            // txtSec
+            // 
+            this.txtSec.Location = new System.Drawing.Point(132, 97);
+            this.txtSec.Name = "txtSec";
+            this.txtSec.Size = new System.Drawing.Size(214, 20);
+            this.txtSec.TabIndex = 12;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(33, 104);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Section";
             // 
             // frmRegisterUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(358, 338);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtSec);
             this.Controls.Add(this.lblpincode);
             this.Controls.Add(this.txtpincode);
             this.Controls.Add(this.lblRegisterAs);
@@ -188,5 +208,7 @@
         private System.Windows.Forms.Label lblRegisterAs;
         private System.Windows.Forms.TextBox txtpincode;
         private System.Windows.Forms.Label lblpincode;
+        private System.Windows.Forms.TextBox txtSec;
+        private System.Windows.Forms.Label label1;
     }
 }

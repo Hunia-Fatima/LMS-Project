@@ -43,6 +43,24 @@
   <wsdl:message name="IService1_IsValidStu_OutputMessage">
     <wsdl:part name="parameters" element="tns:IsValidStuResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_SearchByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchByName" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SearchByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SearchBySection_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchBySection" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SearchBySection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchBySectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ShowAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:ShowAll" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ShowAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ShowAllResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_GetDataUsingDataContract_InputMessage">
     <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
   </wsdl:message>
@@ -73,6 +91,18 @@
     <wsdl:operation name="IsValidStu">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/IsValidStu" message="tns:IService1_IsValidStu_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/IsValidStuResponse" message="tns:IService1_IsValidStu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SearchByName" message="tns:IService1_SearchByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SearchByNameResponse" message="tns:IService1_SearchByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchBySection">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SearchBySection" message="tns:IService1_SearchBySection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SearchBySectionResponse" message="tns:IService1_SearchBySection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ShowAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ShowAll" message="tns:IService1_ShowAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ShowAllResponse" message="tns:IService1_ShowAll_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetDataUsingDataContract">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContract" message="tns:IService1_GetDataUsingDataContract_InputMessage" />
@@ -128,6 +158,33 @@
     </wsdl:operation>
     <wsdl:operation name="IsValidStu">
       <soap:operation soapAction="http://tempuri.org/IService1/IsValidStu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchByName">
+      <soap:operation soapAction="http://tempuri.org/IService1/SearchByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchBySection">
+      <soap:operation soapAction="http://tempuri.org/IService1/SearchBySection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShowAll">
+      <soap:operation soapAction="http://tempuri.org/IService1/ShowAll" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

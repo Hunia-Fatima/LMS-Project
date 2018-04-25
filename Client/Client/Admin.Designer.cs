@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.cmdRegisterUser = new System.Windows.Forms.Button();
-            this.cmdViewData = new System.Windows.Forms.Button();
             this.cmdUpdateResult = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lnkSignOut = new System.Windows.Forms.LinkLabel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cmbVData = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // cmdRegisterUser
@@ -46,20 +47,10 @@
             this.cmdRegisterUser.UseVisualStyleBackColor = false;
             this.cmdRegisterUser.Click += new System.EventHandler(this.cmdRegisterUser_Click);
             // 
-            // cmdViewData
-            // 
-            this.cmdViewData.BackColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.cmdViewData.Location = new System.Drawing.Point(58, 98);
-            this.cmdViewData.Name = "cmdViewData";
-            this.cmdViewData.Size = new System.Drawing.Size(129, 40);
-            this.cmdViewData.TabIndex = 1;
-            this.cmdViewData.Text = "View Data";
-            this.cmdViewData.UseVisualStyleBackColor = false;
-            // 
             // cmdUpdateResult
             // 
             this.cmdUpdateResult.BackColor = System.Drawing.Color.Beige;
-            this.cmdUpdateResult.Location = new System.Drawing.Point(58, 144);
+            this.cmdUpdateResult.Location = new System.Drawing.Point(58, 98);
             this.cmdUpdateResult.Name = "cmdUpdateResult";
             this.cmdUpdateResult.Size = new System.Drawing.Size(129, 40);
             this.cmdUpdateResult.TabIndex = 2;
@@ -87,15 +78,37 @@
             this.lnkSignOut.Text = "Sign Out";
             this.lnkSignOut.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkSignOut_LinkClicked);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(55, 155);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "View Data of";
+            // 
+            // cmbVData
+            // 
+            this.cmbVData.FormattingEnabled = true;
+            this.cmbVData.Items.AddRange(new object[] {
+            "Student",
+            "Teacher"});
+            this.cmbVData.Location = new System.Drawing.Point(58, 184);
+            this.cmbVData.Name = "cmbVData";
+            this.cmbVData.Size = new System.Drawing.Size(185, 21);
+            this.cmbVData.TabIndex = 6;
+            this.cmbVData.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.cmbVData);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lnkSignOut);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmdUpdateResult);
-            this.Controls.Add(this.cmdViewData);
             this.Controls.Add(this.cmdRegisterUser);
             this.Name = "Admin";
             this.Text = "Admin";
@@ -107,9 +120,10 @@
         #endregion
 
         private System.Windows.Forms.Button cmdRegisterUser;
-        private System.Windows.Forms.Button cmdViewData;
         private System.Windows.Forms.Button cmdUpdateResult;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel lnkSignOut;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cmbVData;
     }
 }

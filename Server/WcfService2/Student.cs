@@ -1,47 +1,64 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using System.Linq;
 using System.Web;
 
 namespace WcfService2
 {
+    [DataContract]
     public class Student
     {
-        string name;
-        string password;
-        string email;
-        string pincode;
+        [DataMember]
+        string Name;
+        [DataMember]
+        string Password;
+        [DataMember]
+        string Email;
+        [DataMember]
+        string Pincode;
+        [DataMember]
+        string Section;
+
+        public string getSection()
+        { 
+            return Section; 
+        }
+        public void setSection(string Sec)
+        {
+            Section = Sec;
+        }
         public string getname()
         {
-            return name;
+            return Name;
         }
         public void setname(string s)
         {
-            name = s;
+            Name = s;
         }
         public string getpincode()
         {
-            return pincode;
+            return Pincode;
         }
         public void setpincode(string s)
         {
-            pincode = s;
+            Pincode = s;
         }
         public string getpassword()
         {
-            return password;
+            return Password;
         }
         public void setpassword(string s)
         {
-            password = s;
+            Password = s;
         }
         public string getemail()
         {
-            return email;
+            return Email;
         }
         public void setemail(string s)
         {
-            email = s;
+            Email = s;
         }
     }
 }

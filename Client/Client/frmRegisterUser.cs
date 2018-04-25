@@ -34,9 +34,10 @@ namespace CLient
             else
             {
                 server.Service1 server = new server.Service1();
-                server.registerUser(txtUserName.Text, txtPassword.Text, txtEmail.Text,txtpincode.Text, cmbRegisterAs.Text);
+                server.registerUser(txtUserName.Text, txtPassword.Text, txtEmail.Text,txtpincode.Text,txtSec.Text, cmbRegisterAs.Text);
                 MessageBox.Show("User Registered");
                 txtPassword.Text = "";
+                txtSec.Text = "";
                 txtUserName.Text = "";
                 txtEmail.Text = "";
                 cmbRegisterAs.Text = "";

@@ -30,5 +30,15 @@ namespace CLient
             this.Hide();
             form.Show();
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbVData.Text == "Student")
+            {
+                Student_Data s = new Student_Data();
+                s.Show();
+                this.Hide();
+            }
+        }
     }
 }

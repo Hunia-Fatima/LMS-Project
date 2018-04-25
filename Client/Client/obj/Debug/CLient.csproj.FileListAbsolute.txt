@@ -109,3 +109,5 @@ C:\Users\Admin\Desktop\ppp\LMS-Project\Client\CLient\obj\Debug\CLient.Properties
 C:\Users\Admin\Desktop\ppp\LMS-Project\Client\CLient\obj\Debug\CLient.Student.resources
 C:\Users\Admin\Desktop\ppp\LMS-Project\Client\CLient\obj\Debug\CLient.Teacher.resources
 C:\Users\Admin\Desktop\ppp\LMS-Project\Client\CLient\obj\Debug\CLient.csproj.GenerateResource.Cache
+C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.frmreset.resources
+C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.Student_Data.resources

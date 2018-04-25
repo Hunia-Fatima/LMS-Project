@@ -14,7 +14,7 @@ namespace WcfService2
     {
 
         [OperationContract]
-        void registerUser(string username, string password, string email,string pincode, string user);
+        void registerUser(string username, string password, string email,string pincode, string sec, string user);
         [OperationContract]
         bool IsValid(string username,string password);
         [OperationContract]
@@ -25,6 +25,12 @@ namespace WcfService2
         bool IsValidTeacher(string username, string password);
         [OperationContract]
         bool IsValidStu(string username, string password);
+        [OperationContract]
+        List<Student> SearchByName(string UserName);
+        [OperationContract]
+        List<Student> SearchBySection(string section);
+        [OperationContract]
+        List<Student> ShowAll();
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
 

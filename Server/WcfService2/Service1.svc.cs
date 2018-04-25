@@ -26,7 +26,7 @@ namespace WcfService2
                 return false;
             }
         }
-        public void registerUser(string username, string password, string email,string pincode, string user)
+        public void registerUser(string username, string password, string email,string pincode, string sec, string user)
         {
             if (user == "Teacher")
             {
@@ -44,8 +44,14 @@ namespace WcfService2
                 student.setpassword(password);
                 student.setemail(email);
                 student.setpincode(pincode);
+                student.setSection(sec);
                 StudentDL.students.Add(student);
             }
+        }
+
+        public List<Student> ShowAll()
+        {
+            return StudentDL.students;
         }
         public bool resetpaswrd(string name, string pincode, string user)
         {
@@ -99,7 +105,32 @@ namespace WcfService2
             }
             return false;
         }
-        
+        public List<Student> SearchBySection(string section)
+        {
+            List<Student> stu = new List<Student>();
+            foreach (Student p in StudentDL.students)
+            {
+                if (section == p.getSection())
+                {
+                    stu.Add(p);
+                }
+            }
+            return stu;
+        }
+
+        public List<Student> SearchByName(string UserName)
+        {
+            List<Student> stu = new List<Student>();
+            foreach (Student p in StudentDL.students)
+            {
+                if (UserName == p.getname())
+                {
+                    stu.Add(p);
+                }
+            }
+            return stu;
+ 
+        }
         
         public string GetData(int value)
         {
