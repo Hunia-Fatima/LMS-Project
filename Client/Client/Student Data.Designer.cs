@@ -35,8 +35,8 @@
             this.lblName = new System.Windows.Forms.Label();
             this.lblSby = new System.Windows.Forms.Label();
             this.DGVdata = new System.Windows.Forms.DataGridView();
-            this.cmdSearch = new System.Windows.Forms.Button();
             this.DMC = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.cmdSearch = new System.Windows.Forms.Button();
             this.lnkGoBck = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.DGVdata)).BeginInit();
             this.SuspendLayout();
@@ -103,6 +103,14 @@
             this.DGVdata.Name = "DGVdata";
             this.DGVdata.Size = new System.Drawing.Size(629, 322);
             this.DGVdata.TabIndex = 6;
+            this.DGVdata.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVdata_CellContentClick);
+            // 
+            // DMC
+            // 
+            this.DMC.HeaderText = "View DMC";
+            this.DMC.Name = "DMC";
+            this.DMC.Text = "DMC";
+            this.DMC.UseColumnTextForButtonValue = true;
             // 
             // cmdSearch
             // 
@@ -114,13 +122,6 @@
             this.cmdSearch.Text = "Search";
             this.cmdSearch.UseVisualStyleBackColor = false;
             this.cmdSearch.Click += new System.EventHandler(this.cmdSearch_Click);
-            // 
-            // DMC
-            // 
-            this.DMC.HeaderText = "View DMC";
-            this.DMC.Name = "DMC";
-            this.DMC.Text = "DMC";
-            this.DMC.UseColumnTextForButtonValue = true;
             // 
             // lnkGoBck
             // 

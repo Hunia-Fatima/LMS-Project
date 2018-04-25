@@ -54,5 +54,10 @@ namespace CLient
             this.Hide();
             form.Show();
         }
+
+        private void DGVdata_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

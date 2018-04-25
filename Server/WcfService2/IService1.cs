@@ -12,11 +12,17 @@ namespace WcfService2
     [ServiceContract]
     public interface IService1
     {
+        [OperationContract]
+
+        List<Teacher> SearchByDepartment(string Department);
+        [OperationContract]
+
+        List<Teacher> SearchByname(string Name);
 
         [OperationContract]
         void registerStudent(string username, string password, string email, string pincode,string section);
         [OperationContract]
-        void registerTeacher(string username, string password, string email, string pincode, string subject);
+        void registerTeacher(string username, string password, string email, string pincode, string subject , string department);
         [OperationContract]
         bool IsValid(string username,string password);
         [OperationContract]
@@ -33,6 +39,8 @@ namespace WcfService2
         List<Student> SearchBySection(string section);
         [OperationContract]
         List<Student> ShowAll();
+        [OperationContract]
+        List<Teacher> showall();
         [OperationContract]
         void registerSubject(Student student, Subject subject);
         [OperationContract]

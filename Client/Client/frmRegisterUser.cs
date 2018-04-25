@@ -38,7 +38,7 @@ namespace CLient
             else if (cmbRegisterAs.Text == "Teacher")
             {
                 server.Service1 server = new server.Service1();
-                server.registerTeacher(txtUserName.Text, txtPassword.Text, txtEmail.Text, txtpincode.Text, lblSubject.Text);
+                server.registerTeacher(txtUserName.Text, txtPassword.Text, txtEmail.Text, txtpincode.Text, lblSubject.Text ,cmbdepartment.Text);
 
             }
             else
@@ -57,6 +57,8 @@ namespace CLient
             cmbSubject.Hide();
             txtSec.Text = "";
             txtSec.Hide();
+            cmbdepartment.Text = "";
+
             lblSec.Hide();
         }
 
@@ -84,6 +86,21 @@ namespace CLient
         private void frmRegisterUser_Load(object sender, EventArgs e)
         {
             cmbRegisterAs.TextChanged += new EventHandler(cmbRegisterAs_TextChanged);
+        }
+
+        private void cmbSubject_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSec_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbRegisterAs_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

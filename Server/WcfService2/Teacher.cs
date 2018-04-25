@@ -2,16 +2,25 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Runtime.Serialization;
 
 namespace WcfService2
 {
+    [DataContract]
     public class Teacher
     {
+       [DataMember]
         string name;
+        [DataMember]
         string password;
+        [DataMember]
         string email;
+        [DataMember]
         string pincode;
+        [DataMember]
         string subject;
+        [DataMember]
+        string department;
         public string getname()
         {
             return name;
@@ -20,6 +29,16 @@ namespace WcfService2
         {
             name = s;
         }
+
+        public string getdepartment()
+        {
+            return department;
+        }
+        public void setdepartment(string s)
+        {
+            department = s;
+        }
+
         public string getpincode()
         {
             return pincode;
