@@ -45,9 +45,9 @@
             // 
             // cmdAdd
             // 
-            this.cmdAdd.Location = new System.Drawing.Point(246, 193);
+            this.cmdAdd.Location = new System.Drawing.Point(197, 202);
             this.cmdAdd.Name = "cmdAdd";
-            this.cmdAdd.Size = new System.Drawing.Size(88, 31);
+            this.cmdAdd.Size = new System.Drawing.Size(75, 23);
             this.cmdAdd.TabIndex = 25;
             this.cmdAdd.Text = "Add";
             this.cmdAdd.UseVisualStyleBackColor = true;
@@ -67,7 +67,7 @@
             // lnkgoback
             // 
             this.lnkgoback.AutoSize = true;
-            this.lnkgoback.Location = new System.Drawing.Point(243, 248);
+            this.lnkgoback.Location = new System.Drawing.Point(206, 248);
             this.lnkgoback.Name = "lnkgoback";
             this.lnkgoback.Size = new System.Drawing.Size(54, 13);
             this.lnkgoback.TabIndex = 23;
@@ -147,7 +147,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(110, 124);
+            this.textBox3.Location = new System.Drawing.Point(110, 111);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(121, 20);
             this.textBox3.TabIndex = 15;

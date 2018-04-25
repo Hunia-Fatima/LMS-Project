@@ -19,13 +19,15 @@ namespace CLient
             lblSubject.Hide();
             txtSec.Hide();
             lblSec.Hide();
+            cmbdepartment.Hide();
+            lbldepartment.Hide();
         }
 
         private void cmdRegister_Click(object sender, EventArgs e)
         {
             if (!txtEmail.Text.Contains("@gmail.com"))
             {
-                MessageBox.Show("ENTER VALID EMAIL");
+                MessageBox.Show("ENTER A VALID EMAIL");
             }
             else if (!txtPassword.Text.Any(Char.IsDigit) || !txtPassword.Text.Any(Char.IsLetter) || txtPassword.Text.Length < 8)
             {
@@ -75,11 +77,19 @@ namespace CLient
             {
                 cmbSubject.Show();
                 lblSubject.Show();
+                cmbdepartment.Show();
+                lbldepartment.Show();
+                txtSec.Hide();
+                lblSec.Hide();
             }
             if (cmbRegisterAs.Text == "Student")
             {
                 txtSec.Show();
                 lblSec.Show();
+                cmbSubject.Hide();
+                lblSubject.Hide();
+                cmbdepartment.Hide();
+                lbldepartment.Hide();
             }
         }
 

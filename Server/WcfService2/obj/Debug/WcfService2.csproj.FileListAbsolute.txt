@@ -4,8 +4,8 @@ C:\Users\ok\Desktop\final\LMS-Project\Server\WcfService2\bin\WcfService2.pdb
 C:\Users\ok\Desktop\final\LMS-Project\Server\WcfService2\obj\Debug\WcfService2.csprojResolveAssemblyReference.cache
 C:\Users\ok\Desktop\final\LMS-Project\Server\WcfService2\obj\Debug\WcfService2.dll
 C:\Users\ok\Desktop\final\LMS-Project\Server\WcfService2\obj\Debug\WcfService2.pdb
-C:\Users\Mamuna\Desktop\git\LMS-Project\Server\WcfService2\bin\WcfService2.dll
-C:\Users\Mamuna\Desktop\git\LMS-Project\Server\WcfService2\bin\WcfService2.pdb
-C:\Users\Mamuna\Desktop\git\LMS-Project\Server\WcfService2\obj\Debug\WcfService2.csprojResolveAssemblyReference.cache
-C:\Users\Mamuna\Desktop\git\LMS-Project\Server\WcfService2\obj\Debug\WcfService2.dll
-C:\Users\Mamuna\Desktop\git\LMS-Project\Server\WcfService2\obj\Debug\WcfService2.pdb
+C:\Users\DELL\Desktop\LMS-Project\Server\WcfService2\bin\WcfService2.dll
+C:\Users\DELL\Desktop\LMS-Project\Server\WcfService2\bin\WcfService2.pdb
+C:\Users\DELL\Desktop\LMS-Project\Server\WcfService2\obj\Debug\WcfService2.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Desktop\LMS-Project\Server\WcfService2\obj\Debug\WcfService2.dll
+C:\Users\DELL\Desktop\LMS-Project\Server\WcfService2\obj\Debug\WcfService2.pdb

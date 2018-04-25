@@ -20,22 +20,22 @@ C:\Users\ok\Desktop\final\LMS-Project\Client\CLient\obj\Debug\CLient.pdb
 C:\Users\ok\Desktop\New folder\LMS-Project\Client\CLient\bin\Debug\CLient.exe.config
 C:\Users\ok\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.exe
 C:\Users\ok\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.pdb
-C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\bin\Debug\CLient.exe.config
-C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.exe
-C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.pdb
-C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\bin\Debug\CLient.exe
-C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\bin\Debug\CLient.pdb
-C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.csprojResolveAssemblyReference.cache
-C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.AddStudentResult.resources
-C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.Admin.resources
-C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.frmAdminLogin.resources
-C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.frmRegisterSubject.resources
-C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.frmRegisterUser.resources
-C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.frmreset.resources
-C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.Properties.Resources.resources
-C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.Student_Data.resources
-C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.Student.resources
-C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.Teacher.resources
-C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.Teacher_Data.resources
-C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.ViewUploadedResult.resources
-C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.csproj.GenerateResource.Cache
+C:\Users\DELL\Desktop\LMS-Project\Client\CLient\bin\Debug\CLient.exe.config
+C:\Users\DELL\Desktop\LMS-Project\Client\CLient\obj\Debug\CLient.exe
+C:\Users\DELL\Desktop\LMS-Project\Client\CLient\obj\Debug\CLient.pdb
+C:\Users\DELL\Desktop\LMS-Project\Client\CLient\bin\Debug\CLient.exe
+C:\Users\DELL\Desktop\LMS-Project\Client\CLient\bin\Debug\CLient.pdb
+C:\Users\DELL\Desktop\LMS-Project\Client\CLient\obj\Debug\CLient.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Desktop\LMS-Project\Client\CLient\obj\Debug\CLient.AddStudentResult.resources
+C:\Users\DELL\Desktop\LMS-Project\Client\CLient\obj\Debug\CLient.Admin.resources
+C:\Users\DELL\Desktop\LMS-Project\Client\CLient\obj\Debug\CLient.frmAdminLogin.resources
+C:\Users\DELL\Desktop\LMS-Project\Client\CLient\obj\Debug\CLient.frmRegisterSubject.resources
+C:\Users\DELL\Desktop\LMS-Project\Client\CLient\obj\Debug\CLient.frmRegisterUser.resources
+C:\Users\DELL\Desktop\LMS-Project\Client\CLient\obj\Debug\CLient.frmreset.resources
+C:\Users\DELL\Desktop\LMS-Project\Client\CLient\obj\Debug\CLient.Properties.Resources.resources
+C:\Users\DELL\Desktop\LMS-Project\Client\CLient\obj\Debug\CLient.Student_Data.resources
+C:\Users\DELL\Desktop\LMS-Project\Client\CLient\obj\Debug\CLient.Student.resources
+C:\Users\DELL\Desktop\LMS-Project\Client\CLient\obj\Debug\CLient.Teacher.resources
+C:\Users\DELL\Desktop\LMS-Project\Client\CLient\obj\Debug\CLient.Teacher_Data.resources
+C:\Users\DELL\Desktop\LMS-Project\Client\CLient\obj\Debug\CLient.ViewUploadedResult.resources
+C:\Users\DELL\Desktop\LMS-Project\Client\CLient\obj\Debug\CLient.csproj.GenerateResource.Cache

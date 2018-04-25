@@ -144,11 +144,16 @@ namespace WcfService2
 
         public void registerSubject(Student student, Subject subject)
         {
-            student.subjects.Add(subject);
+
+            Subject sub = new Subject();
+            st.subjects.Add(sub);
         }
         public void unregisterSubject(Student student, Subject subject)
         {
-            student.subjects.Remove(subject);
+            Student s = new Student();
+            s = st;
+            Subject sub = new Subject();
+            s.subjects.Remove(sub);
         }
         public Student loggedInStudent()
         {

@@ -33,7 +33,7 @@ namespace CLient
                 {
                     if (s == myserver.getSubjects()[e.RowIndex])
                     {
-                        //myserver.unregisterSubject(myserver.loggedInStudent(), myserver.getSubjects()[e.RowIndex]);
+                        myserver.unregisterSubject(myserver.loggedInStudent(), myserver.getSubjects()[e.RowIndex]);
                         MessageBox.Show("Subject Unregistered");
                         is_found = true;
 
@@ -41,7 +41,7 @@ namespace CLient
                 }
                 if(!is_found)
                 {
-                //myserver.registerSubject(myserver.loggedInStudent(),myserver.getSubjects()[e.RowIndex]);
+                myserver.registerSubject(myserver.loggedInStudent(),myserver.getSubjects()[e.RowIndex]);
                 MessageBox.Show("You are registered in the subject");
                 }
             }                              
@@ -49,7 +49,7 @@ namespace CLient
 
         private void lnkGoBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Admin form = new Admin();
+            Student form = new Student();
             form.Show(); ;
             this.Hide();
         }
