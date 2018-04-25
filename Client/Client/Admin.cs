@@ -39,6 +39,12 @@ namespace CLient
                 s.Show();
                 this.Hide();
             }
+            if (cmbVData.Text == "Teacher")
+            {
+                Teacher_Data t = new Teacher_Data();
+                t.Show();
+                this.Hide();
+            }
         }
     }
 }

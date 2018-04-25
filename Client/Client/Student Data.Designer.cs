@@ -106,6 +106,14 @@
             this.DGVdata.Name = "DGVdata";
             this.DGVdata.Size = new System.Drawing.Size(629, 322);
             this.DGVdata.TabIndex = 6;
+            this.DGVdata.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVdata_CellContentClick);
+            // 
+            // DMC
+            // 
+            this.DMC.HeaderText = "View DMC";
+            this.DMC.Name = "DMC";
+            this.DMC.Text = "DMC";
+            this.DMC.UseColumnTextForButtonValue = true;
             // 
             // DMC
             // 

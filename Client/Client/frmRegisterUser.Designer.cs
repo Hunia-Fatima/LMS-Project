@@ -44,6 +44,8 @@
             this.lblSec = new System.Windows.Forms.Label();
             this.cmbSubject = new System.Windows.Forms.ComboBox();
             this.lblSubject = new System.Windows.Forms.Label();
+            this.cmbdepartment = new System.Windows.Forms.ComboBox();
+            this.lbldepartment = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtUserName
@@ -72,6 +74,7 @@
             this.cmbRegisterAs.Name = "cmbRegisterAs";
             this.cmbRegisterAs.Size = new System.Drawing.Size(214, 21);
             this.cmbRegisterAs.TabIndex = 2;
+            this.cmbRegisterAs.SelectedIndexChanged += new System.EventHandler(this.cmbRegisterAs_SelectedIndexChanged);
             // 
             // lnkGoBack
             // 
@@ -160,6 +163,7 @@
             this.txtSec.Name = "txtSec";
             this.txtSec.Size = new System.Drawing.Size(212, 20);
             this.txtSec.TabIndex = 12;
+            this.txtSec.TextChanged += new System.EventHandler(this.txtSec_TextChanged);
             // 
             // lblSec
             // 
@@ -185,6 +189,7 @@
             this.cmbSubject.Name = "cmbSubject";
             this.cmbSubject.Size = new System.Drawing.Size(214, 21);
             this.cmbSubject.TabIndex = 14;
+            this.cmbSubject.SelectedIndexChanged += new System.EventHandler(this.cmbSubject_SelectedIndexChanged);
             // 
             // lblSubject
             // 
@@ -195,11 +200,36 @@
             this.lblSubject.TabIndex = 15;
             this.lblSubject.Text = "Subject";
             // 
+            // cmbdepartment
+            // 
+            this.cmbdepartment.FormattingEnabled = true;
+            this.cmbdepartment.Items.AddRange(new object[] {
+            "EE",
+            "CS",
+            "CIVIL",
+            "PETROLEUM",
+            "MECHANICAL"});
+            this.cmbdepartment.Location = new System.Drawing.Point(131, 359);
+            this.cmbdepartment.Name = "cmbdepartment";
+            this.cmbdepartment.Size = new System.Drawing.Size(212, 21);
+            this.cmbdepartment.TabIndex = 16;
+            // 
+            // lbldepartment
+            // 
+            this.lbldepartment.AutoSize = true;
+            this.lbldepartment.Location = new System.Drawing.Point(33, 362);
+            this.lbldepartment.Name = "lbldepartment";
+            this.lbldepartment.Size = new System.Drawing.Size(62, 13);
+            this.lbldepartment.TabIndex = 17;
+            this.lbldepartment.Text = "Department";
+            // 
             // frmRegisterUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(368, 433);
+            this.Controls.Add(this.lbldepartment);
+            this.Controls.Add(this.cmbdepartment);
             this.Controls.Add(this.lblSubject);
             this.Controls.Add(this.cmbSubject);
             this.Controls.Add(this.lblSec);
@@ -242,5 +272,7 @@
         private System.Windows.Forms.Label lblSec;
         private System.Windows.Forms.ComboBox cmbSubject;
         private System.Windows.Forms.Label lblSubject;
+        private System.Windows.Forms.ComboBox cmbdepartment;
+        private System.Windows.Forms.Label lbldepartment;
     }
 }

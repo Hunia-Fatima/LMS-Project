@@ -27,7 +27,7 @@ namespace WcfService2
                 return false;
             }
         }
-        public void registerTeacher(string username, string password, string email, string pincode, string subject)
+        public void registerTeacher(string username, string password, string email, string pincode, string subject , string department)
         {
             Teacher teacher = new Teacher();
             teacher.setname(username);
@@ -35,6 +35,7 @@ namespace WcfService2
             teacher.setemail(email);
             teacher.setpincode(pincode);
             teacher.setsubject(subject);
+            teacher.setdepartment(department);
             Subject s = new Subject();
             s.setname(subject);
             s.setteacher(teacher.getname());
@@ -163,6 +164,39 @@ namespace WcfService2
         {
             return string.Format("You entered: {0}", value);
         }
+
+        public List<Teacher> SearchByname(string Name)
+        {
+            List<Teacher> arr = new List<Teacher>();
+            foreach (Teacher t in TeacherDL.teachers)
+            {
+                if (Name == t.getname())
+                {
+                    arr.Add(t);
+                }
+            }
+            return arr;
+        }
+
+        public List<Teacher> SearchByDepartment(string Department)
+        {
+            List<Teacher> arr = new List<Teacher>();
+            foreach (Teacher t in TeacherDL.teachers)
+            {
+                if (Department == t.getdepartment())
+                {
+                    arr.Add(t);
+                }
+            }
+            return arr;
+        }
+
+
+        public List<Teacher> showall()
+        {
+            return TeacherDL.teachers;
+        }
+
 
         public CompositeType GetDataUsingDataContract(CompositeType composite)
         {
