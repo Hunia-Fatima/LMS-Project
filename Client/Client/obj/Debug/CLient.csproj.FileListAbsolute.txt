@@ -133,3 +133,6 @@ C:\Users\Admin\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.Stu
 C:\Users\Admin\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.Teacher.resources
 C:\Users\Admin\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.Teacher_Data.resources
 C:\Users\Admin\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\New folder (2)\LMS-Project\Client\CLient\bin\Debug\CLient.exe.config
+C:\Users\Admin\Desktop\New folder (2)\LMS-Project\Client\CLient\obj\Debug\CLient.exe
+C:\Users\Admin\Desktop\New folder (2)\LMS-Project\Client\CLient\obj\Debug\CLient.pdb
