@@ -196,6 +196,37 @@ namespace WcfService2
         {
             return TeacherDL.teachers;
         }
+         public void AddResult(string name, string section, string marksobtained, string totalmarks, string status)
+        {
+            AddallResult add = new AddallResult();
+            add.setName(name);
+            add.setSection(section);
+            add.setMarkobtained(marksobtained);
+            add.setTotalmarks(totalmarks);
+            add.setStatus(status);
+            AddAllResultDL.addresult.Add(add);
+        }
+        public List<AddallResult> showResult()
+        {
+
+            return AddAllResultDL.addresult;
+
+        }
+        public List<AddallResult> BySection(string section)
+        {
+
+            List<AddallResult> ad = new List<AddallResult>();
+            
+                foreach (AddallResult d in AddAllResultDL.addresult)
+                {
+                    if (section == d.getSection())
+                    {
+                      ad.Add(d);
+                }
+                }
+            return ad;
+
+        }
 
 
         public CompositeType GetDataUsingDataContract(CompositeType composite)

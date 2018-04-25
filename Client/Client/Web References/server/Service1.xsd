@@ -251,4 +251,60 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="AddResult">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="section" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="marksobtained" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="totalmarks" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="status" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddResultResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="showResult">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="showResultResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="showResultResult" nillable="true" type="q14:ArrayOfAddallResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BySection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="section" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BySectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="BySectionResult" nillable="true" type="q15:ArrayOfAddallResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataUsingDataContract">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="composite" nillable="true" type="q16:CompositeType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataUsingDataContractResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="GetDataUsingDataContractResult" nillable="true" type="q17:CompositeType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

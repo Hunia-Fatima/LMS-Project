@@ -46,4 +46,27 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ArrayOfSubject" nillable="true" type="tns:ArrayOfSubject" />
+  <xs:complexType name="ArrayOfAddallResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AddallResult" nillable="true" type="tns:AddallResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAddallResult" nillable="true" type="tns:ArrayOfAddallResult" />
+  <xs:complexType name="AddallResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Markobtained" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Section" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Totalmarks" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AddallResult" nillable="true" type="tns:AddallResult" />
+  <xs:complexType name="CompositeType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BoolValue" type="xs:boolean" />
+      <xs:element minOccurs="0" name="StringValue" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CompositeType" nillable="true" type="tns:CompositeType" />
 </xs:schema>

@@ -71,6 +71,7 @@
             this.cmdUpldRes.TabIndex = 5;
             this.cmdUpldRes.Text = "Upload Result";
             this.cmdUpldRes.UseVisualStyleBackColor = false;
+            this.cmdUpldRes.Click += new System.EventHandler(this.cmdUpldRes_Click);
             // 
             // lnkTSignOut
             // 

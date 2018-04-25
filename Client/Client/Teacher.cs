@@ -26,6 +26,11 @@ namespace CLient
 
         }
 
-        
+        private void cmdUpldRes_Click(object sender, EventArgs e)
+        {
+            AddStudentResult fr = new AddStudentResult();
+            this.Hide();
+            fr.Show();
+        }
     }
 }

@@ -51,6 +51,13 @@ namespace WcfService2
         Student loggedInStudent();
         [OperationContract]
         List<Subject> loggedInStudentSubject();
+        [OperationContract]
+        void AddResult( string name,string section, string marksobtained, string totalmarks, string status);
+        [OperationContract]
+        List<AddallResult> showResult();
+        [OperationContract]
+        List<AddallResult> BySection(string section);
+        [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
 
         // TODO: Add your service operations here

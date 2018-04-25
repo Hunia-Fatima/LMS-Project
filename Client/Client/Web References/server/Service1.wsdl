@@ -115,6 +115,30 @@
   <wsdl:message name="IService1_loggedInStudentSubject_OutputMessage">
     <wsdl:part name="parameters" element="tns:loggedInStudentSubjectResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_AddResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddResult" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_showResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:showResult" />
+  </wsdl:message>
+  <wsdl:message name="IService1_showResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:showResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BySection_InputMessage">
+    <wsdl:part name="parameters" element="tns:BySection" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BySection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BySectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService1">
     <wsdl:operation name="SearchByDepartment">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/SearchByDepartment" message="tns:IService1_SearchByDepartment_InputMessage" />
@@ -187,6 +211,22 @@
     <wsdl:operation name="loggedInStudentSubject">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/loggedInStudentSubject" message="tns:IService1_loggedInStudentSubject_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/loggedInStudentSubjectResponse" message="tns:IService1_loggedInStudentSubject_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddResult" message="tns:IService1_AddResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddResultResponse" message="tns:IService1_AddResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="showResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/showResult" message="tns:IService1_showResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/showResultResponse" message="tns:IService1_showResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BySection">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BySection" message="tns:IService1_BySection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BySectionResponse" message="tns:IService1_BySection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContract" message="tns:IService1_GetDataUsingDataContract_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContractResponse" message="tns:IService1_GetDataUsingDataContract_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
@@ -346,6 +386,42 @@
     </wsdl:operation>
     <wsdl:operation name="loggedInStudentSubject">
       <soap:operation soapAction="http://tempuri.org/IService1/loggedInStudentSubject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddResult">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="showResult">
+      <soap:operation soapAction="http://tempuri.org/IService1/showResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BySection">
+      <soap:operation soapAction="http://tempuri.org/IService1/BySection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetDataUsingDataContract" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
