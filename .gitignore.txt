@@ -1,2 +1,3 @@
 Client/Client/obj/
 Client/Client/bin/
+Client/CLient.v11.suo
