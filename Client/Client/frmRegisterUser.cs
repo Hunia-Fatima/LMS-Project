@@ -60,6 +60,8 @@ namespace CLient
             txtSec.Text = "";
             txtSec.Hide();
             cmbdepartment.Text = "";
+            cmbdepartment.Hide();
+            lbldepartment.Hide();
 
             lblSec.Hide();
         }

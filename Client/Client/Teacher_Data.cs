@@ -20,7 +20,7 @@ namespace CLient
         private void btnsearch_Click(object sender, EventArgs e)
         {
             BindingSource source = new BindingSource();
-            if (txtname.Text == "")
+            if (txtname.Text == "" && cmbsearchbydep.Text != "" )
             {
                 server.Service1 server = new server.Service1();
                 server.SearchByDepartment(cmbsearchbydep.Text);
@@ -29,15 +29,17 @@ namespace CLient
                 dgv.DataSource = source;
 
             }
-            else if (cmbsearchbydep.Text == "")
+            else if (cmbsearchbydep.Text == "" && txtname.Text != "")
             {
                 server.Service1 server = new server.Service1();
                 server.SearchByname(txtname.Text);
 
-                // List<Teacher> arr = WcfService2.TeacherDl.SearchByname(txtname.Text);
-
                 source.DataSource = server.SearchByname(txtname.Text);
                 dgv.DataSource = source;
+            }
+            else if (cmbsearchbydep.Text != "" && txtname.Text != "")
+            {
+                MessageBox.Show("Please fill only one box");
             }
             else
             {
