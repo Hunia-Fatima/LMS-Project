@@ -43,7 +43,7 @@ namespace CLient
             }
             else
             {
-                MessageBox.Show("Please enter valid section!!");
+                MessageBox.Show("first fill the box!!");
             }
             dataGridView1.DataSource = source;
         }

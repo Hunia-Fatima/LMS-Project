@@ -25,7 +25,12 @@ namespace CLient
 
         private void cmdRegister_Click(object sender, EventArgs e)
         {
-            if (!txtEmail.Text.Contains("@gmail.com"))
+            bool empty = false;
+            if (txtUserName.Text == "" || txtEmail.Text == "" || txtPassword.Text == "" || txtpincode.Text == "")
+            {
+                empty = true;
+            }
+            else if (!txtEmail.Text.Contains("@gmail.com"))
             {
                 MessageBox.Show("ENTER A VALID EMAIL");
             }
@@ -39,31 +44,52 @@ namespace CLient
             }
             else if (cmbRegisterAs.Text == "Teacher")
             {
-                server.Service1 server = new server.Service1();
-                server.registerTeacher(txtUserName.Text, txtPassword.Text, txtEmail.Text, txtpincode.Text, lblSubject.Text ,cmbdepartment.Text);
-
+                if (cmbdepartment.Text == "" || cmbSubject.Text == "")
+                {
+                    MessageBox.Show("Please Fill all the required Boxes");
+                }
+                else
+                {
+                    server.Service1 server = new server.Service1();
+                    server.registerTeacher(txtUserName.Text, txtPassword.Text, txtEmail.Text, txtpincode.Text, cmbSubject.Text, cmbdepartment.Text);
+                    MessageBox.Show("User Registered");
+                }
             }
             else
             {
-                server.Service1 server = new server.Service1();
-                server.registerStudent(txtUserName.Text, txtPassword.Text, txtEmail.Text, txtpincode.Text,txtSec.Text);
+                if (txtSec.Text == "")
+                {
+                    MessageBox.Show("Please Fill all the required Boxes");
+                }
+                else
+                {
+                    server.Service1 server = new server.Service1();
+                    server.registerStudent(txtUserName.Text, txtPassword.Text, txtEmail.Text, txtpincode.Text, txtSec.Text);
+                    MessageBox.Show("User Registered");
+                }
             }
-            MessageBox.Show("User Registered");
-            txtPassword.Text = "";
-            txtUserName.Text = "";
-            txtEmail.Text = "";
-            cmbRegisterAs.Text = "";
-            txtpincode.Text = "";
-            cmbSubject.Text = "";
-            lblSubject.Hide();
-            cmbSubject.Hide();
-            txtSec.Text = "";
-            txtSec.Hide();
-            cmbdepartment.Text = "";
-            cmbdepartment.Hide();
-            lbldepartment.Hide();
+            if (empty)
+            {
+                MessageBox.Show("Please Fill all the required Boxes");
+            }
+            else
+            {
+                txtPassword.Text = "";
+                txtUserName.Text = "";
+                txtEmail.Text = "";
+                cmbRegisterAs.Text = "";
+                txtpincode.Text = "";
+                cmbSubject.Text = "";
+                lblSubject.Hide();
+                cmbSubject.Hide();
+                txtSec.Text = "";
+                txtSec.Hide();
+                cmbdepartment.Text = "";
+                cmbdepartment.Hide();
+                lbldepartment.Hide();
 
-            lblSec.Hide();
+                lblSec.Hide();
+            }
         }
 
         private void lnkGoBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

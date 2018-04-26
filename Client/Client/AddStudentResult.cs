@@ -26,32 +26,20 @@ namespace CLient
 
         private void cmdAdd_Click(object sender, EventArgs e)
         {
-            if(textBox1.Text == "")
-            {
-                MessageBox.Show("Enter a Name");
-            }
-            else if (!textBox1.Text.Any(char.IsLetter))
+
+            if (!textBox1.Text.Any(char.IsLetter))
             {
                 MessageBox.Show("Enter a  valid name");
             }
-            else if(cmbsection.Text=="")
-            {
-                MessageBox.Show("Select any section From given options");
-
-            }
-            else if (!txtmarksobtained.Text.Any(char.IsDigit)&&txtmarksobtained.Text=="")
+            else if (!txtmarksobtained.Text.Any(char.IsDigit))
             {
                 MessageBox.Show("Marks must be in digits");
 
             }
-            else if (!textBox3.Text.Any(char.IsDigit)&&textBox3.Text=="")
+            else if (!textBox3.Text.Any(char.IsDigit))
             {
                 MessageBox.Show("Marks must be in digits");
 
-            }
-            else if(cmbstatus.Text == "")
-            {
-                MessageBox.Show("Select any status from given option");
             }
             else
             {

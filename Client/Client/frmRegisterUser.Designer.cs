@@ -178,13 +178,13 @@
             // 
             this.cmbSubject.FormattingEnabled = true;
             this.cmbSubject.Items.AddRange(new object[] {
-            "Subject1",
-            "Subject2",
-            "Subject3",
-            "Subject4",
-            "Subject5",
-            "Subject6",
-            "Subject7"});
+            "CALCULUS",
+            "ICS",
+            "PF",
+            "COAL",
+            "OOAD",
+            "DSA",
+            "DET"});
             this.cmbSubject.Location = new System.Drawing.Point(129, 274);
             this.cmbSubject.Name = "cmbSubject";
             this.cmbSubject.Size = new System.Drawing.Size(214, 21);

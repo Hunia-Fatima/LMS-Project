@@ -30,8 +30,8 @@
         {
             this.lblName = new System.Windows.Forms.Label();
             this.gvRegisterSubjects = new System.Windows.Forms.DataGridView();
-            this.Register = new System.Windows.Forms.DataGridViewButtonColumn();
             this.lnkGoBack = new System.Windows.Forms.LinkLabel();
+            this.Register = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gvRegisterSubjects)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,12 +56,6 @@
             this.gvRegisterSubjects.TabIndex = 1;
             this.gvRegisterSubjects.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvRegisterUser_CellContentClick);
             // 
-            // Register
-            // 
-            this.Register.HeaderText = "Resgiter/Unregister";
-            this.Register.Name = "Register";
-            this.Register.Text = "Resgiter/Unregister";
-            // 
             // lnkGoBack
             // 
             this.lnkGoBack.AutoSize = true;
@@ -72,6 +66,13 @@
             this.lnkGoBack.TabStop = true;
             this.lnkGoBack.Text = "Go Back";
             this.lnkGoBack.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkGoBack_LinkClicked);
+            // 
+            // Register
+            // 
+            this.Register.HeaderText = "Resgiter/Unregister";
+            this.Register.Name = "Register";
+            this.Register.Text = "Resgiter/Unregister";
+            this.Register.UseColumnTextForButtonValue = true;
             // 
             // frmRegisterSubject
             // 
@@ -93,7 +94,7 @@
 
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.DataGridView gvRegisterSubjects;
-        private System.Windows.Forms.DataGridViewButtonColumn Register;
         private System.Windows.Forms.LinkLabel lnkGoBack;
+        private System.Windows.Forms.DataGridViewButtonColumn Register;
     }
 }
