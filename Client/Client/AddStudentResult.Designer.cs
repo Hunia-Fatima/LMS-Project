@@ -45,7 +45,7 @@
             // 
             // cmdAdd
             // 
-            this.cmdAdd.Location = new System.Drawing.Point(197, 202);
+            this.cmdAdd.Location = new System.Drawing.Point(295, 212);
             this.cmdAdd.Name = "cmdAdd";
             this.cmdAdd.Size = new System.Drawing.Size(75, 23);
             this.cmdAdd.TabIndex = 25;
@@ -56,7 +56,7 @@
             // lnkuploadedresult
             // 
             this.lnkuploadedresult.AutoSize = true;
-            this.lnkuploadedresult.Location = new System.Drawing.Point(24, 248);
+            this.lnkuploadedresult.Location = new System.Drawing.Point(27, 269);
             this.lnkuploadedresult.Name = "lnkuploadedresult";
             this.lnkuploadedresult.Size = new System.Drawing.Size(86, 13);
             this.lnkuploadedresult.TabIndex = 24;
@@ -67,7 +67,7 @@
             // lnkgoback
             // 
             this.lnkgoback.AutoSize = true;
-            this.lnkgoback.Location = new System.Drawing.Point(206, 248);
+            this.lnkgoback.Location = new System.Drawing.Point(316, 257);
             this.lnkgoback.Name = "lnkgoback";
             this.lnkgoback.Size = new System.Drawing.Size(54, 13);
             this.lnkgoback.TabIndex = 23;
@@ -78,7 +78,7 @@
             // lblstatus
             // 
             this.lblstatus.AutoSize = true;
-            this.lblstatus.Location = new System.Drawing.Point(27, 162);
+            this.lblstatus.Location = new System.Drawing.Point(27, 167);
             this.lblstatus.Name = "lblstatus";
             this.lblstatus.Size = new System.Drawing.Size(37, 13);
             this.lblstatus.TabIndex = 22;
@@ -127,9 +127,9 @@
             "PASS",
             "FAIL",
             "PENDING"});
-            this.cmbstatus.Location = new System.Drawing.Point(110, 154);
+            this.cmbstatus.Location = new System.Drawing.Point(110, 164);
             this.cmbstatus.Name = "cmbstatus";
-            this.cmbstatus.Size = new System.Drawing.Size(121, 21);
+            this.cmbstatus.Size = new System.Drawing.Size(238, 21);
             this.cmbstatus.TabIndex = 17;
             // 
             // cmbsection
@@ -142,35 +142,35 @@
             "D"});
             this.cmbsection.Location = new System.Drawing.Point(110, 40);
             this.cmbsection.Name = "cmbsection";
-            this.cmbsection.Size = new System.Drawing.Size(121, 21);
+            this.cmbsection.Size = new System.Drawing.Size(238, 21);
             this.cmbsection.TabIndex = 16;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(110, 111);
+            this.textBox3.Location = new System.Drawing.Point(110, 124);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(121, 20);
+            this.textBox3.Size = new System.Drawing.Size(238, 20);
             this.textBox3.TabIndex = 15;
             // 
             // txtmarksobtained
             // 
-            this.txtmarksobtained.Location = new System.Drawing.Point(110, 85);
+            this.txtmarksobtained.Location = new System.Drawing.Point(110, 82);
             this.txtmarksobtained.Name = "txtmarksobtained";
-            this.txtmarksobtained.Size = new System.Drawing.Size(121, 20);
+            this.txtmarksobtained.Size = new System.Drawing.Size(238, 20);
             this.txtmarksobtained.TabIndex = 14;
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(110, 12);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
+            this.textBox1.Size = new System.Drawing.Size(238, 20);
             this.textBox1.TabIndex = 13;
             // 
             // AddStudentResult
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(356, 303);
+            this.ClientSize = new System.Drawing.Size(487, 303);
             this.Controls.Add(this.cmdAdd);
             this.Controls.Add(this.lnkuploadedresult);
             this.Controls.Add(this.lnkgoback);
