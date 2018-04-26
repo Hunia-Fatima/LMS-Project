@@ -185,7 +185,7 @@
             "Subject5",
             "Subject6",
             "Subject7"});
-            this.cmbSubject.Location = new System.Drawing.Point(132, 321);
+            this.cmbSubject.Location = new System.Drawing.Point(129, 274);
             this.cmbSubject.Name = "cmbSubject";
             this.cmbSubject.Size = new System.Drawing.Size(214, 21);
             this.cmbSubject.TabIndex = 14;
@@ -194,7 +194,7 @@
             // lblSubject
             // 
             this.lblSubject.AutoSize = true;
-            this.lblSubject.Location = new System.Drawing.Point(36, 321);
+            this.lblSubject.Location = new System.Drawing.Point(36, 282);
             this.lblSubject.Name = "lblSubject";
             this.lblSubject.Size = new System.Drawing.Size(43, 13);
             this.lblSubject.TabIndex = 15;
@@ -209,7 +209,7 @@
             "CIVIL",
             "PETROLEUM",
             "MECHANICAL"});
-            this.cmbdepartment.Location = new System.Drawing.Point(131, 359);
+            this.cmbdepartment.Location = new System.Drawing.Point(129, 315);
             this.cmbdepartment.Name = "cmbdepartment";
             this.cmbdepartment.Size = new System.Drawing.Size(212, 21);
             this.cmbdepartment.TabIndex = 16;
@@ -217,7 +217,7 @@
             // lbldepartment
             // 
             this.lbldepartment.AutoSize = true;
-            this.lbldepartment.Location = new System.Drawing.Point(33, 362);
+            this.lbldepartment.Location = new System.Drawing.Point(29, 323);
             this.lbldepartment.Name = "lbldepartment";
             this.lbldepartment.Size = new System.Drawing.Size(62, 13);
             this.lbldepartment.TabIndex = 17;

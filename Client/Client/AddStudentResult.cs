@@ -27,7 +27,7 @@ namespace CLient
         private void cmdAdd_Click(object sender, EventArgs e)
         {
 
-            if (!textBox1.Text.Any(char.IsDigit) || !textBox1.Text.Any(char.IsLetter))
+            if (!textBox1.Text.Any(char.IsLetter))
             {
                 MessageBox.Show("Enter a  valid name");
             }

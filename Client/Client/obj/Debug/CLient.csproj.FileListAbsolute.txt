@@ -58,3 +58,6 @@ C:\Users\Admin\Desktop\New folder (5)\LMS-Project\Client\CLient\obj\Debug\CLient
 C:\Users\Admin\Desktop\New folder (5)\LMS-Project\Client\CLient\obj\Debug\CLient.Teacher_Data.resources
 C:\Users\Admin\Desktop\New folder (5)\LMS-Project\Client\CLient\obj\Debug\CLient.ViewUploadedResult.resources
 C:\Users\Admin\Desktop\New folder (5)\LMS-Project\Client\CLient\obj\Debug\CLient.csproj.GenerateResource.Cache
+C:\Users\ok\Desktop\finala\LMS-Project\Client\CLient\bin\Debug\CLient.exe.config
+C:\Users\ok\Desktop\finala\LMS-Project\Client\CLient\obj\Debug\CLient.exe
+C:\Users\ok\Desktop\finala\LMS-Project\Client\CLient\obj\Debug\CLient.pdb
