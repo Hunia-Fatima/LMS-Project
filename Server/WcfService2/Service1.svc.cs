@@ -128,7 +128,8 @@ namespace WcfService2
             List<Student> stu = new List<Student>();
             foreach (Student p in StudentDL.students)
             {
-                if (UserName == p.getname())
+                string n = p.getname();
+                if (n.Contains(UserName))
                 {
                     stu.Add(p);
                 }
