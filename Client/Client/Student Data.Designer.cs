@@ -35,8 +35,8 @@
             this.lblName = new System.Windows.Forms.Label();
             this.lblSby = new System.Windows.Forms.Label();
             this.DGVdata = new System.Windows.Forms.DataGridView();
-            this.cmdSearch = new System.Windows.Forms.Button();
             this.DMC = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.cmdSearch = new System.Windows.Forms.Button();
             this.lnkGoBck = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.DGVdata)).BeginInit();
             this.SuspendLayout();
@@ -44,6 +44,7 @@
             // lnkShowAll
             // 
             this.lnkShowAll.AutoSize = true;
+            this.lnkShowAll.LinkColor = System.Drawing.Color.Purple;
             this.lnkShowAll.Location = new System.Drawing.Point(613, 57);
             this.lnkShowAll.Name = "lnkShowAll";
             this.lnkShowAll.Size = new System.Drawing.Size(48, 13);
@@ -69,6 +70,7 @@
             // lblSec
             // 
             this.lblSec.AutoSize = true;
+            this.lblSec.ForeColor = System.Drawing.Color.Purple;
             this.lblSec.Location = new System.Drawing.Point(94, 45);
             this.lblSec.Name = "lblSec";
             this.lblSec.Size = new System.Drawing.Size(43, 13);
@@ -78,6 +80,7 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
+            this.lblName.ForeColor = System.Drawing.Color.Purple;
             this.lblName.Location = new System.Drawing.Point(94, 76);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(35, 13);
@@ -104,6 +107,13 @@
             this.DGVdata.Size = new System.Drawing.Size(629, 322);
             this.DGVdata.TabIndex = 6;
             // 
+            // DMC
+            // 
+            this.DMC.HeaderText = "View DMC";
+            this.DMC.Name = "DMC";
+            this.DMC.Text = "DMC";
+            this.DMC.UseColumnTextForButtonValue = true;
+            // 
             // cmdSearch
             // 
             this.cmdSearch.BackColor = System.Drawing.Color.LemonChiffon;
@@ -115,16 +125,10 @@
             this.cmdSearch.UseVisualStyleBackColor = false;
             this.cmdSearch.Click += new System.EventHandler(this.cmdSearch_Click);
             // 
-            // DMC
-            // 
-            this.DMC.HeaderText = "View DMC";
-            this.DMC.Name = "DMC";
-            this.DMC.Text = "DMC";
-            this.DMC.UseColumnTextForButtonValue = true;
-            // 
             // lnkGoBck
             // 
             this.lnkGoBck.AutoSize = true;
+            this.lnkGoBck.LinkColor = System.Drawing.Color.Purple;
             this.lnkGoBck.Location = new System.Drawing.Point(25, 447);
             this.lnkGoBck.Name = "lnkGoBck";
             this.lnkGoBck.Size = new System.Drawing.Size(49, 13);

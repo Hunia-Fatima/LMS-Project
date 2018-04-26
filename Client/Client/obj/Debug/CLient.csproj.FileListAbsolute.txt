@@ -116,3 +116,4 @@ C:\Users\DELL\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.frmr
 C:\Users\DELL\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.Student_Data.resources
 C:\Users\DELL\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.Student.resources
 C:\Users\DELL\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.Teacher.resources
+C:\Users\Mamuna\Desktop\git\LMS-Project\Client\CLient\obj\Debug\CLient.frmRegisterSubject.resources
