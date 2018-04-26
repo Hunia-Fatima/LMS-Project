@@ -29,7 +29,7 @@ namespace CLient
         {
             BindingSource source = new BindingSource();
             server.Service1 server = new server.Service1();
-            if (txtSByName.Text != "" && txtSByName.Text != "")
+            if (txtSByName.Text != "" && txtSBySec.Text != "")
             {
                 MessageBox.Show("Kindly fill only one box!!");          
             }
