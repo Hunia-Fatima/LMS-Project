@@ -162,7 +162,9 @@ namespace CLient
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            Update_Result form = new Update_Result();
+            form.Show();
+            this.Hide();
         }
 
         private void lnkteacherData_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
@@ -191,6 +193,11 @@ namespace CLient
             frmAdminLogin form = new frmAdminLogin();
             this.Hide();
             form.Show();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

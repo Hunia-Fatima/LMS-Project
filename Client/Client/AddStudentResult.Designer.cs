@@ -36,21 +36,15 @@
             this.lblsection = new System.Windows.Forms.Label();
             this.lblname = new System.Windows.Forms.Label();
             this.cmbstatus = new System.Windows.Forms.ComboBox();
-            this.cmbsection = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.cmbStudents = new System.Windows.Forms.ComboBox();
+            this.txtTotalMarks = new System.Windows.Forms.TextBox();
             this.txtmarksobtained = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSec = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lnkSignOut = new System.Windows.Forms.LinkLabel();
             this.lnkUplaodAttendance = new System.Windows.Forms.LinkLabel();
             this.lnkgoback = new System.Windows.Forms.LinkLabel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.SectionA = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.SectionB = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.SectionC = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.SectionD = new System.Windows.Forms.DataGridViewButtonColumn();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // cmdAdd
@@ -133,25 +127,21 @@
             this.cmbstatus.Size = new System.Drawing.Size(191, 21);
             this.cmbstatus.TabIndex = 17;
             // 
-            // cmbsection
+            // cmbStudents
             // 
-            this.cmbsection.FormattingEnabled = true;
-            this.cmbsection.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "C",
-            "D"});
-            this.cmbsection.Location = new System.Drawing.Point(248, 89);
-            this.cmbsection.Name = "cmbsection";
-            this.cmbsection.Size = new System.Drawing.Size(191, 21);
-            this.cmbsection.TabIndex = 16;
+            this.cmbStudents.FormattingEnabled = true;
+            this.cmbStudents.Location = new System.Drawing.Point(248, 30);
+            this.cmbStudents.Name = "cmbStudents";
+            this.cmbStudents.Size = new System.Drawing.Size(191, 21);
+            this.cmbStudents.TabIndex = 16;
+            this.cmbStudents.SelectedIndexChanged += new System.EventHandler(this.cmbsection_SelectedIndexChanged);
             // 
-            // textBox3
+            // txtTotalMarks
             // 
-            this.textBox3.Location = new System.Drawing.Point(250, 206);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(191, 20);
-            this.textBox3.TabIndex = 15;
+            this.txtTotalMarks.Location = new System.Drawing.Point(250, 206);
+            this.txtTotalMarks.Name = "txtTotalMarks";
+            this.txtTotalMarks.Size = new System.Drawing.Size(191, 20);
+            this.txtTotalMarks.TabIndex = 15;
             // 
             // txtmarksobtained
             // 
@@ -160,12 +150,12 @@
             this.txtmarksobtained.Size = new System.Drawing.Size(191, 20);
             this.txtmarksobtained.TabIndex = 14;
             // 
-            // textBox1
+            // txtSec
             // 
-            this.textBox1.Location = new System.Drawing.Point(250, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(189, 20);
-            this.textBox1.TabIndex = 13;
+            this.txtSec.Location = new System.Drawing.Point(248, 88);
+            this.txtSec.Name = "txtSec";
+            this.txtSec.Size = new System.Drawing.Size(189, 20);
+            this.txtSec.TabIndex = 13;
             // 
             // groupBox1
             // 
@@ -215,60 +205,12 @@
             this.lnkgoback.Text = "Go to Main Page";
             this.lnkgoback.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkgoback_LinkClicked);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.SectionA,
-            this.SectionB,
-            this.SectionC,
-            this.SectionD});
-            this.dataGridView1.Location = new System.Drawing.Point(471, 33);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(428, 62);
-            this.dataGridView1.TabIndex = 27;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // SectionA
-            // 
-            this.SectionA.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SectionA.HeaderText = "Result of SectionA";
-            this.SectionA.Name = "SectionA";
-            this.SectionA.Text = "Result of SectionA";
-            this.SectionA.UseColumnTextForButtonValue = true;
-            // 
-            // SectionB
-            // 
-            this.SectionB.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SectionB.HeaderText = "Result of SectionB";
-            this.SectionB.Name = "SectionB";
-            this.SectionB.Text = "Result of SectionB";
-            this.SectionB.UseColumnTextForButtonValue = true;
-            // 
-            // SectionC
-            // 
-            this.SectionC.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SectionC.HeaderText = "Result of SectionC";
-            this.SectionC.Name = "SectionC";
-            this.SectionC.Text = "Result of SectionC";
-            this.SectionC.UseColumnTextForButtonValue = true;
-            // 
-            // SectionD
-            // 
-            this.SectionD.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SectionD.HeaderText = "Result of SectionD";
-            this.SectionD.Name = "SectionD";
-            this.SectionD.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.SectionD.Text = "Result of SectionD";
-            this.SectionD.UseColumnTextForButtonValue = true;
-            // 
             // AddStudentResult
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(911, 363);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(453, 363);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.cmdAdd);
             this.Controls.Add(this.lblstatus);
@@ -277,15 +219,15 @@
             this.Controls.Add(this.lblsection);
             this.Controls.Add(this.lblname);
             this.Controls.Add(this.cmbstatus);
-            this.Controls.Add(this.cmbsection);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.cmbStudents);
+            this.Controls.Add(this.txtTotalMarks);
             this.Controls.Add(this.txtmarksobtained);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtSec);
             this.Name = "AddStudentResult";
             this.Text = "Uplaod Result";
+            this.Load += new System.EventHandler(this.AddStudentResult_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -301,18 +243,13 @@
         private System.Windows.Forms.Label lblsection;
         private System.Windows.Forms.Label lblname;
         private System.Windows.Forms.ComboBox cmbstatus;
-        private System.Windows.Forms.ComboBox cmbsection;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.ComboBox cmbStudents;
+        private System.Windows.Forms.TextBox txtTotalMarks;
         private System.Windows.Forms.TextBox txtmarksobtained;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSec;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.LinkLabel lnkUplaodAttendance;
         private System.Windows.Forms.LinkLabel lnkSignOut;
         private System.Windows.Forms.LinkLabel lnkgoback;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewButtonColumn SectionA;
-        private System.Windows.Forms.DataGridViewButtonColumn SectionB;
-        private System.Windows.Forms.DataGridViewButtonColumn SectionC;
-        private System.Windows.Forms.DataGridViewButtonColumn SectionD;
     }
 }

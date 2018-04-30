@@ -15,6 +15,13 @@ namespace CLient
         public AddStudentResult()
         {
             InitializeComponent();
+            server.Service1 myservice = new server.Service1();
+            string[] s = myservice.registered_students();
+            for (int i = 0; i < s.Length; i++ )
+            {
+                cmbStudents.Items.Add(s[i]);
+            }
+
         }
 
         private void lnkgoback_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -26,49 +33,9 @@ namespace CLient
 
         private void cmdAdd_Click(object sender, EventArgs e)
         {
-
-
-            if (textBox1.Text == "" || cmbsection.Text == "" || txtmarksobtained.Text == "" || textBox3.Text == "" || cmbstatus.Text == "")
-            {
-                MessageBox.Show("Please fill all Boxes");
-            }
-            else if (!textBox1.Text.Any(char.IsLetter))
-            {
-                MessageBox.Show("Enter a  valid name");
-            }
-            else if (cmbsection.Text == "")
-            {
-                MessageBox.Show("Select any section from given options");
-            }
-
-            else if (!txtmarksobtained.Text.Any(char.IsDigit))
-            {
-                MessageBox.Show("Marks must be in digits");
-
-            }
-            else if (!textBox3.Text.Any(char.IsDigit))
-            {
-                MessageBox.Show("Marks must be in digits");
-
-            }
-            else if (cmbstatus.Text == "")
-            {
-                MessageBox.Show("Select section from given options");
-            }
-            else
-            {
-                server.Service1 server = new server.Service1();
-        
-                server.AddResult(textBox1.Text, cmbsection.Text, txtmarksobtained.Text, textBox3.Text, cmbstatus.Text);
-                MessageBox.Show("Result has been Added");
-                textBox1.Text = "";
-                cmbsection.Text = "";
-                txtmarksobtained.Text = "";
-                textBox3.Text = "";
-                cmbstatus.Text = "";
-            }
-
-
+            server.Service1 myservice = new server.Service1();
+            myservice.Add_result(cmbStudents.Text, myservice.getLoggedInTeacher().subject, txtTotalMarks.Text, txtmarksobtained.Text);
+            MessageBox.Show("Result added");
         }
 
         private void lnkuploadedresult_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -86,38 +53,25 @@ namespace CLient
             form.Show();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void cmbsection_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            server.Service1 myserver = new server.Service1();
-            if (e.ColumnIndex == 0)
+        }
+        private void cmbStudents_TextChanged(object sender, EventArgs e)
+        {
+            server.Service1 myservice = new server.Service1();
+            foreach (server.Student s in myservice.get_registered_students())
             {
-                Result_of_SectionA A = new Result_of_SectionA();
-                this.Hide();
-                A.Show();
-
+                if (cmbStudents.Text == s.Name)
+                {
+                    txtSec.Text = s.Section;
+                }
             }
-            else if (e.ColumnIndex == 1)
-            {
-                Result_of_SectionB B = new Result_of_SectionB();
-                this.Hide();
-                B.Show();
+        }
 
-            }
-            else if (e.ColumnIndex == 2)
-            {
-                Result_of_SectionC C = new Result_of_SectionC();
-                this.Hide();
-                C.Show();
-
-            }
-            else if (e.ColumnIndex == 3)
-            {
-                Result_of_SectionD D = new Result_of_SectionD();
-                this.Hide();
-                D.Show();
-
-            }
+        private void AddStudentResult_Load(object sender, EventArgs e)
+        {
+            cmbStudents.TextChanged += new EventHandler(cmbStudents_TextChanged);
         }
     }
 }

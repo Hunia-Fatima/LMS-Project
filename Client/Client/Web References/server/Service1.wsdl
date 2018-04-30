@@ -5,6 +5,7 @@
       <xsd:import schemaLocation="http://localhost:7187/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
       <xsd:import schemaLocation="http://localhost:7187/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
       <xsd:import schemaLocation="http://localhost:7187/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfService2" />
+      <xsd:import schemaLocation="http://localhost:7187/Service1.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="IService1_SearchByDepartment_InputMessage">
@@ -115,23 +116,41 @@
   <wsdl:message name="IService1_loggedInStudentSubject_OutputMessage">
     <wsdl:part name="parameters" element="tns:loggedInStudentSubjectResponse" />
   </wsdl:message>
-  <wsdl:message name="IService1_AddResult_InputMessage">
-    <wsdl:part name="parameters" element="tns:AddResult" />
+  <wsdl:message name="IService1_registered_students_InputMessage">
+    <wsdl:part name="parameters" element="tns:registered_students" />
   </wsdl:message>
-  <wsdl:message name="IService1_AddResult_OutputMessage">
-    <wsdl:part name="parameters" element="tns:AddResultResponse" />
+  <wsdl:message name="IService1_registered_students_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registered_studentsResponse" />
   </wsdl:message>
-  <wsdl:message name="IService1_showResult_InputMessage">
-    <wsdl:part name="parameters" element="tns:showResult" />
+  <wsdl:message name="IService1_get_registered_students_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_registered_students" />
   </wsdl:message>
-  <wsdl:message name="IService1_showResult_OutputMessage">
-    <wsdl:part name="parameters" element="tns:showResultResponse" />
+  <wsdl:message name="IService1_get_registered_students_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_registered_studentsResponse" />
   </wsdl:message>
-  <wsdl:message name="IService1_BySection_InputMessage">
-    <wsdl:part name="parameters" element="tns:BySection" />
+  <wsdl:message name="IService1_getLoggedInTeacher_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLoggedInTeacher" />
   </wsdl:message>
-  <wsdl:message name="IService1_BySection_OutputMessage">
-    <wsdl:part name="parameters" element="tns:BySectionResponse" />
+  <wsdl:message name="IService1_getLoggedInTeacher_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLoggedInTeacherResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_get_result_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_result" />
+  </wsdl:message>
+  <wsdl:message name="IService1_get_result_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_resultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Add_result_InputMessage">
+    <wsdl:part name="parameters" element="tns:Add_result" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Add_result_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Add_resultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_update_result_InputMessage">
+    <wsdl:part name="parameters" element="tns:update_result" />
+  </wsdl:message>
+  <wsdl:message name="IService1_update_result_OutputMessage">
+    <wsdl:part name="parameters" element="tns:update_resultResponse" />
   </wsdl:message>
   <wsdl:message name="IService1_GetDataUsingDataContract_InputMessage">
     <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
@@ -212,17 +231,29 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/loggedInStudentSubject" message="tns:IService1_loggedInStudentSubject_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/loggedInStudentSubjectResponse" message="tns:IService1_loggedInStudentSubject_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="AddResult">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddResult" message="tns:IService1_AddResult_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddResultResponse" message="tns:IService1_AddResult_OutputMessage" />
+    <wsdl:operation name="registered_students">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/registered_students" message="tns:IService1_registered_students_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/registered_studentsResponse" message="tns:IService1_registered_students_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="showResult">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/showResult" message="tns:IService1_showResult_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/showResultResponse" message="tns:IService1_showResult_OutputMessage" />
+    <wsdl:operation name="get_registered_students">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/get_registered_students" message="tns:IService1_get_registered_students_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/get_registered_studentsResponse" message="tns:IService1_get_registered_students_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="BySection">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BySection" message="tns:IService1_BySection_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BySectionResponse" message="tns:IService1_BySection_OutputMessage" />
+    <wsdl:operation name="getLoggedInTeacher">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getLoggedInTeacher" message="tns:IService1_getLoggedInTeacher_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getLoggedInTeacherResponse" message="tns:IService1_getLoggedInTeacher_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_result">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/get_result" message="tns:IService1_get_result_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/get_resultResponse" message="tns:IService1_get_result_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Add_result">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Add_result" message="tns:IService1_Add_result_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Add_resultResponse" message="tns:IService1_Add_result_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="update_result">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/update_result" message="tns:IService1_update_result_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/update_resultResponse" message="tns:IService1_update_result_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetDataUsingDataContract">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContract" message="tns:IService1_GetDataUsingDataContract_InputMessage" />
@@ -393,8 +424,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="AddResult">
-      <soap:operation soapAction="http://tempuri.org/IService1/AddResult" style="document" />
+    <wsdl:operation name="registered_students">
+      <soap:operation soapAction="http://tempuri.org/IService1/registered_students" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -402,8 +433,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="showResult">
-      <soap:operation soapAction="http://tempuri.org/IService1/showResult" style="document" />
+    <wsdl:operation name="get_registered_students">
+      <soap:operation soapAction="http://tempuri.org/IService1/get_registered_students" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -411,8 +442,35 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="BySection">
-      <soap:operation soapAction="http://tempuri.org/IService1/BySection" style="document" />
+    <wsdl:operation name="getLoggedInTeacher">
+      <soap:operation soapAction="http://tempuri.org/IService1/getLoggedInTeacher" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_result">
+      <soap:operation soapAction="http://tempuri.org/IService1/get_result" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Add_result">
+      <soap:operation soapAction="http://tempuri.org/IService1/Add_result" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update_result">
+      <soap:operation soapAction="http://tempuri.org/IService1/update_result" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

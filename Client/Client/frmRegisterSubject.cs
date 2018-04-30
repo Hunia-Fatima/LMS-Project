@@ -75,10 +75,5 @@ namespace CLient
         {
 
         }
-
-        private void frmRegisterSubject_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

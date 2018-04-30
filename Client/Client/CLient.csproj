@@ -89,30 +89,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Result of SectionA.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Result of SectionA.Designer.cs">
-      <DependentUpon>Result of SectionA.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Result of SectionB.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Result of SectionB.Designer.cs">
-      <DependentUpon>Result of SectionB.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Result of SectionC.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Result of SectionC.Designer.cs">
-      <DependentUpon>Result of SectionC.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Result of SectionD.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Result of SectionD.Designer.cs">
-      <DependentUpon>Result of SectionD.cs</DependentUpon>
-    </Compile>
     <Compile Include="Student Data.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +112,12 @@
     </Compile>
     <Compile Include="Teacher_Data.Designer.cs">
       <DependentUpon>Teacher_Data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update Result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update Result.Designer.cs">
+      <DependentUpon>Update Result.cs</DependentUpon>
     </Compile>
     <Compile Include="ViewUploadedResult.cs">
       <SubType>Form</SubType>
@@ -171,18 +153,6 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Result of SectionA.resx">
-      <DependentUpon>Result of SectionA.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Result of SectionB.resx">
-      <DependentUpon>Result of SectionB.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Result of SectionC.resx">
-      <DependentUpon>Result of SectionC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Result of SectionD.resx">
-      <DependentUpon>Result of SectionD.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Student Data.resx">
       <DependentUpon>Student Data.cs</DependentUpon>
     </EmbeddedResource>
@@ -194,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Teacher_Data.resx">
       <DependentUpon>Teacher_Data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update Result.resx">
+      <DependentUpon>Update Result.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewUploadedResult.resx">
       <DependentUpon>ViewUploadedResult.cs</DependentUpon>
@@ -207,15 +180,15 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Web References\server\AddallResult.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
     <None Include="Web References\server\CompositeType.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\server\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\server\Result.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\server\Service1.wsdl" />
     <None Include="Web References\server\Service1.xsd">
@@ -225,6 +198,9 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Web References\server\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\server\Service12.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Web References\server\Student.datasource">

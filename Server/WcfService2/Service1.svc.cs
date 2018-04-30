@@ -14,6 +14,7 @@ namespace WcfService2
     public class Service1 : IService1
     {
         public static Student st = null;
+        public static Teacher tr = null;
 
         public bool IsValid(string username, string password)
         {
@@ -93,6 +94,7 @@ namespace WcfService2
                 if (t.getname() == username && t.getpassword() == password)
                 {
                     found = true;
+                    tr = t;
                     return found;
                 }               
             }
@@ -145,8 +147,8 @@ namespace WcfService2
 
         public void registerSubject(Student student, Subject subject)
         {
-
             Subject sub = new Subject();
+            sub = subject;
             st.subjects.Add(sub);
         }
         public void unregisterSubject(Student student, Subject subject)
@@ -165,12 +167,6 @@ namespace WcfService2
             List<Subject> s = st.subjects;
             return s;
         }
-        
-        public string GetData(int value)
-        {
-            return string.Format("You entered: {0}", value);
-        }
-
         public List<Teacher> SearchByname(string Name)
         {
             List<Teacher> arr = new List<Teacher>();
@@ -202,39 +198,59 @@ namespace WcfService2
         {
             return TeacherDL.teachers;
         }
-         public void AddResult(string name, string section, string marksobtained, string totalmarks, string status)
+        public List<String> registered_students()
         {
-            AddallResult add = new AddallResult();
-            add.setName(name);
-            add.setSection(section);
-            add.setMarkobtained(marksobtained);
-            add.setTotalmarks(totalmarks);
-            add.setStatus(status);
-            AddAllResultDL.addresult.Add(add);
-        }
-        public List<AddallResult> showResult()
-        {
-
-            return AddAllResultDL.addresult;
-
-        }
-        public List<AddallResult> BySection(string section)
-        {
-
-            List<AddallResult> ad = new List<AddallResult>();
-            
-                foreach (AddallResult d in AddAllResultDL.addresult)
+            List<String> str = new List<string>();
+            foreach (Student s in StudentDL.students)
+            {
+                foreach (Subject sb in s.subjects)
                 {
-                    if (section == d.getSection())
+                    if (sb.getteacher() == tr.getname())
                     {
-                      ad.Add(d);
+                        str.Add(s.getname());
+                    }
                 }
-                }
-            return ad;
-
+            }
+            return str;
         }
-
-
+        public List<Student> get_registered_students()
+        {
+            return StudentDL.students;
+        }
+        public Teacher getLoggedInTeacher()
+        {
+            return tr;
+        }
+        public void Add_result(string student,string subject,string total,string marks)
+        {
+            Result res = new Result();
+            res.setstudent(student);
+            res.setsubject(subject);
+            res.settotal(total);
+            res.setmarks(marks);
+            ResultDL.results.Add(res);
+        }
+        public  List<Result> get_result()
+        {
+            return ResultDL.results;
+        }
+        public void update_result(Result res)
+        {
+            foreach (Student s in StudentDL.students)
+            {
+                if (s.getname() == res.getstudent())
+                {
+                    Result r = new Result();
+                    r = res;
+                    s.results.Add(r);
+                }
+            }
+        }
+        
+        public string GetData(int value)
+        {
+            return string.Format("You entered: {0}", value);
+        }
         public CompositeType GetDataUsingDataContract(CompositeType composite)
         {
             if (composite == null)

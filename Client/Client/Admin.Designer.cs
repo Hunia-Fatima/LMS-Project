@@ -56,6 +56,7 @@
             this.cmdUpdateResult.TabIndex = 2;
             this.cmdUpdateResult.Text = "Update Result";
             this.cmdUpdateResult.UseVisualStyleBackColor = false;
+            this.cmdUpdateResult.Click += new System.EventHandler(this.cmdUpdateResult_Click);
             // 
             // label1
             // 

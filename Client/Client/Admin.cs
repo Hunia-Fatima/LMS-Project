@@ -46,5 +46,12 @@ namespace CLient
                 this.Hide();
             }
         }
+
+        private void cmdUpdateResult_Click(object sender, EventArgs e)
+        {
+            Update_Result form = new Update_Result();
+            form.Show();
+            this.Hide();
+        }
     }
 }

@@ -52,11 +52,17 @@ namespace WcfService2
         [OperationContract]
         List<Subject> loggedInStudentSubject();
         [OperationContract]
-        void AddResult( string name,string section, string marksobtained, string totalmarks, string status);
+        List<String> registered_students();
         [OperationContract]
-        List<AddallResult> showResult();
+        List<Student> get_registered_students();
         [OperationContract]
-        List<AddallResult> BySection(string section);
+        Teacher getLoggedInTeacher();
+        [OperationContract]
+        List<Result> get_result();
+        [OperationContract]
+        void Add_result(string student, string subject, string total, string marks);
+        [OperationContract]
+        void update_result(Result res);
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
 

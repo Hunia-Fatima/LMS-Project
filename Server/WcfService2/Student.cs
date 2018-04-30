@@ -19,7 +19,10 @@ namespace WcfService2
         string Pincode;
         [DataMember]
         string Section;
+        [DataMember]
         public List<Subject> subjects = new List<Subject>();
+        [DataMember]
+        public List<Result> results = new List<Result>();
 
         public string getSection()
         { 
