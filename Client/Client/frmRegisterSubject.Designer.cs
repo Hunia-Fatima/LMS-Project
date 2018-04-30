@@ -32,10 +32,10 @@
             this.gvRegisterSubjects = new System.Windows.Forms.DataGridView();
             this.Register = new System.Windows.Forms.DataGridViewButtonColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lnkViewDMC = new System.Windows.Forms.LinkLabel();
-            this.lnkViewAttendance = new System.Windows.Forms.LinkLabel();
-            this.lnkConversation = new System.Windows.Forms.LinkLabel();
             this.lnkSignOut = new System.Windows.Forms.LinkLabel();
+            this.lnkConversation = new System.Windows.Forms.LinkLabel();
+            this.lnkViewAttendance = new System.Windows.Forms.LinkLabel();
+            this.lnkViewDMC = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.gvRegisterSubjects)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -81,28 +81,17 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             // 
-            // lnkViewDMC
+            // lnkSignOut
             // 
-            this.lnkViewDMC.AutoSize = true;
-            this.lnkViewDMC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lnkViewDMC.Location = new System.Drawing.Point(12, 62);
-            this.lnkViewDMC.Name = "lnkViewDMC";
-            this.lnkViewDMC.Size = new System.Drawing.Size(71, 17);
-            this.lnkViewDMC.TabIndex = 0;
-            this.lnkViewDMC.TabStop = true;
-            this.lnkViewDMC.Text = "View DMC";
-            this.lnkViewDMC.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkViewDMC_LinkClicked);
-            // 
-            // lnkViewAttendance
-            // 
-            this.lnkViewAttendance.AutoSize = true;
-            this.lnkViewAttendance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lnkViewAttendance.Location = new System.Drawing.Point(12, 121);
-            this.lnkViewAttendance.Name = "lnkViewAttendance";
-            this.lnkViewAttendance.Size = new System.Drawing.Size(113, 17);
-            this.lnkViewAttendance.TabIndex = 1;
-            this.lnkViewAttendance.TabStop = true;
-            this.lnkViewAttendance.Text = "View Attendance";
+            this.lnkSignOut.AutoSize = true;
+            this.lnkSignOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lnkSignOut.Location = new System.Drawing.Point(12, 244);
+            this.lnkSignOut.Name = "lnkSignOut";
+            this.lnkSignOut.Size = new System.Drawing.Size(63, 17);
+            this.lnkSignOut.TabIndex = 3;
+            this.lnkSignOut.TabStop = true;
+            this.lnkSignOut.Text = "Sign Out";
+            this.lnkSignOut.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkSignOut_LinkClicked);
             // 
             // lnkConversation
             // 
@@ -116,17 +105,28 @@
             this.lnkConversation.Text = "Talk with Teacher";
             this.lnkConversation.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkConversation_LinkClicked);
             // 
-            // lnkSignOut
+            // lnkViewAttendance
             // 
-            this.lnkSignOut.AutoSize = true;
-            this.lnkSignOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lnkSignOut.Location = new System.Drawing.Point(12, 244);
-            this.lnkSignOut.Name = "lnkSignOut";
-            this.lnkSignOut.Size = new System.Drawing.Size(63, 17);
-            this.lnkSignOut.TabIndex = 3;
-            this.lnkSignOut.TabStop = true;
-            this.lnkSignOut.Text = "Sign Out";
-            this.lnkSignOut.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkSignOut_LinkClicked);
+            this.lnkViewAttendance.AutoSize = true;
+            this.lnkViewAttendance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lnkViewAttendance.Location = new System.Drawing.Point(12, 121);
+            this.lnkViewAttendance.Name = "lnkViewAttendance";
+            this.lnkViewAttendance.Size = new System.Drawing.Size(113, 17);
+            this.lnkViewAttendance.TabIndex = 1;
+            this.lnkViewAttendance.TabStop = true;
+            this.lnkViewAttendance.Text = "View Attendance";
+            // 
+            // lnkViewDMC
+            // 
+            this.lnkViewDMC.AutoSize = true;
+            this.lnkViewDMC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lnkViewDMC.Location = new System.Drawing.Point(12, 62);
+            this.lnkViewDMC.Name = "lnkViewDMC";
+            this.lnkViewDMC.Size = new System.Drawing.Size(71, 17);
+            this.lnkViewDMC.TabIndex = 0;
+            this.lnkViewDMC.TabStop = true;
+            this.lnkViewDMC.Text = "View DMC";
+            this.lnkViewDMC.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkViewDMC_LinkClicked);
             // 
             // frmRegisterSubject
             // 
@@ -139,6 +139,7 @@
             this.Controls.Add(this.lblName);
             this.Name = "frmRegisterSubject";
             this.Text = "frmRegisterSubject";
+            this.Load += new System.EventHandler(this.frmRegisterSubject_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gvRegisterSubjects)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

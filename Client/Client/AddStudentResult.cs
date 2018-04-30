@@ -27,10 +27,20 @@ namespace CLient
         private void cmdAdd_Click(object sender, EventArgs e)
         {
 
-            if (!textBox1.Text.Any(char.IsLetter))
+
+            if (textBox1.Text == "" || cmbsection.Text == "" || txtmarksobtained.Text == "" || textBox3.Text == "" || cmbstatus.Text == "")
+            {
+                MessageBox.Show("Please fill all Boxes");
+            }
+            else if (!textBox1.Text.Any(char.IsLetter))
             {
                 MessageBox.Show("Enter a  valid name");
             }
+            else if (cmbsection.Text == "")
+            {
+                MessageBox.Show("Select any section from given options");
+            }
+
             else if (!txtmarksobtained.Text.Any(char.IsDigit))
             {
                 MessageBox.Show("Marks must be in digits");
@@ -40,6 +50,10 @@ namespace CLient
             {
                 MessageBox.Show("Marks must be in digits");
 
+            }
+            else if (cmbstatus.Text == "")
+            {
+                MessageBox.Show("Select section from given options");
             }
             else
             {
@@ -70,6 +84,40 @@ namespace CLient
             frmAdminLogin form = new frmAdminLogin();
             this.Hide();
             form.Show();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            server.Service1 myserver = new server.Service1();
+            if (e.ColumnIndex == 0)
+            {
+                Result_of_SectionA A = new Result_of_SectionA();
+                this.Hide();
+                A.Show();
+
+            }
+            else if (e.ColumnIndex == 1)
+            {
+                Result_of_SectionB B = new Result_of_SectionB();
+                this.Hide();
+                B.Show();
+
+            }
+            else if (e.ColumnIndex == 2)
+            {
+                Result_of_SectionC C = new Result_of_SectionC();
+                this.Hide();
+                C.Show();
+
+            }
+            else if (e.ColumnIndex == 3)
+            {
+                Result_of_SectionD D = new Result_of_SectionD();
+                this.Hide();
+                D.Show();
+
+            }
         }
     }
 }

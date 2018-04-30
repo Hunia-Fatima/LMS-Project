@@ -89,6 +89,30 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Result of SectionA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result of SectionA.Designer.cs">
+      <DependentUpon>Result of SectionA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Result of SectionB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result of SectionB.Designer.cs">
+      <DependentUpon>Result of SectionB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Result of SectionC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result of SectionC.Designer.cs">
+      <DependentUpon>Result of SectionC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Result of SectionD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result of SectionD.Designer.cs">
+      <DependentUpon>Result of SectionD.cs</DependentUpon>
+    </Compile>
     <Compile Include="Student Data.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +170,18 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Result of SectionA.resx">
+      <DependentUpon>Result of SectionA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Result of SectionB.resx">
+      <DependentUpon>Result of SectionB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Result of SectionC.resx">
+      <DependentUpon>Result of SectionC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Result of SectionD.resx">
+      <DependentUpon>Result of SectionD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Student Data.resx">
       <DependentUpon>Student Data.cs</DependentUpon>

@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cmdSearch = new System.Windows.Forms.Button();
             this.cmdShowAll = new System.Windows.Forms.Button();
-            this.txtsection = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lnkSignOut = new System.Windows.Forms.LinkLabel();
@@ -41,21 +39,10 @@
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // cmdSearch
-            // 
-            this.cmdSearch.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.cmdSearch.Location = new System.Drawing.Point(374, 20);
-            this.cmdSearch.Name = "cmdSearch";
-            this.cmdSearch.Size = new System.Drawing.Size(75, 23);
-            this.cmdSearch.TabIndex = 9;
-            this.cmdSearch.Text = "Search";
-            this.cmdSearch.UseVisualStyleBackColor = false;
-            this.cmdSearch.Click += new System.EventHandler(this.cmdSearch_Click);
-            // 
             // cmdShowAll
             // 
             this.cmdShowAll.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.cmdShowAll.Location = new System.Drawing.Point(374, 65);
+            this.cmdShowAll.Location = new System.Drawing.Point(337, 297);
             this.cmdShowAll.Name = "cmdShowAll";
             this.cmdShowAll.Size = new System.Drawing.Size(75, 23);
             this.cmdShowAll.TabIndex = 8;
@@ -63,19 +50,12 @@
             this.cmdShowAll.UseVisualStyleBackColor = false;
             this.cmdShowAll.Click += new System.EventHandler(this.cmdShowAll_Click);
             // 
-            // txtsection
-            // 
-            this.txtsection.Location = new System.Drawing.Point(195, 67);
-            this.txtsection.Name = "txtsection";
-            this.txtsection.Size = new System.Drawing.Size(159, 20);
-            this.txtsection.TabIndex = 7;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(167, 128);
+            this.dataGridView1.Location = new System.Drawing.Point(167, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(282, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(282, 266);
             this.dataGridView1.TabIndex = 6;
             // 
             // groupBox1
@@ -145,9 +125,7 @@
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(461, 332);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.cmdSearch);
             this.Controls.Add(this.cmdShowAll);
-            this.Controls.Add(this.txtsection);
             this.Controls.Add(this.dataGridView1);
             this.Name = "ViewUploadedResult";
             this.Text = "ViewUploadedResult";
@@ -155,15 +133,11 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button cmdSearch;
         private System.Windows.Forms.Button cmdShowAll;
-        private System.Windows.Forms.TextBox txtsection;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.LinkLabel lnkSignOut;

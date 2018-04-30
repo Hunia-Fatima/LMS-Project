@@ -25,22 +25,7 @@ namespace CLient
             dataGridView1.DataSource = source;
         }
 
-        private void cmdSearch_Click(object sender, EventArgs e)
-        {
-            BindingSource source = new BindingSource();
-            server.Service1 server = new server.Service1();
-
-            if (txtsection.Text == "A" || txtsection.Text == "B" || txtsection.Text == "C" || txtsection.Text == "D")
-            {
-                source.DataSource = server.BySection(txtsection.Text);
-            }
-            else
-            {
-                MessageBox.Show("first fill the box!!");
-            }
-            dataGridView1.DataSource = source;
-        }
-
+        
         private void lnkUploadResult_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             AddStudentResult frm = new AddStudentResult();

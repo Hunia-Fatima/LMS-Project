@@ -44,7 +44,13 @@
             this.lnkSignOut = new System.Windows.Forms.LinkLabel();
             this.lnkUplaodAttendance = new System.Windows.Forms.LinkLabel();
             this.lnkgoback = new System.Windows.Forms.LinkLabel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.SectionA = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.SectionB = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.SectionC = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.SectionD = new System.Windows.Forms.DataGridViewButtonColumn();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // cmdAdd
@@ -209,12 +215,60 @@
             this.lnkgoback.Text = "Go to Main Page";
             this.lnkgoback.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkgoback_LinkClicked);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.SectionA,
+            this.SectionB,
+            this.SectionC,
+            this.SectionD});
+            this.dataGridView1.Location = new System.Drawing.Point(471, 33);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(428, 62);
+            this.dataGridView1.TabIndex = 27;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // SectionA
+            // 
+            this.SectionA.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.SectionA.HeaderText = "Result of SectionA";
+            this.SectionA.Name = "SectionA";
+            this.SectionA.Text = "Result of SectionA";
+            this.SectionA.UseColumnTextForButtonValue = true;
+            // 
+            // SectionB
+            // 
+            this.SectionB.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.SectionB.HeaderText = "Result of SectionB";
+            this.SectionB.Name = "SectionB";
+            this.SectionB.Text = "Result of SectionB";
+            this.SectionB.UseColumnTextForButtonValue = true;
+            // 
+            // SectionC
+            // 
+            this.SectionC.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.SectionC.HeaderText = "Result of SectionC";
+            this.SectionC.Name = "SectionC";
+            this.SectionC.Text = "Result of SectionC";
+            this.SectionC.UseColumnTextForButtonValue = true;
+            // 
+            // SectionD
+            // 
+            this.SectionD.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.SectionD.HeaderText = "Result of SectionD";
+            this.SectionD.Name = "SectionD";
+            this.SectionD.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.SectionD.Text = "Result of SectionD";
+            this.SectionD.UseColumnTextForButtonValue = true;
+            // 
             // AddStudentResult
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(453, 363);
+            this.ClientSize = new System.Drawing.Size(911, 363);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.cmdAdd);
             this.Controls.Add(this.lblstatus);
@@ -231,6 +285,7 @@
             this.Text = "Uplaod Result";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -254,5 +309,10 @@
         private System.Windows.Forms.LinkLabel lnkUplaodAttendance;
         private System.Windows.Forms.LinkLabel lnkSignOut;
         private System.Windows.Forms.LinkLabel lnkgoback;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewButtonColumn SectionA;
+        private System.Windows.Forms.DataGridViewButtonColumn SectionB;
+        private System.Windows.Forms.DataGridViewButtonColumn SectionC;
+        private System.Windows.Forms.DataGridViewButtonColumn SectionD;
     }
 }
