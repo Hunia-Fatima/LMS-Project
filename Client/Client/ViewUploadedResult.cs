@@ -17,13 +17,6 @@ namespace CLient
             InitializeComponent();
         }
 
-        private void lnkgoback_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            AddStudentResult frm = new AddStudentResult();
-            this.Hide();
-            frm.Show();
-        }
-
         private void cmdShowAll_Click(object sender, EventArgs e)
         {
             BindingSource source = new BindingSource();
@@ -46,6 +39,25 @@ namespace CLient
                 MessageBox.Show("first fill the box!!");
             }
             dataGridView1.DataSource = source;
+        }
+
+        private void lnkUploadResult_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            AddStudentResult frm = new AddStudentResult();
+            this.Hide();
+            frm.Show();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Teacher form = new Teacher();
+            this.Hide();
+            form.Show();
+        }
+
+        private void lnkUplaodAttendance_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
         }
     }
 }

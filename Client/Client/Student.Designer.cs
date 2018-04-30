@@ -38,7 +38,7 @@
             // 
             // cmdconvo
             // 
-            this.cmdconvo.BackColor = System.Drawing.Color.Azure;
+            this.cmdconvo.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.cmdconvo.Location = new System.Drawing.Point(36, 187);
             this.cmdconvo.Name = "cmdconvo";
             this.cmdconvo.Size = new System.Drawing.Size(213, 38);
@@ -48,7 +48,7 @@
             // 
             // cmdVA
             // 
-            this.cmdVA.BackColor = System.Drawing.Color.Azure;
+            this.cmdVA.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.cmdVA.Location = new System.Drawing.Point(36, 134);
             this.cmdVA.Name = "cmdVA";
             this.cmdVA.Size = new System.Drawing.Size(213, 38);
@@ -58,7 +58,7 @@
             // 
             // cmdRegS
             // 
-            this.cmdRegS.BackColor = System.Drawing.Color.Azure;
+            this.cmdRegS.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.cmdRegS.Location = new System.Drawing.Point(36, 90);
             this.cmdRegS.Name = "cmdRegS";
             this.cmdRegS.Size = new System.Drawing.Size(213, 38);
@@ -69,20 +69,22 @@
             // 
             // cmdVDMC
             // 
-            this.cmdVDMC.BackColor = System.Drawing.Color.Azure;
+            this.cmdVDMC.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.cmdVDMC.Location = new System.Drawing.Point(36, 36);
             this.cmdVDMC.Name = "cmdVDMC";
             this.cmdVDMC.Size = new System.Drawing.Size(213, 38);
             this.cmdVDMC.TabIndex = 4;
             this.cmdVDMC.Text = "View DMC";
             this.cmdVDMC.UseVisualStyleBackColor = false;
+            this.cmdVDMC.Click += new System.EventHandler(this.cmdVDMC_Click);
             // 
             // lnkSSignOut
             // 
             this.lnkSSignOut.AutoSize = true;
+            this.lnkSSignOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lnkSSignOut.Location = new System.Drawing.Point(217, 239);
             this.lnkSSignOut.Name = "lnkSSignOut";
-            this.lnkSSignOut.Size = new System.Drawing.Size(46, 13);
+            this.lnkSSignOut.Size = new System.Drawing.Size(60, 17);
             this.lnkSSignOut.TabIndex = 8;
             this.lnkSSignOut.TabStop = true;
             this.lnkSSignOut.Text = "Sign out";
@@ -102,7 +104,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ClientSize = new System.Drawing.Size(305, 288);
             this.Controls.Add(this.lblStu);
             this.Controls.Add(this.lnkSSignOut);
             this.Controls.Add(this.cmdconvo);

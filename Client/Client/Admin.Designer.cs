@@ -38,7 +38,7 @@
             // 
             // cmdRegisterUser
             // 
-            this.cmdRegisterUser.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.cmdRegisterUser.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.cmdRegisterUser.Location = new System.Drawing.Point(58, 52);
             this.cmdRegisterUser.Name = "cmdRegisterUser";
             this.cmdRegisterUser.Size = new System.Drawing.Size(129, 40);
@@ -49,7 +49,7 @@
             // 
             // cmdUpdateResult
             // 
-            this.cmdUpdateResult.BackColor = System.Drawing.Color.Beige;
+            this.cmdUpdateResult.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.cmdUpdateResult.Location = new System.Drawing.Point(58, 98);
             this.cmdUpdateResult.Name = "cmdUpdateResult";
             this.cmdUpdateResult.Size = new System.Drawing.Size(129, 40);
@@ -103,6 +103,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.cmbVData);
             this.Controls.Add(this.label2);

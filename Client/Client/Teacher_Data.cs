@@ -69,5 +69,26 @@ namespace CLient
             this.Hide();
             form.Show();
         }
+
+        private void lnkRegisteUser_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmRegisterUser form = new frmRegisterUser();
+            this.Hide();
+            form.Show();
+        }
+
+        private void lnkstudentdata_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Student_Data form = new Student_Data();
+            this.Hide();
+            form.Show();
+        }
+
+        private void lnkSignOut_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmAdminLogin form = new frmAdminLogin();
+            form.Show();
+            this.Hide();
+        }
     }
 }

@@ -85,12 +85,13 @@
             // 
             // cmdLogin
             // 
+            this.cmdLogin.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.cmdLogin.Location = new System.Drawing.Point(153, 153);
             this.cmdLogin.Name = "cmdLogin";
             this.cmdLogin.Size = new System.Drawing.Size(119, 23);
             this.cmdLogin.TabIndex = 5;
             this.cmdLogin.Text = "Login";
-            this.cmdLogin.UseVisualStyleBackColor = true;
+            this.cmdLogin.UseVisualStyleBackColor = false;
             this.cmdLogin.Click += new System.EventHandler(this.cmdLogin_Click);
             // 
             // chkTeacher
@@ -128,6 +129,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.lnkforgetpassword);
             this.Controls.Add(this.chkStudent);

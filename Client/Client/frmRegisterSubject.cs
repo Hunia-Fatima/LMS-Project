@@ -53,5 +53,27 @@ namespace CLient
             form.Show(); ;
             this.Hide();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void lnkSignOut_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmAdminLogin form = new frmAdminLogin();
+            form.Show();
+            this.Hide();
+        }
+
+        private void lnkConversation_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void lnkViewDMC_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }

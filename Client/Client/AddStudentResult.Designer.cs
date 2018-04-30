@@ -30,7 +30,6 @@
         {
             this.cmdAdd = new System.Windows.Forms.Button();
             this.lnkuploadedresult = new System.Windows.Forms.LinkLabel();
-            this.lnkgoback = new System.Windows.Forms.LinkLabel();
             this.lblstatus = new System.Windows.Forms.Label();
             this.lbltotalmarks = new System.Windows.Forms.Label();
             this.lblmarksobtained = new System.Windows.Forms.Label();
@@ -41,44 +40,40 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.txtmarksobtained = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lnkSignOut = new System.Windows.Forms.LinkLabel();
+            this.lnkUplaodAttendance = new System.Windows.Forms.LinkLabel();
+            this.lnkgoback = new System.Windows.Forms.LinkLabel();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmdAdd
             // 
-            this.cmdAdd.Location = new System.Drawing.Point(197, 202);
+            this.cmdAdd.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.cmdAdd.Location = new System.Drawing.Point(366, 328);
             this.cmdAdd.Name = "cmdAdd";
             this.cmdAdd.Size = new System.Drawing.Size(75, 23);
             this.cmdAdd.TabIndex = 25;
             this.cmdAdd.Text = "Add";
-            this.cmdAdd.UseVisualStyleBackColor = true;
+            this.cmdAdd.UseVisualStyleBackColor = false;
             this.cmdAdd.Click += new System.EventHandler(this.cmdAdd_Click);
             // 
             // lnkuploadedresult
             // 
             this.lnkuploadedresult.AutoSize = true;
-            this.lnkuploadedresult.Location = new System.Drawing.Point(24, 248);
+            this.lnkuploadedresult.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lnkuploadedresult.Location = new System.Drawing.Point(7, 118);
             this.lnkuploadedresult.Name = "lnkuploadedresult";
-            this.lnkuploadedresult.Size = new System.Drawing.Size(86, 13);
+            this.lnkuploadedresult.Size = new System.Drawing.Size(113, 17);
             this.lnkuploadedresult.TabIndex = 24;
             this.lnkuploadedresult.TabStop = true;
             this.lnkuploadedresult.Text = "Uploaded Result";
             this.lnkuploadedresult.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkuploadedresult_LinkClicked);
             // 
-            // lnkgoback
-            // 
-            this.lnkgoback.AutoSize = true;
-            this.lnkgoback.Location = new System.Drawing.Point(206, 248);
-            this.lnkgoback.Name = "lnkgoback";
-            this.lnkgoback.Size = new System.Drawing.Size(54, 13);
-            this.lnkgoback.TabIndex = 23;
-            this.lnkgoback.TabStop = true;
-            this.lnkgoback.Text = "GO BACK";
-            this.lnkgoback.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkgoback_LinkClicked);
-            // 
             // lblstatus
             // 
             this.lblstatus.AutoSize = true;
-            this.lblstatus.Location = new System.Drawing.Point(27, 162);
+            this.lblstatus.Location = new System.Drawing.Point(161, 267);
             this.lblstatus.Name = "lblstatus";
             this.lblstatus.Size = new System.Drawing.Size(37, 13);
             this.lblstatus.TabIndex = 22;
@@ -87,7 +82,7 @@
             // lbltotalmarks
             // 
             this.lbltotalmarks.AutoSize = true;
-            this.lbltotalmarks.Location = new System.Drawing.Point(13, 127);
+            this.lbltotalmarks.Location = new System.Drawing.Point(161, 211);
             this.lbltotalmarks.Name = "lbltotalmarks";
             this.lbltotalmarks.Size = new System.Drawing.Size(60, 13);
             this.lbltotalmarks.TabIndex = 21;
@@ -96,7 +91,7 @@
             // lblmarksobtained
             // 
             this.lblmarksobtained.AutoSize = true;
-            this.lblmarksobtained.Location = new System.Drawing.Point(13, 85);
+            this.lblmarksobtained.Location = new System.Drawing.Point(155, 153);
             this.lblmarksobtained.Name = "lblmarksobtained";
             this.lblmarksobtained.Size = new System.Drawing.Size(79, 13);
             this.lblmarksobtained.TabIndex = 20;
@@ -105,7 +100,7 @@
             // lblsection
             // 
             this.lblsection.AutoSize = true;
-            this.lblsection.Location = new System.Drawing.Point(27, 40);
+            this.lblsection.Location = new System.Drawing.Point(155, 95);
             this.lblsection.Name = "lblsection";
             this.lblsection.Size = new System.Drawing.Size(43, 13);
             this.lblsection.TabIndex = 19;
@@ -114,7 +109,7 @@
             // lblname
             // 
             this.lblname.AutoSize = true;
-            this.lblname.Location = new System.Drawing.Point(29, 12);
+            this.lblname.Location = new System.Drawing.Point(155, 38);
             this.lblname.Name = "lblname";
             this.lblname.Size = new System.Drawing.Size(35, 13);
             this.lblname.TabIndex = 18;
@@ -127,9 +122,9 @@
             "PASS",
             "FAIL",
             "PENDING"});
-            this.cmbstatus.Location = new System.Drawing.Point(110, 154);
+            this.cmbstatus.Location = new System.Drawing.Point(250, 261);
             this.cmbstatus.Name = "cmbstatus";
-            this.cmbstatus.Size = new System.Drawing.Size(121, 21);
+            this.cmbstatus.Size = new System.Drawing.Size(191, 21);
             this.cmbstatus.TabIndex = 17;
             // 
             // cmbsection
@@ -140,40 +135,88 @@
             "B",
             "C",
             "D"});
-            this.cmbsection.Location = new System.Drawing.Point(110, 40);
+            this.cmbsection.Location = new System.Drawing.Point(248, 89);
             this.cmbsection.Name = "cmbsection";
-            this.cmbsection.Size = new System.Drawing.Size(121, 21);
+            this.cmbsection.Size = new System.Drawing.Size(191, 21);
             this.cmbsection.TabIndex = 16;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(110, 111);
+            this.textBox3.Location = new System.Drawing.Point(250, 206);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(121, 20);
+            this.textBox3.Size = new System.Drawing.Size(191, 20);
             this.textBox3.TabIndex = 15;
             // 
             // txtmarksobtained
             // 
-            this.txtmarksobtained.Location = new System.Drawing.Point(110, 85);
+            this.txtmarksobtained.Location = new System.Drawing.Point(248, 148);
             this.txtmarksobtained.Name = "txtmarksobtained";
-            this.txtmarksobtained.Size = new System.Drawing.Size(121, 20);
+            this.txtmarksobtained.Size = new System.Drawing.Size(191, 20);
             this.txtmarksobtained.TabIndex = 14;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(110, 12);
+            this.textBox1.Location = new System.Drawing.Point(250, 33);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
+            this.textBox1.Size = new System.Drawing.Size(189, 20);
             this.textBox1.TabIndex = 13;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox1.Controls.Add(this.lnkSignOut);
+            this.groupBox1.Controls.Add(this.lnkUplaodAttendance);
+            this.groupBox1.Controls.Add(this.lnkgoback);
+            this.groupBox1.Controls.Add(this.lnkuploadedresult);
+            this.groupBox1.Location = new System.Drawing.Point(0, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(149, 342);
+            this.groupBox1.TabIndex = 26;
+            this.groupBox1.TabStop = false;
+            // 
+            // lnkSignOut
+            // 
+            this.lnkSignOut.AutoSize = true;
+            this.lnkSignOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lnkSignOut.Location = new System.Drawing.Point(7, 238);
+            this.lnkSignOut.Name = "lnkSignOut";
+            this.lnkSignOut.Size = new System.Drawing.Size(63, 17);
+            this.lnkSignOut.TabIndex = 26;
+            this.lnkSignOut.TabStop = true;
+            this.lnkSignOut.Text = "Sign Out";
+            this.lnkSignOut.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkSignOut_LinkClicked);
+            // 
+            // lnkUplaodAttendance
+            // 
+            this.lnkUplaodAttendance.AutoSize = true;
+            this.lnkUplaodAttendance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lnkUplaodAttendance.Location = new System.Drawing.Point(6, 54);
+            this.lnkUplaodAttendance.Name = "lnkUplaodAttendance";
+            this.lnkUplaodAttendance.Size = new System.Drawing.Size(129, 17);
+            this.lnkUplaodAttendance.TabIndex = 25;
+            this.lnkUplaodAttendance.TabStop = true;
+            this.lnkUplaodAttendance.Text = "Upload Attendance";
+            // 
+            // lnkgoback
+            // 
+            this.lnkgoback.AutoSize = true;
+            this.lnkgoback.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lnkgoback.Location = new System.Drawing.Point(6, 179);
+            this.lnkgoback.Name = "lnkgoback";
+            this.lnkgoback.Size = new System.Drawing.Size(114, 17);
+            this.lnkgoback.TabIndex = 23;
+            this.lnkgoback.TabStop = true;
+            this.lnkgoback.Text = "Go to Main Page";
+            this.lnkgoback.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkgoback_LinkClicked);
             // 
             // AddStudentResult
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(356, 303);
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ClientSize = new System.Drawing.Size(453, 363);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.cmdAdd);
-            this.Controls.Add(this.lnkuploadedresult);
-            this.Controls.Add(this.lnkgoback);
             this.Controls.Add(this.lblstatus);
             this.Controls.Add(this.lbltotalmarks);
             this.Controls.Add(this.lblmarksobtained);
@@ -185,7 +228,9 @@
             this.Controls.Add(this.txtmarksobtained);
             this.Controls.Add(this.textBox1);
             this.Name = "AddStudentResult";
-            this.Text = "AddStudentResult";
+            this.Text = "Uplaod Result";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,7 +240,6 @@
 
         private System.Windows.Forms.Button cmdAdd;
         private System.Windows.Forms.LinkLabel lnkuploadedresult;
-        private System.Windows.Forms.LinkLabel lnkgoback;
         private System.Windows.Forms.Label lblstatus;
         private System.Windows.Forms.Label lbltotalmarks;
         private System.Windows.Forms.Label lblmarksobtained;
@@ -206,5 +250,9 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox txtmarksobtained;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.LinkLabel lnkUplaodAttendance;
+        private System.Windows.Forms.LinkLabel lnkSignOut;
+        private System.Windows.Forms.LinkLabel lnkgoback;
     }
 }

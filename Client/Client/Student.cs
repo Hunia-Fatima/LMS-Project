@@ -15,6 +15,8 @@ namespace CLient
         public Student()
         {
             InitializeComponent();
+            server.Service1 myservice = new server.Service1();
+            lblStu.Text = myservice.loggedInStudent().Name; 
         }
 
         private void lnkSSignOut_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -29,6 +31,11 @@ namespace CLient
             frmRegisterSubject form = new frmRegisterSubject();
             this.Hide();
             form.Show();
+        }
+
+        private void cmdVDMC_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

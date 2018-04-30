@@ -54,7 +54,7 @@
             // 
             // cmdUpldAtt
             // 
-            this.cmdUpldAtt.BackColor = System.Drawing.Color.LightYellow;
+            this.cmdUpldAtt.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.cmdUpldAtt.Location = new System.Drawing.Point(36, 113);
             this.cmdUpldAtt.Name = "cmdUpldAtt";
             this.cmdUpldAtt.Size = new System.Drawing.Size(216, 50);
@@ -64,7 +64,7 @@
             // 
             // cmdUpldRes
             // 
-            this.cmdUpldRes.BackColor = System.Drawing.Color.LightYellow;
+            this.cmdUpldRes.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.cmdUpldRes.Location = new System.Drawing.Point(35, 43);
             this.cmdUpldRes.Name = "cmdUpldRes";
             this.cmdUpldRes.Size = new System.Drawing.Size(218, 44);
@@ -98,6 +98,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.lblTeacher);
             this.Controls.Add(this.lnkTSignOut);

@@ -64,5 +64,12 @@ namespace CLient
             view.Show();
 
         }
+
+        private void lnkSignOut_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmAdminLogin form = new frmAdminLogin();
+            this.Hide();
+            form.Show();
+        }
     }
 }

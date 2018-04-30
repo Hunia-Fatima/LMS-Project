@@ -31,7 +31,6 @@
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
             this.cmbRegisterAs = new System.Windows.Forms.ComboBox();
-            this.lnkGoBack = new System.Windows.Forms.LinkLabel();
             this.cmdRegister = new System.Windows.Forms.Button();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -46,11 +45,18 @@
             this.lblSubject = new System.Windows.Forms.Label();
             this.cmbdepartment = new System.Windows.Forms.ComboBox();
             this.lbldepartment = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lnkteacherData = new System.Windows.Forms.LinkLabel();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
+            this.lnkSignOut = new System.Windows.Forms.LinkLabel();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(132, 25);
+            this.txtUserName.Location = new System.Drawing.Point(301, 23);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(214, 20);
             this.txtUserName.TabIndex = 0;
@@ -58,9 +64,10 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(33, 32);
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblName.Location = new System.Drawing.Point(221, 27);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(35, 13);
+            this.lblName.Size = new System.Drawing.Size(41, 15);
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Name";
             // 
@@ -70,27 +77,16 @@
             this.cmbRegisterAs.Items.AddRange(new object[] {
             "Student",
             "Teacher"});
-            this.cmbRegisterAs.Location = new System.Drawing.Point(132, 231);
+            this.cmbRegisterAs.Location = new System.Drawing.Point(300, 222);
             this.cmbRegisterAs.Name = "cmbRegisterAs";
             this.cmbRegisterAs.Size = new System.Drawing.Size(214, 21);
             this.cmbRegisterAs.TabIndex = 2;
             this.cmbRegisterAs.SelectedIndexChanged += new System.EventHandler(this.cmbRegisterAs_SelectedIndexChanged);
             // 
-            // lnkGoBack
-            // 
-            this.lnkGoBack.AutoSize = true;
-            this.lnkGoBack.Location = new System.Drawing.Point(12, 408);
-            this.lnkGoBack.Name = "lnkGoBack";
-            this.lnkGoBack.Size = new System.Drawing.Size(49, 13);
-            this.lnkGoBack.TabIndex = 3;
-            this.lnkGoBack.TabStop = true;
-            this.lnkGoBack.Text = "Go Back";
-            this.lnkGoBack.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkGoBack_LinkClicked);
-            // 
             // cmdRegister
             // 
-            this.cmdRegister.BackColor = System.Drawing.SystemColors.Info;
-            this.cmdRegister.Location = new System.Drawing.Point(226, 383);
+            this.cmdRegister.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.cmdRegister.Location = new System.Drawing.Point(375, 387);
             this.cmdRegister.Name = "cmdRegister";
             this.cmdRegister.Size = new System.Drawing.Size(130, 38);
             this.cmdRegister.TabIndex = 4;
@@ -100,14 +96,14 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(132, 77);
+            this.txtEmail.Location = new System.Drawing.Point(300, 68);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(214, 20);
             this.txtEmail.TabIndex = 5;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(132, 132);
+            this.txtPassword.Location = new System.Drawing.Point(300, 119);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(214, 20);
@@ -116,33 +112,36 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(33, 89);
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblEmail.Location = new System.Drawing.Point(224, 72);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(32, 13);
+            this.lblEmail.Size = new System.Drawing.Size(39, 15);
             this.lblEmail.TabIndex = 7;
             this.lblEmail.Text = "Email";
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(29, 135);
+            this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblPassword.Location = new System.Drawing.Point(224, 122);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(53, 13);
+            this.lblPassword.Size = new System.Drawing.Size(61, 15);
             this.lblPassword.TabIndex = 8;
             this.lblPassword.Text = "Password";
             // 
             // lblRegisterAs
             // 
             this.lblRegisterAs.AutoSize = true;
-            this.lblRegisterAs.Location = new System.Drawing.Point(29, 231);
+            this.lblRegisterAs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblRegisterAs.Location = new System.Drawing.Point(221, 230);
             this.lblRegisterAs.Name = "lblRegisterAs";
-            this.lblRegisterAs.Size = new System.Drawing.Size(61, 13);
+            this.lblRegisterAs.Size = new System.Drawing.Size(69, 15);
             this.lblRegisterAs.TabIndex = 9;
             this.lblRegisterAs.Text = "Register As";
             // 
             // txtpincode
             // 
-            this.txtpincode.Location = new System.Drawing.Point(132, 180);
+            this.txtpincode.Location = new System.Drawing.Point(300, 177);
             this.txtpincode.Name = "txtpincode";
             this.txtpincode.PasswordChar = '*';
             this.txtpincode.Size = new System.Drawing.Size(214, 20);
@@ -151,15 +150,16 @@
             // lblpincode
             // 
             this.lblpincode.AutoSize = true;
-            this.lblpincode.Location = new System.Drawing.Point(29, 180);
+            this.lblpincode.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblpincode.Location = new System.Drawing.Point(224, 180);
             this.lblpincode.Name = "lblpincode";
-            this.lblpincode.Size = new System.Drawing.Size(50, 13);
+            this.lblpincode.Size = new System.Drawing.Size(57, 15);
             this.lblpincode.TabIndex = 11;
             this.lblpincode.Text = "Pin Code";
             // 
             // txtSec
             // 
-            this.txtSec.Location = new System.Drawing.Point(132, 275);
+            this.txtSec.Location = new System.Drawing.Point(303, 279);
             this.txtSec.Name = "txtSec";
             this.txtSec.Size = new System.Drawing.Size(212, 20);
             this.txtSec.TabIndex = 12;
@@ -168,7 +168,7 @@
             // lblSec
             // 
             this.lblSec.AutoSize = true;
-            this.lblSec.Location = new System.Drawing.Point(36, 282);
+            this.lblSec.Location = new System.Drawing.Point(223, 288);
             this.lblSec.Name = "lblSec";
             this.lblSec.Size = new System.Drawing.Size(43, 13);
             this.lblSec.TabIndex = 13;
@@ -185,7 +185,7 @@
             "OOAD",
             "DSA",
             "DET"});
-            this.cmbSubject.Location = new System.Drawing.Point(129, 274);
+            this.cmbSubject.Location = new System.Drawing.Point(300, 279);
             this.cmbSubject.Name = "cmbSubject";
             this.cmbSubject.Size = new System.Drawing.Size(214, 21);
             this.cmbSubject.TabIndex = 14;
@@ -194,9 +194,10 @@
             // lblSubject
             // 
             this.lblSubject.AutoSize = true;
-            this.lblSubject.Location = new System.Drawing.Point(36, 282);
+            this.lblSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblSubject.Location = new System.Drawing.Point(222, 286);
             this.lblSubject.Name = "lblSubject";
-            this.lblSubject.Size = new System.Drawing.Size(43, 13);
+            this.lblSubject.Size = new System.Drawing.Size(48, 15);
             this.lblSubject.TabIndex = 15;
             this.lblSubject.Text = "Subject";
             // 
@@ -209,7 +210,7 @@
             "CIVIL",
             "PETROLEUM",
             "MECHANICAL"});
-            this.cmbdepartment.Location = new System.Drawing.Point(129, 315);
+            this.cmbdepartment.Location = new System.Drawing.Point(300, 324);
             this.cmbdepartment.Name = "cmbdepartment";
             this.cmbdepartment.Size = new System.Drawing.Size(212, 21);
             this.cmbdepartment.TabIndex = 16;
@@ -217,17 +218,94 @@
             // lbldepartment
             // 
             this.lbldepartment.AutoSize = true;
-            this.lbldepartment.Location = new System.Drawing.Point(29, 323);
+            this.lbldepartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lbldepartment.Location = new System.Drawing.Point(223, 330);
             this.lbldepartment.Name = "lbldepartment";
-            this.lbldepartment.Size = new System.Drawing.Size(62, 13);
+            this.lbldepartment.Size = new System.Drawing.Size(72, 15);
             this.lbldepartment.TabIndex = 17;
             this.lbldepartment.Text = "Department";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox1.Controls.Add(this.lnkSignOut);
+            this.groupBox1.Controls.Add(this.lnkteacherData);
+            this.groupBox1.Controls.Add(this.linkLabel2);
+            this.groupBox1.Controls.Add(this.linkLabel3);
+            this.groupBox1.Controls.Add(this.linkLabel4);
+            this.groupBox1.Location = new System.Drawing.Point(0, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(175, 413);
+            this.groupBox1.TabIndex = 26;
+            this.groupBox1.TabStop = false;
+            // 
+            // lnkteacherData
+            // 
+            this.lnkteacherData.AutoSize = true;
+            this.lnkteacherData.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lnkteacherData.Location = new System.Drawing.Point(5, 134);
+            this.lnkteacherData.Name = "lnkteacherData";
+            this.lnkteacherData.Size = new System.Drawing.Size(144, 17);
+            this.lnkteacherData.TabIndex = 20;
+            this.lnkteacherData.TabStop = true;
+            this.lnkteacherData.Text = "View Data of Teacher";
+            this.lnkteacherData.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkteacherData_LinkClicked_1);
+            // 
+            // linkLabel2
+            // 
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.linkLabel2.Location = new System.Drawing.Point(6, 234);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(114, 17);
+            this.linkLabel2.TabIndex = 8;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "Go to Main Page";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            // 
+            // linkLabel3
+            // 
+            this.linkLabel3.AutoSize = true;
+            this.linkLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.linkLabel3.Location = new System.Drawing.Point(8, 85);
+            this.linkLabel3.Name = "linkLabel3";
+            this.linkLabel3.Size = new System.Drawing.Size(98, 17);
+            this.linkLabel3.TabIndex = 0;
+            this.linkLabel3.TabStop = true;
+            this.linkLabel3.Text = "Update Result";
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
+            // 
+            // linkLabel4
+            // 
+            this.linkLabel4.AutoSize = true;
+            this.linkLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.linkLabel4.Location = new System.Drawing.Point(5, 184);
+            this.linkLabel4.Name = "linkLabel4";
+            this.linkLabel4.Size = new System.Drawing.Size(140, 17);
+            this.linkLabel4.TabIndex = 19;
+            this.linkLabel4.TabStop = true;
+            this.linkLabel4.Text = "View Data of Student";
+            this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
+            // 
+            // lnkSignOut
+            // 
+            this.lnkSignOut.AutoSize = true;
+            this.lnkSignOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lnkSignOut.Location = new System.Drawing.Point(8, 287);
+            this.lnkSignOut.Name = "lnkSignOut";
+            this.lnkSignOut.Size = new System.Drawing.Size(63, 17);
+            this.lnkSignOut.TabIndex = 27;
+            this.lnkSignOut.TabStop = true;
+            this.lnkSignOut.Text = "Sign Out";
+            this.lnkSignOut.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkSignOut_LinkClicked);
             // 
             // frmRegisterUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(368, 433);
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ClientSize = new System.Drawing.Size(536, 433);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lbldepartment);
             this.Controls.Add(this.cmbdepartment);
             this.Controls.Add(this.lblSubject);
@@ -242,13 +320,14 @@
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.cmdRegister);
-            this.Controls.Add(this.lnkGoBack);
             this.Controls.Add(this.cmbRegisterAs);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.txtUserName);
             this.Name = "frmRegisterUser";
-            this.Text = "frmRegisterUser";
+            this.Text = "Register User";
             this.Load += new System.EventHandler(this.frmRegisterUser_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -259,7 +338,6 @@
         private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.ComboBox cmbRegisterAs;
-        private System.Windows.Forms.LinkLabel lnkGoBack;
         private System.Windows.Forms.Button cmdRegister;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtPassword;
@@ -274,5 +352,11 @@
         private System.Windows.Forms.Label lblSubject;
         private System.Windows.Forms.ComboBox cmbdepartment;
         private System.Windows.Forms.Label lbldepartment;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.LinkLabel lnkteacherData;
+        private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.LinkLabel linkLabel3;
+        private System.Windows.Forms.LinkLabel linkLabel4;
+        private System.Windows.Forms.LinkLabel lnkSignOut;
     }
 }

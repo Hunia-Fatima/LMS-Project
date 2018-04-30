@@ -93,12 +93,13 @@
             // 
             // cmdresetpassword
             // 
+            this.cmdresetpassword.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.cmdresetpassword.Location = new System.Drawing.Point(174, 176);
             this.cmdresetpassword.Name = "cmdresetpassword";
             this.cmdresetpassword.Size = new System.Drawing.Size(86, 43);
             this.cmdresetpassword.TabIndex = 6;
             this.cmdresetpassword.Text = "Reset Password";
-            this.cmdresetpassword.UseVisualStyleBackColor = true;
+            this.cmdresetpassword.UseVisualStyleBackColor = false;
             this.cmdresetpassword.Click += new System.EventHandler(this.cmdresetpassword_Click);
             // 
             // lbllogin
@@ -116,6 +117,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.lbllogin);
             this.Controls.Add(this.cmdresetpassword);

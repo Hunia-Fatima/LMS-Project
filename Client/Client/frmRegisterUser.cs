@@ -140,5 +140,57 @@ namespace CLient
         {
 
         }
+
+        private void lnkUpdateResult_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void lnkteacherdata_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Teacher_Data form = new Teacher_Data();
+            form.Show();
+            this.Hide();
+        }
+
+        private void lnkstudentdata_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Student_Data form = new Student_Data();
+            form.Show();
+            this.Hide();
+        }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void lnkteacherData_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Teacher_Data form = new Teacher_Data();
+            this.Hide();
+            form.Show();
+        }
+
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Student_Data form = new Student_Data();
+            this.Hide();
+            form.Show();
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Admin form = new Admin();
+            this.Hide();
+            form.Show();
+        }
+
+        private void lnkSignOut_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmAdminLogin form = new frmAdminLogin();
+            this.Hide();
+            form.Show();
+        }
     }
 }
