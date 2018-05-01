@@ -172,7 +172,8 @@ namespace WcfService2
             List<Teacher> arr = new List<Teacher>();
             foreach (Teacher t in TeacherDL.teachers)
             {
-                if (Name == t.getname())
+                string g = t.getname();
+                if (g.Contains(Name))
                 {
                     arr.Add(t);
                 }

@@ -140,3 +140,24 @@ C:\Users\DELL\Desktop\LMS-Project-21892b2c2fe65dd760bc3107029426a77518063d\Clien
 C:\Users\DELL\Desktop\LMS-Project-21892b2c2fe65dd760bc3107029426a77518063d\Client\CLient\obj\Debug\CLient.Update_Result.resources
 C:\Users\Mamuna\Desktop\asd\LMS-Project\Client\CLient\obj\Debug\CLient.Update_Result.resources
 C:\Users\Mamuna\Desktop\asd\LMS-Project\Client\CLient\obj\Debug\CLient.Upload_Attendance.resources
+C:\Users\Admin\Desktop\New folder\LMS-Project\Client\CLient\bin\Debug\CLient.exe.config
+C:\Users\Admin\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.exe
+C:\Users\Admin\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.pdb
+C:\Users\Admin\Desktop\New folder\LMS-Project\Client\CLient\bin\Debug\CLient.exe
+C:\Users\Admin\Desktop\New folder\LMS-Project\Client\CLient\bin\Debug\CLient.pdb
+C:\Users\Admin\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.AddStudentResult.resources
+C:\Users\Admin\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.Admin.resources
+C:\Users\Admin\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.frmAdminLogin.resources
+C:\Users\Admin\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.frmRegisterSubject.resources
+C:\Users\Admin\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.frmRegisterUser.resources
+C:\Users\Admin\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.frmreset.resources
+C:\Users\Admin\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.Properties.Resources.resources
+C:\Users\Admin\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.Student_Data.resources
+C:\Users\Admin\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.Student.resources
+C:\Users\Admin\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.Teacher.resources
+C:\Users\Admin\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.Teacher_Data.resources
+C:\Users\Admin\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.Update_Result.resources
+C:\Users\Admin\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.Upload_Attendance.resources
+C:\Users\Admin\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.ViewUploadedResult.resources
+C:\Users\Admin\Desktop\New folder\LMS-Project\Client\CLient\obj\Debug\CLient.csproj.GenerateResource.Cache

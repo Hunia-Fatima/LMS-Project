@@ -29,3 +29,9 @@ C:\Users\DELL\Desktop\LMS-Project-21892b2c2fe65dd760bc3107029426a77518063d\Serve
 C:\Users\DELL\Desktop\LMS-Project-21892b2c2fe65dd760bc3107029426a77518063d\Server\WcfService2\obj\Debug\WcfService2.csprojResolveAssemblyReference.cache
 C:\Users\DELL\Desktop\LMS-Project-21892b2c2fe65dd760bc3107029426a77518063d\Server\WcfService2\obj\Debug\WcfService2.dll
 C:\Users\DELL\Desktop\LMS-Project-21892b2c2fe65dd760bc3107029426a77518063d\Server\WcfService2\obj\Debug\WcfService2.pdb
+C:\Users\Admin\Desktop\New folder\LMS-Project\Server\WcfService2\bin\WcfService2.dll.config
+C:\Users\Admin\Desktop\New folder\LMS-Project\Server\WcfService2\bin\WcfService2.dll
+C:\Users\Admin\Desktop\New folder\LMS-Project\Server\WcfService2\bin\WcfService2.pdb
+C:\Users\Admin\Desktop\New folder\LMS-Project\Server\WcfService2\obj\Debug\WcfService2.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\New folder\LMS-Project\Server\WcfService2\obj\Debug\WcfService2.dll
+C:\Users\Admin\Desktop\New folder\LMS-Project\Server\WcfService2\obj\Debug\WcfService2.pdb
