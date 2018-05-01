@@ -61,6 +61,7 @@
             this.cmdUpldAtt.TabIndex = 6;
             this.cmdUpldAtt.Text = "Upload attendance";
             this.cmdUpldAtt.UseVisualStyleBackColor = false;
+            this.cmdUpldAtt.Click += new System.EventHandler(this.cmdUpldAtt_Click);
             // 
             // cmdUpldRes
             // 

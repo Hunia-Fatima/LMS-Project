@@ -246,7 +246,55 @@ namespace WcfService2
                 }
             }
         }
-        
+
+        public void AddAttendance(string name, string Attendance, string section, string subject, Teacher t)
+        {
+            Attendance Atten = new Attendance();
+            Atten.setStudent(name);
+            Atten.setpercentage(Attendance);
+            Atten.setSection(section);
+            Atten.setsub(subject);
+            Atten.setteacher(t);
+            foreach (Student s in StudentDL.students)
+            {
+                if (s.getname() == name)
+                {
+                    s.attendance.Add(Atten);
+                }
+            }
+            AttendanceDL.Attendances.Add(Atten);
+           
+        }
+        /*
+        public bool ValRegstrdStu(string name)
+        {
+            Teacher t = getLoggedInTeacher();
+            foreach (Student s in StudentDL.students)
+            {
+                if (s.getname() == name)
+                {
+                    List<Subject> sub = getSubjects();
+                    foreach (Subject S1 in sub)
+                    {
+                        if (S1.getname() == t.getsubject())
+                        {
+                            return true;
+                        }
+                        else 
+                        {
+                            return false;
+                        }
+                    }
+                }
+                else 
+                {
+                    return false;
+                }
+            }
+            return false;
+        }g
+        */
+
         public string GetData(int value)
         {
             return string.Format("You entered: {0}", value);

@@ -32,5 +32,12 @@ namespace CLient
             this.Hide();
             fr.Show();
         }
+
+        private void cmdUpldAtt_Click(object sender, EventArgs e)
+        {
+            Upload_Attendance up = new Upload_Attendance();
+            this.Hide();
+            up.Show();
+        }
     }
 }

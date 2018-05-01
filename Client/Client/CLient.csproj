@@ -119,6 +119,12 @@
     <Compile Include="Update Result.Designer.cs">
       <DependentUpon>Update Result.cs</DependentUpon>
     </Compile>
+    <Compile Include="Upload Attendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Upload Attendance.Designer.cs">
+      <DependentUpon>Upload Attendance.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewUploadedResult.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Update Result.resx">
       <DependentUpon>Update Result.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Upload Attendance.resx">
+      <DependentUpon>Upload Attendance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewUploadedResult.resx">
       <DependentUpon>ViewUploadedResult.cs</DependentUpon>

@@ -73,5 +73,12 @@ namespace CLient
         {
             cmbStudents.TextChanged += new EventHandler(cmbStudents_TextChanged);
         }
+
+        private void lnkUplaodAttendance_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Upload_Attendance up = new Upload_Attendance();
+            this.Hide();
+            up.Show();
+        }
     }
 }

@@ -30,11 +30,22 @@
       <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Pincode" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Section" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="attendance" nillable="true" type="tns:ArrayOfAttendance" />
       <xs:element minOccurs="0" name="results" nillable="true" type="tns:ArrayOfResult" />
       <xs:element minOccurs="0" name="subjects" nillable="true" type="tns:ArrayOfSubject" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Student" nillable="true" type="tns:Student" />
+  <xs:complexType name="ArrayOfAttendance">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Attendance" nillable="true" type="tns:Attendance" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAttendance" nillable="true" type="tns:ArrayOfAttendance" />
+  <xs:complexType name="Attendance">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="Attendance" nillable="true" type="tns:Attendance" />
   <xs:complexType name="ArrayOfResult">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="Result" nillable="true" type="tns:Result" />

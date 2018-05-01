@@ -138,3 +138,5 @@ C:\Users\DELL\Desktop\LMS-Project-21892b2c2fe65dd760bc3107029426a77518063d\Clien
 C:\Users\DELL\Desktop\LMS-Project-21892b2c2fe65dd760bc3107029426a77518063d\Client\CLient\obj\Debug\CLient.ViewUploadedResult.resources
 C:\Users\DELL\Desktop\LMS-Project-21892b2c2fe65dd760bc3107029426a77518063d\Client\CLient\obj\Debug\CLient.csproj.GenerateResource.Cache
 C:\Users\DELL\Desktop\LMS-Project-21892b2c2fe65dd760bc3107029426a77518063d\Client\CLient\obj\Debug\CLient.Update_Result.resources
+C:\Users\Mamuna\Desktop\asd\LMS-Project\Client\CLient\obj\Debug\CLient.Update_Result.resources
+C:\Users\Mamuna\Desktop\asd\LMS-Project\Client\CLient\obj\Debug\CLient.Upload_Attendance.resources

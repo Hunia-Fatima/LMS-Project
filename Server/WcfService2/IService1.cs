@@ -16,9 +16,7 @@ namespace WcfService2
 
         List<Teacher> SearchByDepartment(string Department);
         [OperationContract]
-
         List<Teacher> SearchByname(string Name);
-
         [OperationContract]
         void registerStudent(string username, string password, string email, string pincode,string section);
         [OperationContract]
@@ -63,6 +61,11 @@ namespace WcfService2
         void Add_result(string student, string subject, string total, string marks);
         [OperationContract]
         void update_result(Result res);
+        [OperationContract]
+        void AddAttendance(string name, string attendance, string section, string subject, Teacher t);
+        
+        
+        
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
 

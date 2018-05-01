@@ -192,6 +192,7 @@
             this.lnkUplaodAttendance.TabIndex = 25;
             this.lnkUplaodAttendance.TabStop = true;
             this.lnkUplaodAttendance.Text = "Upload Attendance";
+            this.lnkUplaodAttendance.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkUplaodAttendance_LinkClicked);
             // 
             // lnkgoback
             // 

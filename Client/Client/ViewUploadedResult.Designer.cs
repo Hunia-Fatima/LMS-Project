@@ -75,7 +75,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(167, 128);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(282, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(455, 280);
             this.dataGridView1.TabIndex = 6;
             // 
             // groupBox1
@@ -87,7 +87,7 @@
             this.groupBox1.Controls.Add(this.lnkUploadResult);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(149, 308);
+            this.groupBox1.Size = new System.Drawing.Size(149, 384);
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
             // 
@@ -130,7 +130,7 @@
             // 
             this.lnkUploadResult.AutoSize = true;
             this.lnkUploadResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lnkUploadResult.Location = new System.Drawing.Point(7, 118);
+            this.lnkUploadResult.Location = new System.Drawing.Point(7, 116);
             this.lnkUploadResult.Name = "lnkUploadResult";
             this.lnkUploadResult.Size = new System.Drawing.Size(97, 17);
             this.lnkUploadResult.TabIndex = 24;
@@ -143,7 +143,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(461, 332);
+            this.ClientSize = new System.Drawing.Size(624, 420);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.cmdSearch);
             this.Controls.Add(this.cmdShowAll);

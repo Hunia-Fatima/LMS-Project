@@ -23,6 +23,14 @@ namespace WcfService2
         public List<Subject> subjects = new List<Subject>();
         [DataMember]
         public List<Result> results = new List<Result>();
+        [DataMember]
+        public List<Attendance> attendance = new List<Attendance>();
+
+        public List<Attendance> Attendance
+        {
+            get { return attendance; }
+            set { attendance = value; }
+        }
 
         public string getSection()
         { 
