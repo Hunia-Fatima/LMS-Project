@@ -87,6 +87,7 @@ namespace WcfService2
             }
         }
 
+
         public Result Viewresult(Student s)
         {
             Result b = new Result();
