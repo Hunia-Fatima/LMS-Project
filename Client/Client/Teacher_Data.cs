@@ -90,5 +90,15 @@ namespace CLient
             form.Show();
             this.Hide();
         }
+
+        private void gbAdmin_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lnkUpdateResult_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }

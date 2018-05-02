@@ -38,10 +38,10 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.gbAdmin = new System.Windows.Forms.GroupBox();
+            this.lnkSignOut = new System.Windows.Forms.LinkLabel();
             this.lnkRegisteUser = new System.Windows.Forms.LinkLabel();
             this.lnkUpdateResult = new System.Windows.Forms.LinkLabel();
             this.lnkstudentdata = new System.Windows.Forms.LinkLabel();
-            this.lnkSignOut = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.gbAdmin.SuspendLayout();
             this.SuspendLayout();
@@ -153,6 +153,19 @@
             this.gbAdmin.Size = new System.Drawing.Size(175, 301);
             this.gbAdmin.TabIndex = 25;
             this.gbAdmin.TabStop = false;
+            this.gbAdmin.Enter += new System.EventHandler(this.gbAdmin_Enter);
+            // 
+            // lnkSignOut
+            // 
+            this.lnkSignOut.AutoSize = true;
+            this.lnkSignOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lnkSignOut.Location = new System.Drawing.Point(8, 264);
+            this.lnkSignOut.Name = "lnkSignOut";
+            this.lnkSignOut.Size = new System.Drawing.Size(63, 17);
+            this.lnkSignOut.TabIndex = 28;
+            this.lnkSignOut.TabStop = true;
+            this.lnkSignOut.Text = "Sign Out";
+            this.lnkSignOut.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkSignOut_LinkClicked);
             // 
             // lnkRegisteUser
             // 
@@ -176,6 +189,7 @@
             this.lnkUpdateResult.TabIndex = 0;
             this.lnkUpdateResult.TabStop = true;
             this.lnkUpdateResult.Text = "Update Result";
+            this.lnkUpdateResult.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkUpdateResult_LinkClicked);
             // 
             // lnkstudentdata
             // 
@@ -188,18 +202,6 @@
             this.lnkstudentdata.TabStop = true;
             this.lnkstudentdata.Text = "View Data of Student";
             this.lnkstudentdata.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkstudentdata_LinkClicked);
-            // 
-            // lnkSignOut
-            // 
-            this.lnkSignOut.AutoSize = true;
-            this.lnkSignOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lnkSignOut.Location = new System.Drawing.Point(8, 264);
-            this.lnkSignOut.Name = "lnkSignOut";
-            this.lnkSignOut.Size = new System.Drawing.Size(63, 17);
-            this.lnkSignOut.TabIndex = 28;
-            this.lnkSignOut.TabStop = true;
-            this.lnkSignOut.Text = "Sign Out";
-            this.lnkSignOut.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkSignOut_LinkClicked);
             // 
             // Teacher_Data
             // 

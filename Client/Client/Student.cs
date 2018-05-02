@@ -39,5 +39,10 @@ namespace CLient
             this.Hide();
             form.Show();
         }
+
+        private void Student_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

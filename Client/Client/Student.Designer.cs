@@ -114,6 +114,7 @@
             this.Controls.Add(this.cmdVDMC);
             this.Name = "Student";
             this.Text = "Student";
+            this.Load += new System.EventHandler(this.Student_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
