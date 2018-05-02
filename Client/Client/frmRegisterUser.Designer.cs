@@ -64,7 +64,9 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblName.BackColor = System.Drawing.Color.Transparent;
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.ForeColor = System.Drawing.Color.White;
             this.lblName.Location = new System.Drawing.Point(221, 27);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(41, 15);
@@ -86,6 +88,9 @@
             // cmdRegister
             // 
             this.cmdRegister.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.cmdRegister.BackgroundImage = global::CLient.Properties.Resources.zero_g_theme_logon_background_by_lilmegz97_d4sliyn3;
+            this.cmdRegister.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdRegister.ForeColor = System.Drawing.Color.White;
             this.cmdRegister.Location = new System.Drawing.Point(375, 387);
             this.cmdRegister.Name = "cmdRegister";
             this.cmdRegister.Size = new System.Drawing.Size(130, 38);
@@ -112,7 +117,9 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
+            this.lblEmail.BackColor = System.Drawing.Color.Transparent;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblEmail.ForeColor = System.Drawing.Color.White;
             this.lblEmail.Location = new System.Drawing.Point(224, 72);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(39, 15);
@@ -122,7 +129,9 @@
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
+            this.lblPassword.BackColor = System.Drawing.Color.Transparent;
             this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblPassword.ForeColor = System.Drawing.Color.White;
             this.lblPassword.Location = new System.Drawing.Point(224, 122);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(61, 15);
@@ -132,7 +141,9 @@
             // lblRegisterAs
             // 
             this.lblRegisterAs.AutoSize = true;
+            this.lblRegisterAs.BackColor = System.Drawing.Color.Transparent;
             this.lblRegisterAs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblRegisterAs.ForeColor = System.Drawing.Color.White;
             this.lblRegisterAs.Location = new System.Drawing.Point(221, 230);
             this.lblRegisterAs.Name = "lblRegisterAs";
             this.lblRegisterAs.Size = new System.Drawing.Size(69, 15);
@@ -150,7 +161,9 @@
             // lblpincode
             // 
             this.lblpincode.AutoSize = true;
+            this.lblpincode.BackColor = System.Drawing.Color.Transparent;
             this.lblpincode.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblpincode.ForeColor = System.Drawing.Color.Transparent;
             this.lblpincode.Location = new System.Drawing.Point(224, 180);
             this.lblpincode.Name = "lblpincode";
             this.lblpincode.Size = new System.Drawing.Size(57, 15);
@@ -194,7 +207,9 @@
             // lblSubject
             // 
             this.lblSubject.AutoSize = true;
+            this.lblSubject.BackColor = System.Drawing.Color.Transparent;
             this.lblSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblSubject.ForeColor = System.Drawing.Color.White;
             this.lblSubject.Location = new System.Drawing.Point(222, 286);
             this.lblSubject.Name = "lblSubject";
             this.lblSubject.Size = new System.Drawing.Size(48, 15);
@@ -218,7 +233,9 @@
             // lbldepartment
             // 
             this.lbldepartment.AutoSize = true;
+            this.lbldepartment.BackColor = System.Drawing.Color.Transparent;
             this.lbldepartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lbldepartment.ForeColor = System.Drawing.Color.White;
             this.lbldepartment.Location = new System.Drawing.Point(223, 330);
             this.lbldepartment.Name = "lbldepartment";
             this.lbldepartment.Size = new System.Drawing.Size(72, 15);
@@ -228,6 +245,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox1.BackgroundImage = global::CLient.Properties.Resources.Untitled_2;
             this.groupBox1.Controls.Add(this.lnkSignOut);
             this.groupBox1.Controls.Add(this.lnkteacherData);
             this.groupBox1.Controls.Add(this.linkLabel2);
@@ -243,7 +261,9 @@
             // lnkSignOut
             // 
             this.lnkSignOut.AutoSize = true;
+            this.lnkSignOut.BackColor = System.Drawing.Color.Transparent;
             this.lnkSignOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lnkSignOut.LinkColor = System.Drawing.Color.White;
             this.lnkSignOut.Location = new System.Drawing.Point(8, 287);
             this.lnkSignOut.Name = "lnkSignOut";
             this.lnkSignOut.Size = new System.Drawing.Size(63, 17);
@@ -255,7 +275,9 @@
             // lnkteacherData
             // 
             this.lnkteacherData.AutoSize = true;
+            this.lnkteacherData.BackColor = System.Drawing.Color.Transparent;
             this.lnkteacherData.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lnkteacherData.LinkColor = System.Drawing.Color.White;
             this.lnkteacherData.Location = new System.Drawing.Point(5, 134);
             this.lnkteacherData.Name = "lnkteacherData";
             this.lnkteacherData.Size = new System.Drawing.Size(144, 17);
@@ -267,7 +289,9 @@
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
+            this.linkLabel2.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.linkLabel2.LinkColor = System.Drawing.Color.White;
             this.linkLabel2.Location = new System.Drawing.Point(6, 234);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(114, 17);
@@ -279,7 +303,9 @@
             // linkLabel3
             // 
             this.linkLabel3.AutoSize = true;
+            this.linkLabel3.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.linkLabel3.LinkColor = System.Drawing.Color.White;
             this.linkLabel3.Location = new System.Drawing.Point(8, 85);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(98, 17);
@@ -291,7 +317,9 @@
             // linkLabel4
             // 
             this.linkLabel4.AutoSize = true;
+            this.linkLabel4.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.linkLabel4.LinkColor = System.Drawing.Color.White;
             this.linkLabel4.Location = new System.Drawing.Point(5, 184);
             this.linkLabel4.Name = "linkLabel4";
             this.linkLabel4.Size = new System.Drawing.Size(140, 17);
@@ -305,6 +333,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BackgroundImage = global::CLient.Properties.Resources.zero_g_theme_logon_background_by_lilmegz97_d4sliyn3;
             this.ClientSize = new System.Drawing.Size(536, 433);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lbldepartment);
