@@ -63,9 +63,11 @@ namespace WcfService2
         void update_result(Result res);
         [OperationContract]
         void AddAttendance(string name, string attendance, string section, string subject, Teacher t);
-        
-        
-        
+        [OperationContract]
+        Result Viewresult(Student s);
+
+
+
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
 

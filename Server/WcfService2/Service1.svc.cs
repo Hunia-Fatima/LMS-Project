@@ -86,6 +86,24 @@ namespace WcfService2
                 return false;
             }
         }
+
+        public Result Viewresult(Student s)
+        {
+            Result b = new Result();
+            
+            foreach (Result r in ResultDL.results)
+            {
+                
+                if(r.getstudent() == s.getname())
+                {
+                    b = r;
+                    return r ;
+                }
+
+            }
+            return b;   
+        }
+
         public bool IsValidTeacher(string username, string password)
         {
             bool found = false;

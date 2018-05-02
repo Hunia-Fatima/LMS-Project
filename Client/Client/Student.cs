@@ -35,7 +35,9 @@ namespace CLient
 
         private void cmdVDMC_Click(object sender, EventArgs e)
         {
-
+            DMC form = new DMC();
+            this.Hide();
+            form.Show();
         }
     }
 }

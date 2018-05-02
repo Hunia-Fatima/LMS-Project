@@ -79,6 +79,8 @@ namespace CLient.server {
         
         private System.Threading.SendOrPostCallback AddAttendanceOperationCompleted;
         
+        private System.Threading.SendOrPostCallback ViewresultOperationCompleted;
+        
         private System.Threading.SendOrPostCallback GetDataUsingDataContractOperationCompleted;
         
         private bool useDefaultCredentialsSetExplicitly;
@@ -193,6 +195,9 @@ namespace CLient.server {
         
         /// <remarks/>
         public event AddAttendanceCompletedEventHandler AddAttendanceCompleted;
+        
+        /// <remarks/>
+        public event ViewresultCompletedEventHandler ViewresultCompleted;
         
         /// <remarks/>
         public event GetDataUsingDataContractCompletedEventHandler GetDataUsingDataContractCompleted;
@@ -971,6 +976,36 @@ namespace CLient.server {
             if ((this.AddAttendanceCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.AddAttendanceCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/Viewresult", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public Result Viewresult([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] Student s) {
+            object[] results = this.Invoke("Viewresult", new object[] {
+                        s});
+            return ((Result)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ViewresultAsync(Student s) {
+            this.ViewresultAsync(s, null);
+        }
+        
+        /// <remarks/>
+        public void ViewresultAsync(Student s, object userState) {
+            if ((this.ViewresultOperationCompleted == null)) {
+                this.ViewresultOperationCompleted = new System.Threading.SendOrPostCallback(this.OnViewresultOperationCompleted);
+            }
+            this.InvokeAsync("Viewresult", new object[] {
+                        s}, this.ViewresultOperationCompleted, userState);
+        }
+        
+        private void OnViewresultOperationCompleted(object arg) {
+            if ((this.ViewresultCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ViewresultCompleted(this, new ViewresultCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -1902,6 +1937,32 @@ namespace CLient.server {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
     public delegate void AddAttendanceCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    public delegate void ViewresultCompletedEventHandler(object sender, ViewresultCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ViewresultCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ViewresultCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public Result Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Result)(this.results[0]));
+            }
+        }
+    }
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
