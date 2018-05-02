@@ -88,5 +88,15 @@ namespace CLient
             this.Hide();
             frm.Show();
         }
+
+        private void frmAdminLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblName_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -259,6 +259,42 @@
   <ItemGroup>
     <None Include="Resources\Untitled2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transparent board.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zero_g_theme_logon_background_by_lilmegz97-d4sliyn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ooo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zero_g_theme_logon_background_by_lilmegz97-d4sliyn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zero_g_theme_logon_background_by_lilmegz97-d4sliyn1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zero_g_theme_logon_background_by_lilmegz97-d4sliyn2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
