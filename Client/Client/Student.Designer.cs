@@ -55,6 +55,7 @@
             this.cmdVA.TabIndex = 6;
             this.cmdVA.Text = "View Attendance";
             this.cmdVA.UseVisualStyleBackColor = false;
+            this.cmdVA.Click += new System.EventHandler(this.cmdVA_Click);
             // 
             // cmdRegS
             // 

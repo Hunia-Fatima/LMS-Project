@@ -62,10 +62,11 @@ namespace WcfService2
         [OperationContract]
         void update_result(Result res);
         [OperationContract]
-        void AddAttendance(string name, string attendance, string section, string subject, Teacher t);
+        void AddAttendance(string name, string attendance, string section, string subject, Teacher t, string semes);
         [OperationContract]
         Result Viewresult(Student s);
-
+        [OperationContract]
+        Attendance ViewAttendance(Student name);
 
 
         [OperationContract]

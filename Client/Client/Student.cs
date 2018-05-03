@@ -44,5 +44,12 @@ namespace CLient
         {
 
         }
+
+        private void cmdVA_Click(object sender, EventArgs e)
+        {
+            View_Attendance v = new View_Attendance();
+            this.Hide();
+            v.Show();
+        }
     }
 }

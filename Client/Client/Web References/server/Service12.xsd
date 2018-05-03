@@ -43,7 +43,14 @@
   </xs:complexType>
   <xs:element name="ArrayOfAttendance" nillable="true" type="tns:ArrayOfAttendance" />
   <xs:complexType name="Attendance">
-    <xs:sequence />
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Section" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Semester" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Student" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="percentage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sub" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="teacher" nillable="true" type="tns:Teacher" />
+    </xs:sequence>
   </xs:complexType>
   <xs:element name="Attendance" nillable="true" type="tns:Attendance" />
   <xs:complexType name="ArrayOfResult">

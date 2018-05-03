@@ -10,7 +10,7 @@ namespace WcfService2
     public class Attendance
     {
         [DataMember]
-        public static string Student;
+        public string Student;
 
         public string getStudent()
         {
@@ -21,7 +21,7 @@ namespace WcfService2
             Student = S;
         }
         [DataMember]
-        public static string percentage;
+        public string percentage;
 
         public string getpercentage()
         {
@@ -32,7 +32,7 @@ namespace WcfService2
             percentage = S;
         }
         [DataMember]
-        public static string sub;
+        public string sub;
         public string getsub()
         {
             return sub;
@@ -43,7 +43,7 @@ namespace WcfService2
         }
        
         [DataMember]
-        public static Teacher teacher;
+        public Teacher teacher;
         public Teacher getteacher()
         {
             return teacher;
@@ -54,7 +54,7 @@ namespace WcfService2
         }
        
          [DataMember]
-        public static string Section;
+        public string Section;
 
          public string getSection()
          {
@@ -65,7 +65,7 @@ namespace WcfService2
              Section = Sec;
          }
          [DataMember]
-        public static string Semester;
+        public string Semester;
          public string getsemester()
          {
              return Semester;

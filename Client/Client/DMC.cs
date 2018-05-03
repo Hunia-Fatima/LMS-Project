@@ -58,5 +58,10 @@ namespace CLient
             form.Show();
             this.Hide();
         }
+
+        private void DMC_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

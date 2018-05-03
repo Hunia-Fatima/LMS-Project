@@ -267,7 +267,7 @@ namespace WcfService2
             }
         }
 
-        public void AddAttendance(string name, string Attendance, string section, string subject, Teacher t)
+        public void AddAttendance(string name, string Attendance, string section, string subject, Teacher t,string semes)
         {
             Attendance Atten = new Attendance();
             Atten.setStudent(name);
@@ -275,6 +275,8 @@ namespace WcfService2
             Atten.setSection(section);
             Atten.setsub(subject);
             Atten.setteacher(t);
+            Atten.setSemester(semes);
+            AttendanceDL.Attendances.Add(Atten);
             foreach (Student s in StudentDL.students)
             {
                 if (s.getname() == name)
@@ -282,9 +284,28 @@ namespace WcfService2
                     s.attendance.Add(Atten);
                 }
             }
-            AttendanceDL.Attendances.Add(Atten);
+            
            
         }
+
+        public Attendance ViewAttendance(Student name)
+        {
+            Attendance at = new Attendance();
+            foreach (Attendance att in AttendanceDL.Attendances)
+            {
+                if (att.getStudent() == name.getname())
+                {
+                    at = att;
+                    return at;
+                }
+
+                
+
+            }
+            return at;
+        }
+
+
         /*
         public bool ValRegstrdStu(string name)
         {

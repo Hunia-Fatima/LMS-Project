@@ -126,6 +126,7 @@
             this.Controls.Add(this.dgvDMC);
             this.Name = "DMC";
             this.Text = "DMC";
+            this.Load += new System.EventHandler(this.DMC_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDMC)).EndInit();
             this.gbAdmin.ResumeLayout(false);
             this.gbAdmin.PerformLayout();

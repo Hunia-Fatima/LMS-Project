@@ -131,6 +131,12 @@
     <Compile Include="Upload Attendance.Designer.cs">
       <DependentUpon>Upload Attendance.cs</DependentUpon>
     </Compile>
+    <Compile Include="View Attendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Attendance.Designer.cs">
+      <DependentUpon>View Attendance.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewUploadedResult.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +192,9 @@
     <EmbeddedResource Include="Upload Attendance.resx">
       <DependentUpon>Upload Attendance.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View Attendance.resx">
+      <DependentUpon>View Attendance.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ViewUploadedResult.resx">
       <DependentUpon>ViewUploadedResult.cs</DependentUpon>
     </EmbeddedResource>
@@ -198,6 +207,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Web References\server\Attendance.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
     <None Include="Web References\server\CompositeType.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
