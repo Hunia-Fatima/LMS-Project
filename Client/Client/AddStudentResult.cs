@@ -21,7 +21,7 @@ namespace CLient
             {
                 cmbStudents.Items.Add(s[i]);
             }
-
+            cmbStudents.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
         private void lnkgoback_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

@@ -205,3 +205,4 @@ C:\Users\Admin\Desktop\pop\LMS-Project\Client\CLient\obj\Debug\CLient.Update_Res
 C:\Users\Admin\Desktop\pop\LMS-Project\Client\CLient\obj\Debug\CLient.Upload_Attendance.resources
 C:\Users\Admin\Desktop\pop\LMS-Project\Client\CLient\obj\Debug\CLient.ViewUploadedResult.resources
 C:\Users\Admin\Desktop\pop\LMS-Project\Client\CLient\obj\Debug\CLient.csproj.GenerateResource.Cache
+C:\Users\Mamuna\Desktop\asd\LMS-Project\Client\CLient\obj\Debug\CLient.DMC.resources

@@ -42,9 +42,9 @@
             this.cmdRegisterUser.BackgroundImage = global::CLient.Properties.Resources.zero_g_theme_logon_background_by_lilmegz97_d4sliyn3;
             this.cmdRegisterUser.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdRegisterUser.Location = new System.Drawing.Point(184, 112);
+            this.cmdRegisterUser.Location = new System.Drawing.Point(149, 107);
             this.cmdRegisterUser.Name = "cmdRegisterUser";
-            this.cmdRegisterUser.Size = new System.Drawing.Size(129, 40);
+            this.cmdRegisterUser.Size = new System.Drawing.Size(186, 40);
             this.cmdRegisterUser.TabIndex = 0;
             this.cmdRegisterUser.Text = "Register Users";
             this.cmdRegisterUser.UseVisualStyleBackColor = false;
@@ -55,9 +55,9 @@
             this.cmdUpdateResult.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.cmdUpdateResult.BackgroundImage = global::CLient.Properties.Resources.zero_g_theme_logon_background_by_lilmegz97_d4sliyn3;
             this.cmdUpdateResult.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdUpdateResult.Location = new System.Drawing.Point(184, 174);
+            this.cmdUpdateResult.Location = new System.Drawing.Point(149, 171);
             this.cmdUpdateResult.Name = "cmdUpdateResult";
-            this.cmdUpdateResult.Size = new System.Drawing.Size(129, 40);
+            this.cmdUpdateResult.Size = new System.Drawing.Size(186, 40);
             this.cmdUpdateResult.TabIndex = 2;
             this.cmdUpdateResult.Text = "Update Result";
             this.cmdUpdateResult.UseVisualStyleBackColor = false;
@@ -77,6 +77,7 @@
             // lnkSignOut
             // 
             this.lnkSignOut.AutoSize = true;
+            this.lnkSignOut.LinkColor = System.Drawing.Color.White;
             this.lnkSignOut.Location = new System.Drawing.Point(406, 282);
             this.lnkSignOut.Name = "lnkSignOut";
             this.lnkSignOut.Size = new System.Drawing.Size(48, 13);

@@ -24,6 +24,9 @@ namespace CLient
                   
             }
             cmbStudents.DropDownStyle = ComboBoxStyle.DropDownList;
+            server.Teacher t = myservice.getLoggedInTeacher();
+            txtSbj.Text = t.subject;
+        
         }
 
         private void lnkgoback_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -53,6 +56,24 @@ namespace CLient
             myserver.AddAttendance(cmbStudents.Text, txtPerc.Text, txtSec.Text, txtSbj.Text, myserver.getLoggedInTeacher());
             MessageBox.Show("Attendance has been added");
                       
+            
+        }
+
+        private void cmbStudents_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            server.Service1 myservice = new server.Service1();
+            foreach (server.Student s in myservice.get_registered_students())
+            {
+                if (cmbStudents.Text == s.Name)
+                {
+                    txtSec.Text = s.Section;
+                }
+            }
+        }
+
+        private void txtSbj_TextChanged(object sender, EventArgs e)
+        {
+                         
             
         }
     }

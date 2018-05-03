@@ -163,6 +163,7 @@
             this.txtSbj.Name = "txtSbj";
             this.txtSbj.Size = new System.Drawing.Size(193, 20);
             this.txtSbj.TabIndex = 41;
+            this.txtSbj.TextChanged += new System.EventHandler(this.txtSbj_TextChanged);
             // 
             // lblSub
             // 
@@ -180,6 +181,7 @@
             this.cmbStudents.Name = "cmbStudents";
             this.cmbStudents.Size = new System.Drawing.Size(191, 21);
             this.cmbStudents.TabIndex = 43;
+            this.cmbStudents.SelectedIndexChanged += new System.EventHandler(this.cmbStudents_SelectedIndexChanged);
             // 
             // label1
             // 

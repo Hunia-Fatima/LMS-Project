@@ -30,11 +30,11 @@
         {
             this.dgvDMC = new System.Windows.Forms.DataGridView();
             this.gbAdmin = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.lnkSignOut = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.lnkUpdateResult = new System.Windows.Forms.LinkLabel();
             this.lnkstudentdata = new System.Windows.Forms.LinkLabel();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDMC)).BeginInit();
             this.gbAdmin.SuspendLayout();
             this.SuspendLayout();
@@ -44,7 +44,7 @@
             this.dgvDMC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDMC.Location = new System.Drawing.Point(157, 5);
             this.dgvDMC.Name = "dgvDMC";
-            this.dgvDMC.Size = new System.Drawing.Size(363, 423);
+            this.dgvDMC.Size = new System.Drawing.Size(512, 423);
             this.dgvDMC.TabIndex = 0;
             this.dgvDMC.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDMC_CellContentClick);
             // 
@@ -61,6 +61,16 @@
             this.gbAdmin.Size = new System.Drawing.Size(144, 408);
             this.gbAdmin.TabIndex = 26;
             this.gbAdmin.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 386);
+            this.label1.Name = "label1";
+            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label1.Size = new System.Drawing.Size(29, 13);
+            this.label1.TabIndex = 29;
+            this.label1.Text = "LMS";
             // 
             // lnkSignOut
             // 
@@ -107,21 +117,11 @@
             this.lnkstudentdata.Size = new System.Drawing.Size(0, 17);
             this.lnkstudentdata.TabIndex = 19;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 386);
-            this.label1.Name = "label1";
-            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(29, 13);
-            this.label1.TabIndex = 29;
-            this.label1.Text = "LMS";
-            // 
             // DMC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(520, 410);
+            this.ClientSize = new System.Drawing.Size(681, 432);
             this.Controls.Add(this.gbAdmin);
             this.Controls.Add(this.dgvDMC);
             this.Name = "DMC";
