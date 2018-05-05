@@ -50,19 +50,22 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox1.BackgroundImage = global::CLient.Properties.Resources.Untitled_2;
             this.groupBox1.Controls.Add(this.lnkSignOut);
             this.groupBox1.Controls.Add(this.lnkUplaodAttendance);
             this.groupBox1.Controls.Add(this.lnkgoback);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(-2, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(122, 380);
+            this.groupBox1.Size = new System.Drawing.Size(136, 397);
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
             // 
             // lnkSignOut
             // 
             this.lnkSignOut.AutoSize = true;
+            this.lnkSignOut.BackColor = System.Drawing.Color.Black;
             this.lnkSignOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lnkSignOut.LinkColor = System.Drawing.Color.White;
             this.lnkSignOut.Location = new System.Drawing.Point(6, 185);
             this.lnkSignOut.Name = "lnkSignOut";
             this.lnkSignOut.Size = new System.Drawing.Size(63, 17);
@@ -74,7 +77,9 @@
             // lnkUplaodAttendance
             // 
             this.lnkUplaodAttendance.AutoSize = true;
+            this.lnkUplaodAttendance.BackColor = System.Drawing.Color.Black;
             this.lnkUplaodAttendance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lnkUplaodAttendance.LinkColor = System.Drawing.Color.White;
             this.lnkUplaodAttendance.Location = new System.Drawing.Point(6, 115);
             this.lnkUplaodAttendance.Name = "lnkUplaodAttendance";
             this.lnkUplaodAttendance.Size = new System.Drawing.Size(97, 17);
@@ -86,7 +91,9 @@
             // lnkgoback
             // 
             this.lnkgoback.AutoSize = true;
+            this.lnkgoback.BackColor = System.Drawing.Color.Black;
             this.lnkgoback.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lnkgoback.LinkColor = System.Drawing.Color.White;
             this.lnkgoback.Location = new System.Drawing.Point(6, 148);
             this.lnkgoback.Name = "lnkgoback";
             this.lnkgoback.Size = new System.Drawing.Size(114, 17);
@@ -98,7 +105,9 @@
             // lblUpAt
             // 
             this.lblUpAt.AutoSize = true;
+            this.lblUpAt.BackColor = System.Drawing.Color.Black;
             this.lblUpAt.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUpAt.ForeColor = System.Drawing.Color.White;
             this.lblUpAt.Location = new System.Drawing.Point(261, 43);
             this.lblUpAt.Name = "lblUpAt";
             this.lblUpAt.Size = new System.Drawing.Size(166, 22);
@@ -108,6 +117,10 @@
             // cmdAdd
             // 
             this.cmdAdd.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.cmdAdd.BackgroundImage = global::CLient.Properties.Resources.zero_g_theme_logon_background_by_lilmegz97_d4sliyn3;
+            this.cmdAdd.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdAdd.ForeColor = System.Drawing.Color.White;
             this.cmdAdd.Location = new System.Drawing.Point(379, 355);
             this.cmdAdd.Name = "cmdAdd";
             this.cmdAdd.Size = new System.Drawing.Size(133, 37);
@@ -119,6 +132,8 @@
             // lblsection
             // 
             this.lblsection.AutoSize = true;
+            this.lblsection.BackColor = System.Drawing.Color.Black;
+            this.lblsection.ForeColor = System.Drawing.Color.White;
             this.lblsection.Location = new System.Drawing.Point(202, 148);
             this.lblsection.Name = "lblsection";
             this.lblsection.Size = new System.Drawing.Size(43, 13);
@@ -128,6 +143,8 @@
             // lblname
             // 
             this.lblname.AutoSize = true;
+            this.lblname.BackColor = System.Drawing.Color.Black;
+            this.lblname.ForeColor = System.Drawing.Color.White;
             this.lblname.Location = new System.Drawing.Point(202, 100);
             this.lblname.Name = "lblname";
             this.lblname.Size = new System.Drawing.Size(35, 13);
@@ -144,6 +161,8 @@
             // lblPer
             // 
             this.lblPer.AutoSize = true;
+            this.lblPer.BackColor = System.Drawing.Color.Black;
+            this.lblPer.ForeColor = System.Drawing.Color.White;
             this.lblPer.Location = new System.Drawing.Point(140, 197);
             this.lblPer.Name = "lblPer";
             this.lblPer.Size = new System.Drawing.Size(122, 13);
@@ -168,6 +187,8 @@
             // lblSub
             // 
             this.lblSub.AutoSize = true;
+            this.lblSub.BackColor = System.Drawing.Color.Black;
+            this.lblSub.ForeColor = System.Drawing.Color.White;
             this.lblSub.Location = new System.Drawing.Point(202, 255);
             this.lblSub.Name = "lblSub";
             this.lblSub.Size = new System.Drawing.Size(43, 13);
@@ -186,6 +207,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(202, 297);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 13);
@@ -204,7 +227,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(538, 414);
+            this.BackgroundImage = global::CLient.Properties.Resources.zero_g_theme_logon_background_by_lilmegz97_d4sliyn3;
+            this.ClientSize = new System.Drawing.Size(645, 411);
             this.Controls.Add(this.txtSemes);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbStudents);

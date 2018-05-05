@@ -38,24 +38,32 @@
             // 
             // txtStatus
             // 
-            this.txtStatus.Location = new System.Drawing.Point(116, 195);
+            this.txtStatus.Location = new System.Drawing.Point(148, 255);
             this.txtStatus.Name = "txtStatus";
-            this.txtStatus.Size = new System.Drawing.Size(137, 20);
+            this.txtStatus.Size = new System.Drawing.Size(218, 20);
             this.txtStatus.TabIndex = 8;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 198);
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(31, 255);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 13);
+            this.label1.Size = new System.Drawing.Size(97, 24);
             this.label1.TabIndex = 7;
             this.label1.Text = "Set Status";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // cmdUpldAtt
             // 
-            this.cmdUpldAtt.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.cmdUpldAtt.Location = new System.Drawing.Point(36, 113);
+            this.cmdUpldAtt.BackColor = System.Drawing.Color.Black;
+            this.cmdUpldAtt.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdUpldAtt.ForeColor = System.Drawing.Color.White;
+            this.cmdUpldAtt.Location = new System.Drawing.Point(149, 170);
             this.cmdUpldAtt.Name = "cmdUpldAtt";
             this.cmdUpldAtt.Size = new System.Drawing.Size(216, 50);
             this.cmdUpldAtt.TabIndex = 6;
@@ -65,8 +73,11 @@
             // 
             // cmdUpldRes
             // 
-            this.cmdUpldRes.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.cmdUpldRes.Location = new System.Drawing.Point(35, 43);
+            this.cmdUpldRes.BackColor = System.Drawing.Color.Black;
+            this.cmdUpldRes.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdUpldRes.ForeColor = System.Drawing.Color.White;
+            this.cmdUpldRes.Location = new System.Drawing.Point(148, 100);
             this.cmdUpldRes.Name = "cmdUpldRes";
             this.cmdUpldRes.Size = new System.Drawing.Size(218, 44);
             this.cmdUpldRes.TabIndex = 5;
@@ -77,9 +88,13 @@
             // lnkTSignOut
             // 
             this.lnkTSignOut.AutoSize = true;
-            this.lnkTSignOut.Location = new System.Drawing.Point(217, 239);
+            this.lnkTSignOut.BackColor = System.Drawing.Color.Black;
+            this.lnkTSignOut.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkTSignOut.LinkColor = System.Drawing.Color.White;
+            this.lnkTSignOut.Location = new System.Drawing.Point(530, 358);
             this.lnkTSignOut.Name = "lnkTSignOut";
-            this.lnkTSignOut.Size = new System.Drawing.Size(46, 13);
+            this.lnkTSignOut.Size = new System.Drawing.Size(78, 22);
             this.lnkTSignOut.TabIndex = 9;
             this.lnkTSignOut.TabStop = true;
             this.lnkTSignOut.Text = "Sign out";
@@ -88,10 +103,13 @@
             // lblTeacher
             // 
             this.lblTeacher.AutoSize = true;
-            this.lblTeacher.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTeacher.Location = new System.Drawing.Point(164, 9);
+            this.lblTeacher.BackColor = System.Drawing.Color.Black;
+            this.lblTeacher.Font = new System.Drawing.Font("Times New Roman", 24F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTeacher.ForeColor = System.Drawing.Color.White;
+            this.lblTeacher.Location = new System.Drawing.Point(12, 9);
             this.lblTeacher.Name = "lblTeacher";
-            this.lblTeacher.Size = new System.Drawing.Size(101, 24);
+            this.lblTeacher.Size = new System.Drawing.Size(165, 36);
             this.lblTeacher.TabIndex = 10;
             this.lblTeacher.Text = "TEACHER";
             // 
@@ -100,7 +118,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.BackgroundImage = global::CLient.Properties.Resources.zero_g_theme_logon_background_by_lilmegz97_d4sliyn3;
+            this.ClientSize = new System.Drawing.Size(620, 389);
             this.Controls.Add(this.lblTeacher);
             this.Controls.Add(this.lnkTSignOut);
             this.Controls.Add(this.txtStatus);

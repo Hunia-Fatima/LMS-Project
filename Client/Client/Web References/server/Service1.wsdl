@@ -8,6 +8,30 @@
       <xsd:import schemaLocation="http://localhost:7187/Service1.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     </xsd:schema>
   </wsdl:types>
+  <wsdl:message name="IService1_RESETSTUDENT_InputMessage">
+    <wsdl:part name="parameters" element="tns:RESETSTUDENT" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RESETSTUDENT_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RESETSTUDENTResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SETST_InputMessage">
+    <wsdl:part name="parameters" element="tns:SETST" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SETST_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SETSTResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SETT_InputMessage">
+    <wsdl:part name="parameters" element="tns:SETT" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SETT_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SETTResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RESETTEACHER_InputMessage">
+    <wsdl:part name="parameters" element="tns:RESETTEACHER" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RESETTEACHER_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RESETTEACHERResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_SearchByDepartment_InputMessage">
     <wsdl:part name="parameters" element="tns:SearchByDepartment" />
   </wsdl:message>
@@ -177,6 +201,22 @@
     <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
   </wsdl:message>
   <wsdl:portType name="IService1">
+    <wsdl:operation name="RESETSTUDENT">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/RESETSTUDENT" message="tns:IService1_RESETSTUDENT_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/RESETSTUDENTResponse" message="tns:IService1_RESETSTUDENT_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SETST">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SETST" message="tns:IService1_SETST_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SETSTResponse" message="tns:IService1_SETST_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SETT">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SETT" message="tns:IService1_SETT_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SETTResponse" message="tns:IService1_SETT_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RESETTEACHER">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/RESETTEACHER" message="tns:IService1_RESETTEACHER_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/RESETTEACHERResponse" message="tns:IService1_RESETTEACHER_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="SearchByDepartment">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/SearchByDepartment" message="tns:IService1_SearchByDepartment_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/SearchByDepartmentResponse" message="tns:IService1_SearchByDepartment_OutputMessage" />
@@ -292,6 +332,42 @@
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RESETSTUDENT">
+      <soap:operation soapAction="http://tempuri.org/IService1/RESETSTUDENT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SETST">
+      <soap:operation soapAction="http://tempuri.org/IService1/SETST" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SETT">
+      <soap:operation soapAction="http://tempuri.org/IService1/SETT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RESETTEACHER">
+      <soap:operation soapAction="http://tempuri.org/IService1/RESETTEACHER" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="SearchByDepartment">
       <soap:operation soapAction="http://tempuri.org/IService1/SearchByDepartment" style="document" />
       <wsdl:input>

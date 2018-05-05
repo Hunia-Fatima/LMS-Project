@@ -38,20 +38,26 @@
             // 
             // cmdconvo
             // 
-            this.cmdconvo.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.cmdconvo.Location = new System.Drawing.Point(36, 187);
+            this.cmdconvo.BackColor = System.Drawing.Color.Black;
+            this.cmdconvo.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdconvo.ForeColor = System.Drawing.Color.White;
+            this.cmdconvo.Location = new System.Drawing.Point(349, 264);
             this.cmdconvo.Name = "cmdconvo";
-            this.cmdconvo.Size = new System.Drawing.Size(213, 38);
+            this.cmdconvo.Size = new System.Drawing.Size(213, 51);
             this.cmdconvo.TabIndex = 7;
             this.cmdconvo.Text = "Conversation";
             this.cmdconvo.UseVisualStyleBackColor = false;
             // 
             // cmdVA
             // 
-            this.cmdVA.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.cmdVA.Location = new System.Drawing.Point(36, 134);
+            this.cmdVA.BackColor = System.Drawing.Color.Black;
+            this.cmdVA.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdVA.ForeColor = System.Drawing.Color.White;
+            this.cmdVA.Location = new System.Drawing.Point(258, 207);
             this.cmdVA.Name = "cmdVA";
-            this.cmdVA.Size = new System.Drawing.Size(213, 38);
+            this.cmdVA.Size = new System.Drawing.Size(213, 51);
             this.cmdVA.TabIndex = 6;
             this.cmdVA.Text = "View Attendance";
             this.cmdVA.UseVisualStyleBackColor = false;
@@ -59,10 +65,13 @@
             // 
             // cmdRegS
             // 
-            this.cmdRegS.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.cmdRegS.Location = new System.Drawing.Point(36, 90);
+            this.cmdRegS.BackColor = System.Drawing.Color.Black;
+            this.cmdRegS.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdRegS.ForeColor = System.Drawing.Color.White;
+            this.cmdRegS.Location = new System.Drawing.Point(167, 150);
             this.cmdRegS.Name = "cmdRegS";
-            this.cmdRegS.Size = new System.Drawing.Size(213, 38);
+            this.cmdRegS.Size = new System.Drawing.Size(213, 51);
             this.cmdRegS.TabIndex = 5;
             this.cmdRegS.Text = "Register Subjects";
             this.cmdRegS.UseVisualStyleBackColor = false;
@@ -70,10 +79,13 @@
             // 
             // cmdVDMC
             // 
-            this.cmdVDMC.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.cmdVDMC.Location = new System.Drawing.Point(36, 36);
+            this.cmdVDMC.BackColor = System.Drawing.Color.Black;
+            this.cmdVDMC.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdVDMC.ForeColor = System.Drawing.Color.White;
+            this.cmdVDMC.Location = new System.Drawing.Point(111, 93);
             this.cmdVDMC.Name = "cmdVDMC";
-            this.cmdVDMC.Size = new System.Drawing.Size(213, 38);
+            this.cmdVDMC.Size = new System.Drawing.Size(213, 51);
             this.cmdVDMC.TabIndex = 4;
             this.cmdVDMC.Text = "View DMC";
             this.cmdVDMC.UseVisualStyleBackColor = false;
@@ -82,8 +94,10 @@
             // lnkSSignOut
             // 
             this.lnkSSignOut.AutoSize = true;
+            this.lnkSSignOut.BackColor = System.Drawing.Color.Black;
             this.lnkSSignOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lnkSSignOut.Location = new System.Drawing.Point(217, 239);
+            this.lnkSSignOut.ForeColor = System.Drawing.Color.White;
+            this.lnkSSignOut.Location = new System.Drawing.Point(31, 359);
             this.lnkSSignOut.Name = "lnkSSignOut";
             this.lnkSSignOut.Size = new System.Drawing.Size(60, 17);
             this.lnkSSignOut.TabIndex = 8;
@@ -94,25 +108,30 @@
             // lblStu
             // 
             this.lblStu.AutoSize = true;
+            this.lblStu.BackColor = System.Drawing.Color.Black;
             this.lblStu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStu.Location = new System.Drawing.Point(198, 9);
+            this.lblStu.ForeColor = System.Drawing.Color.White;
+            this.lblStu.Location = new System.Drawing.Point(30, 24);
             this.lblStu.Name = "lblStu";
             this.lblStu.Size = new System.Drawing.Size(74, 24);
             this.lblStu.TabIndex = 9;
             this.lblStu.Text = "Student";
+            this.lblStu.Click += new System.EventHandler(this.lblStu_Click);
             // 
             // Student
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(305, 288);
+            this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImage = global::CLient.Properties.Resources.zero_g_theme_logon_background_by_lilmegz97_d4sliyn3;
+            this.ClientSize = new System.Drawing.Size(684, 405);
             this.Controls.Add(this.lblStu);
             this.Controls.Add(this.lnkSSignOut);
             this.Controls.Add(this.cmdconvo);
             this.Controls.Add(this.cmdVA);
             this.Controls.Add(this.cmdRegS);
             this.Controls.Add(this.cmdVDMC);
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "Student";
             this.Text = "Student";
             this.Load += new System.EventHandler(this.Student_Load);

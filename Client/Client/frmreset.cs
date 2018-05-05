@@ -19,52 +19,53 @@ namespace CLient
 
         private void cmdresetpassword_Click(object sender, EventArgs e)
         {
-           
-            bool isvalid;
-            bool isvalidacces;
-            string user = "user";
+            bool isvalid = true;;
+            bool ok;
+            server.Service1 server = new server.Service1();
+            if (chkstudent.Checked == false && chkteacher.Checked == false)
+            {
+                MessageBox.Show("Please Check checkbox");
+            }
+            if (chkstudent.Checked == true && chkteacher.Checked == true)
+            {
+                MessageBox.Show("Check only one checkbox");
+            }
             if (chkstudent.Checked == true && chkteacher.Checked == false)
             {
-                user = "Student";
-            }
-            else if (chkteacher.Checked == true && chkstudent.Checked == false)
-            {
-                user = "Teacher";
-            }
-            else if (chkteacher.Checked == true && chkstudent.Checked == true)
-            {
-                user = "Nobody";
-            }
-            else if (chkteacher.Checked == false && chkstudent.Checked == false)
-            {
-                user = "nobody";
-            }
-            server.Service1 server = new server.Service1();
-            server.resetpaswrd(txtusername.Text, txtpincode.Text, user, out isvalid, out isvalidacces);
-            
-            if (user == "Nobody")
-            {
-                MessageBox.Show("Please check only one check box");
-            }
-            else if (user == "nobody")
-            {
-                MessageBox.Show("Select the user through checkbox first");
-            }
-            else
-            {
-                if (isvalid)
-                {
-                    MessageBox.Show("Password has been reset to 1234asdf");
-                }
-                else if (!isvalid)
-                {
-                    MessageBox.Show("Please Enter correct pincode");
 
+               
+                server.RESETSTUDENT(txtusername.Text, txtpincode.Text, out isvalid, out ok);
+                if (!isvalid)
+                {
+                    MessageBox.Show("Enter Correct pincode");
+                }
+                else
+                {
+                    PASSWORD frm = new PASSWORD();
+                    this.Hide();
+                    frm.Show();
+                }    
+
+            }
+
+
+            if (chkstudent.Checked == false && chkteacher.Checked == true)
+            {
+
+
+                server.RESETTEACHER(txtusername.Text, txtpincode.Text, out isvalid, out ok);
+                if (!isvalid)
+                {
+                    MessageBox.Show("Enter Correct pincode");
+                }
+                else
+                {
+                    PASSWORD_TEACHER frm = new PASSWORD_TEACHER();
+                    this.Hide();
+                    frm.Show();
                 }
 
             }
-           
-
 
         }
         private void lbllogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

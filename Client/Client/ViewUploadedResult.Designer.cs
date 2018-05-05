@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.cmdSearch = new System.Windows.Forms.Button();
             this.cmdShowAll = new System.Windows.Forms.Button();
             this.txtsection = new System.Windows.Forms.TextBox();
@@ -43,10 +44,13 @@
             // 
             // cmdSearch
             // 
-            this.cmdSearch.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.cmdSearch.BackColor = System.Drawing.Color.Black;
+            this.cmdSearch.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdSearch.ForeColor = System.Drawing.Color.White;
             this.cmdSearch.Location = new System.Drawing.Point(374, 20);
             this.cmdSearch.Name = "cmdSearch";
-            this.cmdSearch.Size = new System.Drawing.Size(75, 23);
+            this.cmdSearch.Size = new System.Drawing.Size(100, 39);
             this.cmdSearch.TabIndex = 9;
             this.cmdSearch.Text = "Search";
             this.cmdSearch.UseVisualStyleBackColor = false;
@@ -54,10 +58,13 @@
             // 
             // cmdShowAll
             // 
-            this.cmdShowAll.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.cmdShowAll.BackColor = System.Drawing.Color.Black;
+            this.cmdShowAll.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdShowAll.ForeColor = System.Drawing.Color.White;
             this.cmdShowAll.Location = new System.Drawing.Point(374, 65);
             this.cmdShowAll.Name = "cmdShowAll";
-            this.cmdShowAll.Size = new System.Drawing.Size(75, 23);
+            this.cmdShowAll.Size = new System.Drawing.Size(100, 34);
             this.cmdShowAll.TabIndex = 8;
             this.cmdShowAll.Text = "ShowAll";
             this.cmdShowAll.UseVisualStyleBackColor = false;
@@ -65,14 +72,23 @@
             // 
             // txtsection
             // 
-            this.txtsection.Location = new System.Drawing.Point(195, 67);
+            this.txtsection.Location = new System.Drawing.Point(181, 74);
             this.txtsection.Name = "txtsection";
-            this.txtsection.Size = new System.Drawing.Size(159, 20);
+            this.txtsection.Size = new System.Drawing.Size(173, 20);
             this.txtsection.TabIndex = 7;
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.Black;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.Location = new System.Drawing.Point(167, 128);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(455, 280);
@@ -81,20 +97,23 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox1.BackgroundImage = global::CLient.Properties.Resources.Untitled_2;
             this.groupBox1.Controls.Add(this.lnkSignOut);
             this.groupBox1.Controls.Add(this.lnkUplaodAttendance);
             this.groupBox1.Controls.Add(this.linkLabel1);
             this.groupBox1.Controls.Add(this.lnkUploadResult);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(149, 384);
+            this.groupBox1.Size = new System.Drawing.Size(149, 396);
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
             // 
             // lnkSignOut
             // 
             this.lnkSignOut.AutoSize = true;
+            this.lnkSignOut.BackColor = System.Drawing.Color.Black;
             this.lnkSignOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lnkSignOut.LinkColor = System.Drawing.Color.White;
             this.lnkSignOut.Location = new System.Drawing.Point(7, 238);
             this.lnkSignOut.Name = "lnkSignOut";
             this.lnkSignOut.Size = new System.Drawing.Size(63, 17);
@@ -105,7 +124,9 @@
             // lnkUplaodAttendance
             // 
             this.lnkUplaodAttendance.AutoSize = true;
+            this.lnkUplaodAttendance.BackColor = System.Drawing.Color.Black;
             this.lnkUplaodAttendance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lnkUplaodAttendance.LinkColor = System.Drawing.Color.White;
             this.lnkUplaodAttendance.Location = new System.Drawing.Point(6, 54);
             this.lnkUplaodAttendance.Name = "lnkUplaodAttendance";
             this.lnkUplaodAttendance.Size = new System.Drawing.Size(129, 17);
@@ -117,7 +138,9 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.Black;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
             this.linkLabel1.Location = new System.Drawing.Point(6, 179);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(114, 17);
@@ -129,7 +152,9 @@
             // lnkUploadResult
             // 
             this.lnkUploadResult.AutoSize = true;
+            this.lnkUploadResult.BackColor = System.Drawing.Color.Black;
             this.lnkUploadResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lnkUploadResult.LinkColor = System.Drawing.Color.White;
             this.lnkUploadResult.Location = new System.Drawing.Point(7, 116);
             this.lnkUploadResult.Name = "lnkUploadResult";
             this.lnkUploadResult.Size = new System.Drawing.Size(97, 17);
@@ -143,6 +168,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BackgroundImage = global::CLient.Properties.Resources.zero_g_theme_logon_background_by_lilmegz97_d4sliyn3;
             this.ClientSize = new System.Drawing.Size(624, 420);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.cmdSearch);
@@ -151,6 +177,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "ViewUploadedResult";
             this.Text = "ViewUploadedResult";
+            this.Load += new System.EventHandler(this.ViewUploadedResult_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

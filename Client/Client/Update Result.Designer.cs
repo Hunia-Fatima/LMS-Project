@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -42,12 +43,21 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.Black;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Update});
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.Location = new System.Drawing.Point(206, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(392, 305);
+            this.dataGridView1.Size = new System.Drawing.Size(456, 353);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -61,6 +71,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox1.BackgroundImage = global::CLient.Properties.Resources.Untitled_2;
             this.groupBox1.Controls.Add(this.lnkSignOut);
             this.groupBox1.Controls.Add(this.lnkteacherData);
             this.groupBox1.Controls.Add(this.lnkGoBack);
@@ -68,15 +79,17 @@
             this.groupBox1.Controls.Add(this.lnkStudentData);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(175, 305);
+            this.groupBox1.Size = new System.Drawing.Size(175, 391);
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
             // 
             // lnkSignOut
             // 
             this.lnkSignOut.AutoSize = true;
+            this.lnkSignOut.BackColor = System.Drawing.Color.Black;
             this.lnkSignOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lnkSignOut.Location = new System.Drawing.Point(8, 240);
+            this.lnkSignOut.LinkColor = System.Drawing.Color.White;
+            this.lnkSignOut.Location = new System.Drawing.Point(8, 285);
             this.lnkSignOut.Name = "lnkSignOut";
             this.lnkSignOut.Size = new System.Drawing.Size(63, 17);
             this.lnkSignOut.TabIndex = 27;
@@ -87,8 +100,10 @@
             // lnkteacherData
             // 
             this.lnkteacherData.AutoSize = true;
+            this.lnkteacherData.BackColor = System.Drawing.Color.Black;
             this.lnkteacherData.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lnkteacherData.Location = new System.Drawing.Point(5, 87);
+            this.lnkteacherData.LinkColor = System.Drawing.Color.White;
+            this.lnkteacherData.Location = new System.Drawing.Point(5, 132);
             this.lnkteacherData.Name = "lnkteacherData";
             this.lnkteacherData.Size = new System.Drawing.Size(144, 17);
             this.lnkteacherData.TabIndex = 20;
@@ -99,8 +114,10 @@
             // lnkGoBack
             // 
             this.lnkGoBack.AutoSize = true;
+            this.lnkGoBack.BackColor = System.Drawing.Color.Black;
             this.lnkGoBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lnkGoBack.Location = new System.Drawing.Point(6, 187);
+            this.lnkGoBack.LinkColor = System.Drawing.Color.White;
+            this.lnkGoBack.Location = new System.Drawing.Point(6, 232);
             this.lnkGoBack.Name = "lnkGoBack";
             this.lnkGoBack.Size = new System.Drawing.Size(114, 17);
             this.lnkGoBack.TabIndex = 8;
@@ -111,8 +128,10 @@
             // lnkRegisterUser
             // 
             this.lnkRegisterUser.AutoSize = true;
+            this.lnkRegisterUser.BackColor = System.Drawing.Color.Black;
             this.lnkRegisterUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lnkRegisterUser.Location = new System.Drawing.Point(8, 38);
+            this.lnkRegisterUser.LinkColor = System.Drawing.Color.White;
+            this.lnkRegisterUser.Location = new System.Drawing.Point(8, 83);
             this.lnkRegisterUser.Name = "lnkRegisterUser";
             this.lnkRegisterUser.Size = new System.Drawing.Size(95, 17);
             this.lnkRegisterUser.TabIndex = 0;
@@ -123,8 +142,10 @@
             // lnkStudentData
             // 
             this.lnkStudentData.AutoSize = true;
+            this.lnkStudentData.BackColor = System.Drawing.Color.Black;
             this.lnkStudentData.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lnkStudentData.Location = new System.Drawing.Point(5, 137);
+            this.lnkStudentData.LinkColor = System.Drawing.Color.White;
+            this.lnkStudentData.Location = new System.Drawing.Point(5, 182);
             this.lnkStudentData.Name = "lnkStudentData";
             this.lnkStudentData.Size = new System.Drawing.Size(140, 17);
             this.lnkStudentData.TabIndex = 19;
@@ -137,7 +158,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(601, 329);
+            this.BackgroundImage = global::CLient.Properties.Resources.zero_g_theme_logon_background_by_lilmegz97_d4sliyn3;
+            this.ClientSize = new System.Drawing.Size(786, 415);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Update_Result";

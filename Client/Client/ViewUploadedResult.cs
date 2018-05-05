@@ -54,5 +54,10 @@ namespace CLient
         {
 
         }
+
+        private void ViewUploadedResult_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

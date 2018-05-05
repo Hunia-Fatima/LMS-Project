@@ -51,5 +51,10 @@ namespace CLient
             this.Hide();
             v.Show();
         }
+
+        private void lblStu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

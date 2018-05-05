@@ -49,10 +49,12 @@
             // 
             // cmdAdd
             // 
-            this.cmdAdd.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.cmdAdd.Location = new System.Drawing.Point(366, 328);
+            this.cmdAdd.BackColor = System.Drawing.Color.Black;
+            this.cmdAdd.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdAdd.ForeColor = System.Drawing.Color.White;
+            this.cmdAdd.Location = new System.Drawing.Point(373, 360);
             this.cmdAdd.Name = "cmdAdd";
-            this.cmdAdd.Size = new System.Drawing.Size(75, 23);
+            this.cmdAdd.Size = new System.Drawing.Size(159, 43);
             this.cmdAdd.TabIndex = 25;
             this.cmdAdd.Text = "Add";
             this.cmdAdd.UseVisualStyleBackColor = false;
@@ -61,7 +63,11 @@
             // lnkuploadedresult
             // 
             this.lnkuploadedresult.AutoSize = true;
+            this.lnkuploadedresult.BackColor = System.Drawing.Color.Transparent;
+            this.lnkuploadedresult.DisabledLinkColor = System.Drawing.Color.White;
             this.lnkuploadedresult.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lnkuploadedresult.ForeColor = System.Drawing.Color.White;
+            this.lnkuploadedresult.LinkColor = System.Drawing.Color.White;
             this.lnkuploadedresult.Location = new System.Drawing.Point(7, 118);
             this.lnkuploadedresult.Name = "lnkuploadedresult";
             this.lnkuploadedresult.Size = new System.Drawing.Size(113, 17);
@@ -73,7 +79,9 @@
             // lblstatus
             // 
             this.lblstatus.AutoSize = true;
-            this.lblstatus.Location = new System.Drawing.Point(161, 267);
+            this.lblstatus.BackColor = System.Drawing.Color.Transparent;
+            this.lblstatus.ForeColor = System.Drawing.Color.White;
+            this.lblstatus.Location = new System.Drawing.Point(205, 267);
             this.lblstatus.Name = "lblstatus";
             this.lblstatus.Size = new System.Drawing.Size(37, 13);
             this.lblstatus.TabIndex = 22;
@@ -82,7 +90,9 @@
             // lbltotalmarks
             // 
             this.lbltotalmarks.AutoSize = true;
-            this.lbltotalmarks.Location = new System.Drawing.Point(161, 211);
+            this.lbltotalmarks.BackColor = System.Drawing.Color.Transparent;
+            this.lbltotalmarks.ForeColor = System.Drawing.Color.White;
+            this.lbltotalmarks.Location = new System.Drawing.Point(205, 211);
             this.lbltotalmarks.Name = "lbltotalmarks";
             this.lbltotalmarks.Size = new System.Drawing.Size(60, 13);
             this.lbltotalmarks.TabIndex = 21;
@@ -91,7 +101,9 @@
             // lblmarksobtained
             // 
             this.lblmarksobtained.AutoSize = true;
-            this.lblmarksobtained.Location = new System.Drawing.Point(155, 153);
+            this.lblmarksobtained.BackColor = System.Drawing.Color.Black;
+            this.lblmarksobtained.ForeColor = System.Drawing.Color.Transparent;
+            this.lblmarksobtained.Location = new System.Drawing.Point(199, 153);
             this.lblmarksobtained.Name = "lblmarksobtained";
             this.lblmarksobtained.Size = new System.Drawing.Size(79, 13);
             this.lblmarksobtained.TabIndex = 20;
@@ -100,7 +112,9 @@
             // lblsection
             // 
             this.lblsection.AutoSize = true;
-            this.lblsection.Location = new System.Drawing.Point(155, 95);
+            this.lblsection.BackColor = System.Drawing.Color.Black;
+            this.lblsection.ForeColor = System.Drawing.Color.White;
+            this.lblsection.Location = new System.Drawing.Point(199, 95);
             this.lblsection.Name = "lblsection";
             this.lblsection.Size = new System.Drawing.Size(43, 13);
             this.lblsection.TabIndex = 19;
@@ -109,7 +123,9 @@
             // lblname
             // 
             this.lblname.AutoSize = true;
-            this.lblname.Location = new System.Drawing.Point(155, 38);
+            this.lblname.BackColor = System.Drawing.Color.Transparent;
+            this.lblname.ForeColor = System.Drawing.Color.White;
+            this.lblname.Location = new System.Drawing.Point(199, 38);
             this.lblname.Name = "lblname";
             this.lblname.Size = new System.Drawing.Size(35, 13);
             this.lblname.TabIndex = 18;
@@ -122,7 +138,7 @@
             "PASS",
             "FAIL",
             "PENDING"});
-            this.cmbstatus.Location = new System.Drawing.Point(250, 261);
+            this.cmbstatus.Location = new System.Drawing.Point(302, 246);
             this.cmbstatus.Name = "cmbstatus";
             this.cmbstatus.Size = new System.Drawing.Size(191, 21);
             this.cmbstatus.TabIndex = 17;
@@ -130,7 +146,7 @@
             // cmbStudents
             // 
             this.cmbStudents.FormattingEnabled = true;
-            this.cmbStudents.Location = new System.Drawing.Point(248, 30);
+            this.cmbStudents.Location = new System.Drawing.Point(300, 38);
             this.cmbStudents.Name = "cmbStudents";
             this.cmbStudents.Size = new System.Drawing.Size(191, 21);
             this.cmbStudents.TabIndex = 16;
@@ -138,21 +154,21 @@
             // 
             // txtTotalMarks
             // 
-            this.txtTotalMarks.Location = new System.Drawing.Point(250, 206);
+            this.txtTotalMarks.Location = new System.Drawing.Point(302, 187);
             this.txtTotalMarks.Name = "txtTotalMarks";
             this.txtTotalMarks.Size = new System.Drawing.Size(191, 20);
             this.txtTotalMarks.TabIndex = 15;
             // 
             // txtmarksobtained
             // 
-            this.txtmarksobtained.Location = new System.Drawing.Point(248, 148);
+            this.txtmarksobtained.Location = new System.Drawing.Point(300, 129);
             this.txtmarksobtained.Name = "txtmarksobtained";
             this.txtmarksobtained.Size = new System.Drawing.Size(191, 20);
             this.txtmarksobtained.TabIndex = 14;
             // 
             // txtSec
             // 
-            this.txtSec.Location = new System.Drawing.Point(248, 88);
+            this.txtSec.Location = new System.Drawing.Point(300, 88);
             this.txtSec.Name = "txtSec";
             this.txtSec.Size = new System.Drawing.Size(189, 20);
             this.txtSec.TabIndex = 13;
@@ -160,20 +176,25 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox1.BackgroundImage = global::CLient.Properties.Resources.Untitled_2;
             this.groupBox1.Controls.Add(this.lnkSignOut);
             this.groupBox1.Controls.Add(this.lnkUplaodAttendance);
             this.groupBox1.Controls.Add(this.lnkgoback);
             this.groupBox1.Controls.Add(this.lnkuploadedresult);
-            this.groupBox1.Location = new System.Drawing.Point(0, 12);
+            this.groupBox1.Location = new System.Drawing.Point(0, -1);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(149, 342);
+            this.groupBox1.Size = new System.Drawing.Size(149, 432);
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
             // 
             // lnkSignOut
             // 
             this.lnkSignOut.AutoSize = true;
+            this.lnkSignOut.BackColor = System.Drawing.Color.Transparent;
+            this.lnkSignOut.DisabledLinkColor = System.Drawing.Color.White;
             this.lnkSignOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lnkSignOut.ForeColor = System.Drawing.Color.White;
+            this.lnkSignOut.LinkColor = System.Drawing.Color.White;
             this.lnkSignOut.Location = new System.Drawing.Point(7, 238);
             this.lnkSignOut.Name = "lnkSignOut";
             this.lnkSignOut.Size = new System.Drawing.Size(63, 17);
@@ -185,7 +206,11 @@
             // lnkUplaodAttendance
             // 
             this.lnkUplaodAttendance.AutoSize = true;
+            this.lnkUplaodAttendance.BackColor = System.Drawing.Color.Transparent;
+            this.lnkUplaodAttendance.DisabledLinkColor = System.Drawing.Color.White;
             this.lnkUplaodAttendance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lnkUplaodAttendance.ForeColor = System.Drawing.Color.White;
+            this.lnkUplaodAttendance.LinkColor = System.Drawing.Color.White;
             this.lnkUplaodAttendance.Location = new System.Drawing.Point(6, 54);
             this.lnkUplaodAttendance.Name = "lnkUplaodAttendance";
             this.lnkUplaodAttendance.Size = new System.Drawing.Size(129, 17);
@@ -197,7 +222,11 @@
             // lnkgoback
             // 
             this.lnkgoback.AutoSize = true;
+            this.lnkgoback.BackColor = System.Drawing.Color.Transparent;
+            this.lnkgoback.DisabledLinkColor = System.Drawing.Color.White;
             this.lnkgoback.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lnkgoback.ForeColor = System.Drawing.Color.White;
+            this.lnkgoback.LinkColor = System.Drawing.Color.White;
             this.lnkgoback.Location = new System.Drawing.Point(6, 179);
             this.lnkgoback.Name = "lnkgoback";
             this.lnkgoback.Size = new System.Drawing.Size(114, 17);
@@ -211,7 +240,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(453, 363);
+            this.BackgroundImage = global::CLient.Properties.Resources.zero_g_theme_logon_background_by_lilmegz97_d4sliyn3;
+            this.ClientSize = new System.Drawing.Size(654, 425);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.cmdAdd);
             this.Controls.Add(this.lblstatus);

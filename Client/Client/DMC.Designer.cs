@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvDMC = new System.Windows.Forms.DataGridView();
             this.gbAdmin = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.lnkSignOut = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.lnkUpdateResult = new System.Windows.Forms.LinkLabel();
@@ -41,7 +41,17 @@
             // 
             // dgvDMC
             // 
+            this.dgvDMC.BackgroundColor = System.Drawing.Color.Black;
             this.dgvDMC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDMC.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvDMC.GridColor = System.Drawing.Color.Black;
             this.dgvDMC.Location = new System.Drawing.Point(157, 5);
             this.dgvDMC.Name = "dgvDMC";
             this.dgvDMC.Size = new System.Drawing.Size(512, 423);
@@ -51,7 +61,7 @@
             // gbAdmin
             // 
             this.gbAdmin.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.gbAdmin.Controls.Add(this.label1);
+            this.gbAdmin.BackgroundImage = global::CLient.Properties.Resources.Untitled_2;
             this.gbAdmin.Controls.Add(this.lnkSignOut);
             this.gbAdmin.Controls.Add(this.linkLabel1);
             this.gbAdmin.Controls.Add(this.lnkUpdateResult);
@@ -62,21 +72,13 @@
             this.gbAdmin.TabIndex = 26;
             this.gbAdmin.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 386);
-            this.label1.Name = "label1";
-            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(29, 13);
-            this.label1.TabIndex = 29;
-            this.label1.Text = "LMS";
-            // 
             // lnkSignOut
             // 
             this.lnkSignOut.AutoSize = true;
+            this.lnkSignOut.BackColor = System.Drawing.Color.Transparent;
             this.lnkSignOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lnkSignOut.Location = new System.Drawing.Point(15, 203);
+            this.lnkSignOut.LinkColor = System.Drawing.Color.White;
+            this.lnkSignOut.Location = new System.Drawing.Point(15, 259);
             this.lnkSignOut.Name = "lnkSignOut";
             this.lnkSignOut.Size = new System.Drawing.Size(63, 17);
             this.lnkSignOut.TabIndex = 28;
@@ -87,8 +89,10 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.linkLabel1.Location = new System.Drawing.Point(15, 115);
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(15, 68);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(81, 17);
             this.linkLabel1.TabIndex = 7;
@@ -99,7 +103,9 @@
             // lnkUpdateResult
             // 
             this.lnkUpdateResult.AutoSize = true;
+            this.lnkUpdateResult.BackColor = System.Drawing.Color.Transparent;
             this.lnkUpdateResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lnkUpdateResult.LinkColor = System.Drawing.Color.White;
             this.lnkUpdateResult.Location = new System.Drawing.Point(6, 161);
             this.lnkUpdateResult.Name = "lnkUpdateResult";
             this.lnkUpdateResult.Size = new System.Drawing.Size(127, 17);
@@ -142,6 +148,5 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.LinkLabel lnkUpdateResult;
         private System.Windows.Forms.LinkLabel lnkstudentdata;
-        private System.Windows.Forms.Label label1;
     }
 }

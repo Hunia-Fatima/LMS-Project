@@ -13,6 +13,76 @@ namespace WcfService2
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class Service1 : IService1
     {
+        public bool RESETSTUDENT(string name, string pincode)
+        {
+            foreach (Student s in StudentDL.students)
+            {
+                if(name == s.getname() && pincode == s.getpincode())
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+
+        public bool RESETTEACHER(string name, string pincode)
+        {
+            foreach (Teacher s in TeacherDL.teachers )
+            {
+                if (name == s.getname() && pincode == s.getpincode())
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+
+
+        public bool SETST(string name, string password)
+        {
+
+            foreach (Student s in StudentDL.students)
+            {
+                if (name == s.getname())
+                {
+                    s.setpassword(password);
+                    return true;
+                }
+            }
+
+            return false;
+
+        }
+
+
+
+        public bool SETT(string name, string password)
+        {
+
+            foreach (Teacher s in TeacherDL.teachers)
+            {
+                if (name == s.getname())
+                {
+                    s.setpassword(password);
+                    return true;
+                }
+            }
+
+            return false;
+
+        }
+
+
+
+
+
+
+
+
+
+
         public static Student st = null;
         public static Teacher tr = null;
 

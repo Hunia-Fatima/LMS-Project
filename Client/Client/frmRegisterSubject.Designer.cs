@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblName = new System.Windows.Forms.Label();
             this.gvRegisterSubjects = new System.Windows.Forms.DataGridView();
             this.Register = new System.Windows.Forms.DataGridViewButtonColumn();
@@ -56,6 +57,14 @@
             this.gvRegisterSubjects.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvRegisterSubjects.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Register});
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gvRegisterSubjects.DefaultCellStyle = dataGridViewCellStyle1;
             this.gvRegisterSubjects.Location = new System.Drawing.Point(174, 74);
             this.gvRegisterSubjects.Name = "gvRegisterSubjects";
             this.gvRegisterSubjects.Size = new System.Drawing.Size(403, 352);

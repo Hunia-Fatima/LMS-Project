@@ -13,6 +13,16 @@ namespace WcfService2
     public interface IService1
     {
         [OperationContract]
+        bool RESETSTUDENT(string name, string pincode);
+        [OperationContract]
+        bool SETST(string name,  string password);
+        [OperationContract]
+        bool SETT(string name, string password);
+        [OperationContract]
+        bool RESETTEACHER(string name, string pincode);
+
+
+        [OperationContract]
 
         List<Teacher> SearchByDepartment(string Department);
         [OperationContract]

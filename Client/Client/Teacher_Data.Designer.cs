@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgv = new System.Windows.Forms.DataGridView();
             this.Department = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,43 +49,63 @@
             // 
             // dgv
             // 
+            this.dgv.BackgroundColor = System.Drawing.Color.Black;
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv.Location = new System.Drawing.Point(221, 94);
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv.Location = new System.Drawing.Point(240, 143);
             this.dgv.Name = "dgv";
-            this.dgv.Size = new System.Drawing.Size(482, 217);
+            this.dgv.Size = new System.Drawing.Size(512, 243);
             this.dgv.TabIndex = 0;
             this.dgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellContentClick);
             // 
             // Department
             // 
             this.Department.AutoSize = true;
+            this.Department.BackColor = System.Drawing.Color.Black;
+            this.Department.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Department.ForeColor = System.Drawing.Color.White;
             this.Department.Location = new System.Drawing.Point(278, 26);
             this.Department.Name = "Department";
-            this.Department.Size = new System.Drawing.Size(62, 13);
+            this.Department.Size = new System.Drawing.Size(88, 19);
             this.Department.TabIndex = 1;
             this.Department.Text = "Department";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Black;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(288, 74);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(48, 19);
             this.label2.TabIndex = 2;
             this.label2.Text = "Name";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Italic);
+            this.label3.BackColor = System.Drawing.Color.Black;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(204, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 18);
+            this.label3.Size = new System.Drawing.Size(77, 19);
             this.label3.TabIndex = 3;
             this.label3.Text = "Search By";
             // 
             // cmbsearchbydep
             // 
+            this.cmbsearchbydep.BackColor = System.Drawing.Color.Black;
+            this.cmbsearchbydep.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbsearchbydep.ForeColor = System.Drawing.Color.White;
             this.cmbsearchbydep.FormattingEnabled = true;
             this.cmbsearchbydep.Items.AddRange(new object[] {
             "EE",
@@ -94,19 +115,24 @@
             "MECHANICAL"});
             this.cmbsearchbydep.Location = new System.Drawing.Point(387, 18);
             this.cmbsearchbydep.Name = "cmbsearchbydep";
-            this.cmbsearchbydep.Size = new System.Drawing.Size(168, 21);
+            this.cmbsearchbydep.Size = new System.Drawing.Size(168, 27);
             this.cmbsearchbydep.TabIndex = 4;
             // 
             // txtname
             // 
+            this.txtname.BackColor = System.Drawing.Color.Black;
+            this.txtname.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtname.ForeColor = System.Drawing.Color.White;
             this.txtname.Location = new System.Drawing.Point(387, 63);
             this.txtname.Name = "txtname";
-            this.txtname.Size = new System.Drawing.Size(167, 20);
+            this.txtname.Size = new System.Drawing.Size(167, 26);
             this.txtname.TabIndex = 5;
             // 
             // btnsearch
             // 
-            this.btnsearch.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnsearch.BackColor = System.Drawing.Color.Black;
+            this.btnsearch.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsearch.ForeColor = System.Drawing.Color.White;
             this.btnsearch.Location = new System.Drawing.Point(591, 53);
             this.btnsearch.Name = "btnsearch";
             this.btnsearch.Size = new System.Drawing.Size(112, 30);
@@ -118,7 +144,9 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.Black;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
             this.linkLabel1.Location = new System.Drawing.Point(8, 25);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(125, 17);
@@ -130,7 +158,9 @@
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
+            this.linkLabel2.BackColor = System.Drawing.Color.Black;
             this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.linkLabel2.LinkColor = System.Drawing.Color.White;
             this.linkLabel2.Location = new System.Drawing.Point(6, 223);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(114, 17);
@@ -141,16 +171,19 @@
             // 
             // gbAdmin
             // 
-            this.gbAdmin.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.gbAdmin.BackColor = System.Drawing.Color.Black;
+            this.gbAdmin.BackgroundImage = global::CLient.Properties.Resources.Untitled_2;
             this.gbAdmin.Controls.Add(this.lnkSignOut);
             this.gbAdmin.Controls.Add(this.lnkRegisteUser);
             this.gbAdmin.Controls.Add(this.linkLabel1);
             this.gbAdmin.Controls.Add(this.linkLabel2);
             this.gbAdmin.Controls.Add(this.lnkUpdateResult);
             this.gbAdmin.Controls.Add(this.lnkstudentdata);
-            this.gbAdmin.Location = new System.Drawing.Point(12, 9);
+            this.gbAdmin.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbAdmin.ForeColor = System.Drawing.Color.White;
+            this.gbAdmin.Location = new System.Drawing.Point(12, 69);
             this.gbAdmin.Name = "gbAdmin";
-            this.gbAdmin.Size = new System.Drawing.Size(175, 301);
+            this.gbAdmin.Size = new System.Drawing.Size(175, 352);
             this.gbAdmin.TabIndex = 25;
             this.gbAdmin.TabStop = false;
             this.gbAdmin.Enter += new System.EventHandler(this.gbAdmin_Enter);
@@ -158,7 +191,9 @@
             // lnkSignOut
             // 
             this.lnkSignOut.AutoSize = true;
+            this.lnkSignOut.BackColor = System.Drawing.Color.Black;
             this.lnkSignOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lnkSignOut.LinkColor = System.Drawing.Color.White;
             this.lnkSignOut.Location = new System.Drawing.Point(8, 264);
             this.lnkSignOut.Name = "lnkSignOut";
             this.lnkSignOut.Size = new System.Drawing.Size(63, 17);
@@ -170,7 +205,9 @@
             // lnkRegisteUser
             // 
             this.lnkRegisteUser.AutoSize = true;
+            this.lnkRegisteUser.BackColor = System.Drawing.Color.Black;
             this.lnkRegisteUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lnkRegisteUser.LinkColor = System.Drawing.Color.White;
             this.lnkRegisteUser.Location = new System.Drawing.Point(5, 123);
             this.lnkRegisteUser.Name = "lnkRegisteUser";
             this.lnkRegisteUser.Size = new System.Drawing.Size(95, 17);
@@ -182,7 +219,9 @@
             // lnkUpdateResult
             // 
             this.lnkUpdateResult.AutoSize = true;
+            this.lnkUpdateResult.BackColor = System.Drawing.Color.Black;
             this.lnkUpdateResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lnkUpdateResult.LinkColor = System.Drawing.Color.White;
             this.lnkUpdateResult.Location = new System.Drawing.Point(8, 74);
             this.lnkUpdateResult.Name = "lnkUpdateResult";
             this.lnkUpdateResult.Size = new System.Drawing.Size(98, 17);
@@ -194,7 +233,9 @@
             // lnkstudentdata
             // 
             this.lnkstudentdata.AutoSize = true;
+            this.lnkstudentdata.BackColor = System.Drawing.Color.Black;
             this.lnkstudentdata.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lnkstudentdata.LinkColor = System.Drawing.Color.White;
             this.lnkstudentdata.Location = new System.Drawing.Point(5, 173);
             this.lnkstudentdata.Name = "lnkstudentdata";
             this.lnkstudentdata.Size = new System.Drawing.Size(140, 17);
@@ -208,7 +249,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(714, 322);
+            this.BackgroundImage = global::CLient.Properties.Resources.zero_g_theme_logon_background_by_lilmegz97_d4sliyn3;
+            this.ClientSize = new System.Drawing.Size(806, 430);
             this.Controls.Add(this.gbAdmin);
             this.Controls.Add(this.btnsearch);
             this.Controls.Add(this.txtname);
