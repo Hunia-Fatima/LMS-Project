@@ -49,7 +49,7 @@
       <xs:element minOccurs="0" name="Student" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="percentage" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="sub" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="teacher" nillable="true" type="tns:Teacher" />
+      <xs:element minOccurs="0" name="teacher" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Attendance" nillable="true" type="tns:Attendance" />

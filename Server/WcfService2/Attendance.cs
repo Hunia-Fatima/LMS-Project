@@ -43,12 +43,12 @@ namespace WcfService2
         }
        
         [DataMember]
-        public Teacher teacher;
-        public Teacher getteacher()
+        public string teacher;
+        public string getteacher()
         {
             return teacher;
         }
-        public void setteacher(Teacher S)
+        public void setteacher(string S)
         {
             teacher = S;
         }

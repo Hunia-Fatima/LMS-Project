@@ -181,6 +181,8 @@
             // lblSec
             // 
             this.lblSec.AutoSize = true;
+            this.lblSec.BackColor = System.Drawing.SystemColors.Desktop;
+            this.lblSec.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblSec.Location = new System.Drawing.Point(223, 288);
             this.lblSec.Name = "lblSec";
             this.lblSec.Size = new System.Drawing.Size(43, 13);
@@ -210,7 +212,7 @@
             this.lblSubject.BackColor = System.Drawing.Color.Transparent;
             this.lblSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lblSubject.ForeColor = System.Drawing.Color.White;
-            this.lblSubject.Location = new System.Drawing.Point(222, 286);
+            this.lblSubject.Location = new System.Drawing.Point(221, 288);
             this.lblSubject.Name = "lblSubject";
             this.lblSubject.Size = new System.Drawing.Size(48, 15);
             this.lblSubject.TabIndex = 15;
@@ -236,7 +238,7 @@
             this.lbldepartment.BackColor = System.Drawing.Color.Transparent;
             this.lbldepartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lbldepartment.ForeColor = System.Drawing.Color.White;
-            this.lbldepartment.Location = new System.Drawing.Point(223, 330);
+            this.lbldepartment.Location = new System.Drawing.Point(222, 330);
             this.lbldepartment.Name = "lbldepartment";
             this.lbldepartment.Size = new System.Drawing.Size(72, 15);
             this.lbldepartment.TabIndex = 17;

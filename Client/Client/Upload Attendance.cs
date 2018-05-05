@@ -53,7 +53,7 @@ namespace CLient
         private void cmdAdd_Click(object sender, EventArgs e)
         {
             server.Service1 myserver = new server.Service1();
-            myserver.AddAttendance(cmbStudents.Text, txtPerc.Text, txtSec.Text, txtSbj.Text, myserver.getLoggedInTeacher(), txtSemes.Text);
+            myserver.AddAttendance(cmbStudents.Text, txtPerc.Text, txtSec.Text, txtSbj.Text, myserver.getLoggedInTeacher().name, txtSemes.Text);
             MessageBox.Show("Attendance has been added");
         }
 

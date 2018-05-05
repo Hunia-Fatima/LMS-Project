@@ -337,14 +337,14 @@ namespace WcfService2
             }
         }
 
-        public void AddAttendance(string name, string Attendance, string section, string subject, Teacher t,string semes)
+        public void AddAttendance(string name, string Attendance, string section, string subject, string teacher,string semes)
         {
             Attendance Atten = new Attendance();
             Atten.setStudent(name);
             Atten.setpercentage(Attendance);
             Atten.setSection(section);
             Atten.setsub(subject);
-            Atten.setteacher(t);
+            Atten.setteacher(teacher);
             Atten.setSemester(semes);
             AttendanceDL.Attendances.Add(Atten);
             foreach (Student s in StudentDL.students)
