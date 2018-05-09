@@ -116,6 +116,7 @@
             this.cmbact.Name = "cmbact";
             this.cmbact.Size = new System.Drawing.Size(238, 21);
             this.cmbact.TabIndex = 12;
+            this.cmbact.SelectedIndexChanged += new System.EventHandler(this.cmbact_SelectedIndexChanged);
             // 
             // Teacher
             // 

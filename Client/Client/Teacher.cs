@@ -73,5 +73,16 @@ namespace CLient
         {
 
         }
+
+        private void cmbact_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(cmbact.Text == "Free")
+            {
+                ChatwithStudent form = new ChatwithStudent();
+                form.Show();
+                
+            }
+            
+        }
     }
 }

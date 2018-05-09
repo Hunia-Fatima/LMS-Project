@@ -35,8 +35,7 @@ namespace CLient
 
         private void cmdStConvo_Click(object sender, EventArgs e)
         {
-            ChatwithStudent form = new ChatwithStudent();
-            form.Show();
+            
             ChatWithTeacher form1 = new ChatWithTeacher();
             form1.Show();
             this.Hide();

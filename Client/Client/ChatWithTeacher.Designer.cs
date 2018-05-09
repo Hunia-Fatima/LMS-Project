@@ -44,6 +44,7 @@
             this.Messages.Name = "Messages";
             this.Messages.Size = new System.Drawing.Size(467, 316);
             this.Messages.TabIndex = 0;
+            this.Messages.SelectedIndexChanged += new System.EventHandler(this.Messages_SelectedIndexChanged);
             // 
             // cmdSend
             // 

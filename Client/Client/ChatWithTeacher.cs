@@ -39,5 +39,10 @@ namespace CLient
                 srvc.setStudentMessage(null);
             }
         }
+
+        private void Messages_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
