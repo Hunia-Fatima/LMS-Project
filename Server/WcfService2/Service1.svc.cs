@@ -410,36 +410,7 @@ namespace WcfService2
         }
 
 
-        /*
-        public bool ValRegstrdStu(string name)
-        {
-            Teacher t = getLoggedInTeacher();
-            foreach (Student s in StudentDL.students)
-            {
-                if (s.getname() == name)
-                {
-                    List<Subject> sub = getSubjects();
-                    foreach (Subject S1 in sub)
-                    {
-                        if (S1.getname() == t.getsubject())
-                        {
-                            return true;
-                        }
-                        else 
-                        {
-                            return false;
-                        }
-                    }
-                }
-                else 
-                {
-                    return false;
-                }
-            }
-            return false;
-        }g
-        */
-
+        
         public string GetData(int value)
         {
             return string.Format("You entered: {0}", value);

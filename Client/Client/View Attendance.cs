@@ -39,5 +39,45 @@ namespace CLient
         {
 
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            DMC frm1 = new DMC();
+            this.Hide();
+            frm1.Show();
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmRegisterSubject frm2 = new frmRegisterSubject();
+            this.Hide();
+            frm2.Show();
+        }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Student_Chat frm3 = new Student_Chat();
+            this.Hide();
+            frm3.Show();
+        }
+
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Student frm4 = new Student();
+            this.Hide();
+            frm4.Show();
+        }
+
+        private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmAdminLogin frm5 = new frmAdminLogin();
+            this.Hide();
+            frm5.Show();
+        }
     }
 }

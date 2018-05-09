@@ -63,8 +63,6 @@ namespace CLient
             Sc.Show();
             this.Hide();
             
-            //ChatWithTeacher form = new ChatWithTeacher();
-            //form.Show();
         }
     }
 }
