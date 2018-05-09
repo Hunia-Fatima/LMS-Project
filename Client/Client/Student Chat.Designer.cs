@@ -28,24 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DGVteachers = new System.Windows.Forms.DataGridView();
             this.lblConvo = new System.Windows.Forms.Label();
             this.cmdStConvo = new System.Windows.Forms.Button();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.DGVteachers)).BeginInit();
             this.SuspendLayout();
             // 
             // DGVteachers
             // 
             this.DGVteachers.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Info;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGVteachers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.Info;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGVteachers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.DGVteachers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGVteachers.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.DGVteachers.Location = new System.Drawing.Point(-1, 90);
@@ -64,6 +65,7 @@
             this.lblConvo.Size = new System.Drawing.Size(211, 21);
             this.lblConvo.TabIndex = 5;
             this.lblConvo.Text = "Conversation with teacher";
+            this.lblConvo.Click += new System.EventHandler(this.lblConvo_Click);
             // 
             // cmdStConvo
             // 
@@ -78,12 +80,28 @@
             this.cmdStConvo.UseVisualStyleBackColor = false;
             this.cmdStConvo.Click += new System.EventHandler(this.cmdStConvo_Click);
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.linkLabel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(22, 329);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(78, 20);
+            this.linkLabel1.TabIndex = 7;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "GO BACK";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // Student_Chat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CLient.Properties.Resources.zero_g_theme_logon_background_by_lilmegz97_d4sliyn3;
             this.ClientSize = new System.Drawing.Size(500, 409);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.DGVteachers);
             this.Controls.Add(this.lblConvo);
             this.Controls.Add(this.cmdStConvo);
@@ -101,5 +119,6 @@
         private System.Windows.Forms.DataGridView DGVteachers;
         private System.Windows.Forms.Label lblConvo;
         private System.Windows.Forms.Button cmdStConvo;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

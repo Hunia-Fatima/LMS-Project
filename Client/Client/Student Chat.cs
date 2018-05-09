@@ -38,7 +38,19 @@ namespace CLient
             
             ChatWithTeacher form1 = new ChatWithTeacher();
             form1.Show();
+            
+        }
+
+        private void lblConvo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Student frm = new Student();
             this.Hide();
+            frm.Show();
         }
     }
 }

@@ -19,17 +19,12 @@ namespace CLient
 
         private void cmdShowAll_Click(object sender, EventArgs e)
         {
-            server.Service1 myservice = new server.Service1();
             BindingSource source = new BindingSource();
-            List<server.Result> s = myservice.get_result().ToList();
-            source.DataSource = s;
+            server.Service1 server = new server.Service1();
+            source.DataSource = server.Showalll();
             dataGridView1.DataSource = source;
         }
 
-        private void cmdSearch_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void lnkUploadResult_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -67,6 +62,16 @@ namespace CLient
             frmAdminLogin form = new frmAdminLogin();
             form.Show();
             this.Hide();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txtsection_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

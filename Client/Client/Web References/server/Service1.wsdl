@@ -230,6 +230,18 @@
   <wsdl:message name="IService1_ViewAttendance_OutputMessage">
     <wsdl:part name="parameters" element="tns:ViewAttendanceResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_Showalll_InputMessage">
+    <wsdl:part name="parameters" element="tns:Showalll" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Showalll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ShowalllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_By_Section_InputMessage">
+    <wsdl:part name="parameters" element="tns:By_Section" />
+  </wsdl:message>
+  <wsdl:message name="IService1_By_Section_OutputMessage">
+    <wsdl:part name="parameters" element="tns:By_SectionResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_GetDataUsingDataContract_InputMessage">
     <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
   </wsdl:message>
@@ -384,6 +396,14 @@
     <wsdl:operation name="ViewAttendance">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/ViewAttendance" message="tns:IService1_ViewAttendance_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/ViewAttendanceResponse" message="tns:IService1_ViewAttendance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Showalll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Showalll" message="tns:IService1_Showalll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ShowalllResponse" message="tns:IService1_Showalll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="By_Section">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/By_Section" message="tns:IService1_By_Section_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/By_SectionResponse" message="tns:IService1_By_Section_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetDataUsingDataContract">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContract" message="tns:IService1_GetDataUsingDataContract_InputMessage" />
@@ -718,6 +738,24 @@
     </wsdl:operation>
     <wsdl:operation name="ViewAttendance">
       <soap:operation soapAction="http://tempuri.org/IService1/ViewAttendance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Showalll">
+      <soap:operation soapAction="http://tempuri.org/IService1/Showalll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="By_Section">
+      <soap:operation soapAction="http://tempuri.org/IService1/By_Section" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

@@ -410,7 +410,11 @@ namespace WcfService2
         }
 
 
-        
+        public List<Result> Showalll()
+        {
+            return ResultDL.results;
+        }
+       
         public string GetData(int value)
         {
             return string.Format("You entered: {0}", value);

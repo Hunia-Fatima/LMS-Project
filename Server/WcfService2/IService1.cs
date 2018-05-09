@@ -88,6 +88,10 @@ namespace WcfService2
         Result Viewresult(Student s);
         [OperationContract]
         Attendance ViewAttendance(Student name);
+        [OperationContract]
+        List<Result> Showalll();
+        
+
 
 
         [OperationContract]
