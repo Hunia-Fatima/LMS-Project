@@ -28,7 +28,7 @@ namespace CLient
                 if (isvalid)
                 {
                     Admin admin = new Admin();
-                    this.Hide();
+            //        this.Hide();
                     admin.Show();
 
                 }
@@ -46,7 +46,7 @@ namespace CLient
                 if (isValidTeacher)
                 {
                     Teacher t = new Teacher();
-                    this.Hide();
+              //      this.Hide();
                     t.Show();
                 }
                 else 
@@ -64,7 +64,7 @@ namespace CLient
                 {
                     Student s = new Student();
                     s.Show();
-                    this.Hide();
+                //    this.Hide();
                 }
                 else
                 {

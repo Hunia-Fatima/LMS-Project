@@ -9,7 +9,10 @@ namespace WcfService2
     [DataContract]
     public class Teacher
     {
-       [DataMember]
+
+        [DataMember]
+        bool Status;
+        [DataMember]
         string name;
         [DataMember]
         string password;
@@ -21,6 +24,14 @@ namespace WcfService2
         string subject;
         [DataMember]
         string department;
+        public bool getstatus()
+        {
+            return Status;
+        }
+        public void setstatus(bool a)
+        {
+            Status = a;
+        }
         public string getname()
         {
             return name;

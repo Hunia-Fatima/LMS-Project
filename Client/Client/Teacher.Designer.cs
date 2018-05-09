@@ -28,21 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtStatus = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cmdUpldAtt = new System.Windows.Forms.Button();
             this.cmdUpldRes = new System.Windows.Forms.Button();
             this.lnkTSignOut = new System.Windows.Forms.LinkLabel();
             this.lblTeacher = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.cmbact = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
-            // 
-            // txtStatus
-            // 
-            this.txtStatus.Location = new System.Drawing.Point(148, 255);
-            this.txtStatus.Name = "txtStatus";
-            this.txtStatus.Size = new System.Drawing.Size(218, 20);
-            this.txtStatus.TabIndex = 8;
             // 
             // label1
             // 
@@ -114,15 +106,16 @@
             this.lblTeacher.TabIndex = 10;
             this.lblTeacher.Text = "TEACHER";
             // 
-            // button1
+            // cmbact
             // 
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.cmbact.FormattingEnabled = true;
+            this.cmbact.Items.AddRange(new object[] {
+            "Busy",
+            "Free"});
+            this.cmbact.Location = new System.Drawing.Point(149, 260);
+            this.cmbact.Name = "cmbact";
+            this.cmbact.Size = new System.Drawing.Size(238, 21);
+            this.cmbact.TabIndex = 12;
             // 
             // Teacher
             // 
@@ -131,15 +124,15 @@
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.BackgroundImage = global::CLient.Properties.Resources.zero_g_theme_logon_background_by_lilmegz97_d4sliyn3;
             this.ClientSize = new System.Drawing.Size(620, 389);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cmbact);
             this.Controls.Add(this.lblTeacher);
             this.Controls.Add(this.lnkTSignOut);
-            this.Controls.Add(this.txtStatus);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmdUpldAtt);
             this.Controls.Add(this.cmdUpldRes);
             this.Name = "Teacher";
             this.Text = "Teacher";
+            this.Load += new System.EventHandler(this.Teacher_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -147,12 +140,11 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtStatus;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button cmdUpldAtt;
         private System.Windows.Forms.Button cmdUpldRes;
         private System.Windows.Forms.LinkLabel lnkTSignOut;
         private System.Windows.Forms.Label lblTeacher;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cmbact;
     }
 }

@@ -2,6 +2,30 @@
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="http://localhost:7187/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfService2" />
   <xs:import schemaLocation="http://localhost:7187/Service1.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="StatusOfTeacher">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StatusOfTeacherResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="StatusOfTeacherResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewTeacher">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewTeacherResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="NewTeacherResult" nillable="true" type="q1:Teacher" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="RESETSTUDENT">
     <xs:complexType>
       <xs:sequence>
@@ -120,7 +144,7 @@
   <xs:element name="SearchByDepartmentResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="SearchByDepartmentResult" nillable="true" type="q1:ArrayOfTeacher" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="SearchByDepartmentResult" nillable="true" type="q2:ArrayOfTeacher" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -134,7 +158,7 @@
   <xs:element name="SearchBynameResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="SearchBynameResult" nillable="true" type="q2:ArrayOfTeacher" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="SearchBynameResult" nillable="true" type="q3:ArrayOfTeacher" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -256,7 +280,7 @@
   <xs:element name="SearchByNameResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="SearchByNameResult" nillable="true" type="q3:ArrayOfStudent" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="SearchByNameResult" nillable="true" type="q4:ArrayOfStudent" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -270,7 +294,7 @@
   <xs:element name="SearchBySectionResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="SearchBySectionResult" nillable="true" type="q4:ArrayOfStudent" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="SearchBySectionResult" nillable="true" type="q5:ArrayOfStudent" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -282,7 +306,7 @@
   <xs:element name="ShowAllResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="ShowAllResult" nillable="true" type="q5:ArrayOfStudent" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="ShowAllResult" nillable="true" type="q6:ArrayOfStudent" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -294,15 +318,15 @@
   <xs:element name="showallResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="showallResult" nillable="true" type="q6:ArrayOfTeacher" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="showallResult" nillable="true" type="q7:ArrayOfTeacher" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="registerSubject">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="student" nillable="true" type="q7:Student" />
-        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="subject" nillable="true" type="q8:Subject" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="student" nillable="true" type="q8:Student" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="subject" nillable="true" type="q9:Subject" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -314,8 +338,8 @@
   <xs:element name="unregisterSubject">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="student" nillable="true" type="q9:Student" />
-        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="subject" nillable="true" type="q10:Subject" />
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="student" nillable="true" type="q10:Student" />
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="subject" nillable="true" type="q11:Subject" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -332,7 +356,7 @@
   <xs:element name="getSubjectsResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="getSubjectsResult" nillable="true" type="q11:ArrayOfSubject" />
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="getSubjectsResult" nillable="true" type="q12:ArrayOfSubject" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -344,7 +368,7 @@
   <xs:element name="loggedInStudentResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="loggedInStudentResult" nillable="true" type="q12:Student" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="loggedInStudentResult" nillable="true" type="q13:Student" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -356,7 +380,7 @@
   <xs:element name="loggedInStudentSubjectResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="loggedInStudentSubjectResult" nillable="true" type="q13:ArrayOfSubject" />
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="loggedInStudentSubjectResult" nillable="true" type="q14:ArrayOfSubject" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -368,7 +392,7 @@
   <xs:element name="registered_studentsResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q14="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="registered_studentsResult" nillable="true" type="q14:ArrayOfstring" />
+        <xs:element xmlns:q15="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="registered_studentsResult" nillable="true" type="q15:ArrayOfstring" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -380,7 +404,7 @@
   <xs:element name="get_registered_studentsResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="get_registered_studentsResult" nillable="true" type="q15:ArrayOfStudent" />
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="get_registered_studentsResult" nillable="true" type="q16:ArrayOfStudent" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -392,7 +416,7 @@
   <xs:element name="getLoggedInTeacherResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="getLoggedInTeacherResult" nillable="true" type="q16:Teacher" />
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="getLoggedInTeacherResult" nillable="true" type="q17:Teacher" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -404,7 +428,7 @@
   <xs:element name="get_resultResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="get_resultResult" nillable="true" type="q17:ArrayOfResult" />
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="get_resultResult" nillable="true" type="q18:ArrayOfResult" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -426,7 +450,7 @@
   <xs:element name="update_result">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="res" nillable="true" type="q18:Result" />
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="res" nillable="true" type="q19:Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -455,42 +479,42 @@
   <xs:element name="Viewresult">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="s" nillable="true" type="q19:Student" />
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="s" nillable="true" type="q20:Student" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="ViewresultResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="ViewresultResult" nillable="true" type="q20:Result" />
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="ViewresultResult" nillable="true" type="q21:Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="ViewAttendance">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="name" nillable="true" type="q21:Student" />
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="name" nillable="true" type="q22:Student" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="ViewAttendanceResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="ViewAttendanceResult" nillable="true" type="q22:Attendance" />
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="ViewAttendanceResult" nillable="true" type="q23:Attendance" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="GetDataUsingDataContract">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="composite" nillable="true" type="q23:CompositeType" />
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="composite" nillable="true" type="q24:CompositeType" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="GetDataUsingDataContractResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="GetDataUsingDataContractResult" nillable="true" type="q24:CompositeType" />
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/WcfService2" minOccurs="0" name="GetDataUsingDataContractResult" nillable="true" type="q25:CompositeType" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

@@ -50,5 +50,26 @@ namespace CLient
             ChatwithStudent form = new ChatwithStudent();
             form.Show();
         }
+
+        protected void cmbbact_TextChanged(object sender, EventArgs e)
+        {
+            BindingSource source = new BindingSource();
+            server.Service1 server = new server.Service1();
+
+            if (cmbact.SelectedText == "Busy")
+            {
+                server.getLoggedInTeacher().Status = false;
+
+            }
+            else if (cmbact.SelectedText == "Free")
+            {
+                server.getLoggedInTeacher().Status = true;
+            }
+
+        }
+        private void Teacher_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

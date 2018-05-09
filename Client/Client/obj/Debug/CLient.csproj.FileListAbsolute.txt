@@ -311,3 +311,6 @@ C:\Users\Admin\Desktop\qwert\LMS-Project\Client\CLient\obj\Debug\CLient.Upload_A
 C:\Users\Admin\Desktop\qwert\LMS-Project\Client\CLient\obj\Debug\CLient.View_Attendance.resources
 C:\Users\Admin\Desktop\qwert\LMS-Project\Client\CLient\obj\Debug\CLient.ViewUploadedResult.resources
 C:\Users\Admin\Desktop\qwert\LMS-Project\Client\CLient\obj\Debug\CLient.csproj.GenerateResource.Cache
+C:\Users\Mamuna\Desktop\asd\LMS-Project\Client\CLient\obj\Debug\CLient.ChatwithStudent.resources
+C:\Users\Mamuna\Desktop\asd\LMS-Project\Client\CLient\obj\Debug\CLient.ChatWithTeacher.resources
+C:\Users\Mamuna\Desktop\asd\LMS-Project\Client\CLient\obj\Debug\CLient.Student_Chat.resources

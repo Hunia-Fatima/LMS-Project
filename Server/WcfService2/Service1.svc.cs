@@ -25,6 +25,19 @@ namespace WcfService2
             return false;
         }
 
+        public bool StatusOfTeacher()
+        {
+            return tr.getstatus();
+        }
+
+        public Teacher NewTeacher()
+        {
+            Teacher t = new Teacher();
+            t.setname(tr.getname());
+            t.setsubject(tr.getsubject());
+            return t;
+        }
+
 
         public bool RESETTEACHER(string name, string pincode)
         {

@@ -13,6 +13,10 @@ namespace WcfService2
     public interface IService1
     {
         [OperationContract]
+        bool StatusOfTeacher();
+        [OperationContract]
+        Teacher NewTeacher();
+        [OperationContract]
         bool RESETSTUDENT(string name, string pincode);
         [OperationContract]
         bool SETST(string name,  string password);
