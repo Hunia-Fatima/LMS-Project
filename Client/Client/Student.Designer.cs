@@ -110,11 +110,12 @@
             // 
             this.lblStu.AutoSize = true;
             this.lblStu.BackColor = System.Drawing.Color.Black;
-            this.lblStu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStu.Font = new System.Drawing.Font("Times New Roman", 24F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStu.ForeColor = System.Drawing.Color.White;
             this.lblStu.Location = new System.Drawing.Point(30, 24);
             this.lblStu.Name = "lblStu";
-            this.lblStu.Size = new System.Drawing.Size(74, 24);
+            this.lblStu.Size = new System.Drawing.Size(116, 36);
             this.lblStu.TabIndex = 9;
             this.lblStu.Text = "Student";
             this.lblStu.Click += new System.EventHandler(this.lblStu_Click);

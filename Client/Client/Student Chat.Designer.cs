@@ -76,6 +76,7 @@
             this.cmdStConvo.TabIndex = 4;
             this.cmdStConvo.Text = "Start Conversation";
             this.cmdStConvo.UseVisualStyleBackColor = false;
+            this.cmdStConvo.Click += new System.EventHandler(this.cmdStConvo_Click);
             // 
             // Student_Chat
             // 

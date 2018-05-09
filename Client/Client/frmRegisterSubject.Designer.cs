@@ -132,6 +132,7 @@
             this.lnkViewAttendance.TabIndex = 1;
             this.lnkViewAttendance.TabStop = true;
             this.lnkViewAttendance.Text = "View Attendance";
+            this.lnkViewAttendance.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkViewAttendance_LinkClicked);
             // 
             // lnkViewDMC
             // 

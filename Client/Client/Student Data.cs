@@ -57,7 +57,11 @@ namespace CLient
 
         private void DGVdata_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            if (e.RowIndex == 0)
+            {
+                DMCAdmin form = new DMCAdmin();
+                form.Show();
+            }
         }
 
         private void lnkteacherdata_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -77,7 +81,9 @@ namespace CLient
 
         private void lnkUpdateResult_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            Update_Result form = new Update_Result();
+            form.Show();
+            this.Hide();
         }
 
         private void lnkSignOut_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

@@ -42,6 +42,9 @@ namespace CLient
                 if(!is_found)
                 {
                 myserver.registerSubject(myserver.loggedInStudent(),myserver.getSubjects()[e.RowIndex]);
+                DataGridViewTextBoxCell sc = new DataGridViewTextBoxCell();
+                sc.Value = "Registered";
+                gvRegisterSubjects.Rows[e.RowIndex].Cells[0] = sc;
                 MessageBox.Show("You are registered in the subject");
                 }
             }                              
@@ -68,12 +71,23 @@ namespace CLient
 
         private void lnkConversation_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            Student_Chat form = new Student_Chat();
+            form.Show();
+            this.Hide();
         }
 
         private void lnkViewDMC_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            DMC form = new DMC();
+            form.Show();
+            this.Hide();
+        }
 
+        private void lnkViewAttendance_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            View_Attendance form = new View_Attendance();
+            this.Hide();
+            form.Show();
         }
     }
 }

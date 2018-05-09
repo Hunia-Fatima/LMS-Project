@@ -314,3 +314,13 @@ C:\Users\Admin\Desktop\qwert\LMS-Project\Client\CLient\obj\Debug\CLient.csproj.G
 C:\Users\Mamuna\Desktop\asd\LMS-Project\Client\CLient\obj\Debug\CLient.ChatwithStudent.resources
 C:\Users\Mamuna\Desktop\asd\LMS-Project\Client\CLient\obj\Debug\CLient.ChatWithTeacher.resources
 C:\Users\Mamuna\Desktop\asd\LMS-Project\Client\CLient\obj\Debug\CLient.Student_Chat.resources
+C:\Users\DELL\Desktop\Project\LMS-Project\Client\CLient\obj\Debug\CLient.ChatwithStudent.resources
+C:\Users\DELL\Desktop\Project\LMS-Project\Client\CLient\obj\Debug\CLient.ChatWithTeacher.resources
+C:\Users\DELL\Desktop\Project\LMS-Project\Client\CLient\obj\Debug\CLient.DMC.resources
+C:\Users\DELL\Desktop\Project\LMS-Project\Client\CLient\obj\Debug\CLient.PASSWORD.resources
+C:\Users\DELL\Desktop\Project\LMS-Project\Client\CLient\obj\Debug\CLient.PASSWORD_TEACHER.resources
+C:\Users\DELL\Desktop\Project\LMS-Project\Client\CLient\obj\Debug\CLient.Student_Chat.resources
+C:\Users\DELL\Desktop\Project\LMS-Project\Client\CLient\obj\Debug\CLient.Update_Result.resources
+C:\Users\DELL\Desktop\Project\LMS-Project\Client\CLient\obj\Debug\CLient.Upload_Attendance.resources
+C:\Users\DELL\Desktop\Project\LMS-Project\Client\CLient\obj\Debug\CLient.View_Attendance.resources
+C:\Users\DELL\Desktop\Project\LMS-Project\Client\CLient\obj\Debug\CLient.DMCAdmin.resources

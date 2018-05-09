@@ -47,7 +47,9 @@ namespace CLient
 
         private void lnkUplaodAttendance_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            Upload_Attendance form = new Upload_Attendance();
+            form.Show();
+            this.Hide();
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -58,6 +60,13 @@ namespace CLient
         private void ViewUploadedResult_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void lnkSignOut_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmAdminLogin form = new frmAdminLogin();
+            form.Show();
+            this.Hide();
         }
     }
 }

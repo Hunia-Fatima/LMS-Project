@@ -20,10 +20,13 @@ namespace CLient
 
         private void cmdSend_Click(object sender, EventArgs e)
         {
-            server.Service1 myService = new server.Service1();
-            myService.setStudentMessage(txtMsg.Text);
-            Messages.Items.Add("Me>>  " + txtMsg.Text);
-            txtMsg.Clear();
+            if (txtMsg.Text != "")
+            {
+                server.Service1 myService = new server.Service1();
+                myService.setStudentMessage(txtMsg.Text);
+                Messages.Items.Add("Me>>  " + txtMsg.Text);
+                txtMsg.Clear();
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)

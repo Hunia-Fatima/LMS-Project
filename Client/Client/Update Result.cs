@@ -28,6 +28,9 @@ namespace CLient
             if (e.ColumnIndex == 0)
             {
                 myservice.update_result(myservice.get_result()[e.RowIndex]);
+                DataGridViewTextBoxCell sc = new DataGridViewTextBoxCell();
+                sc.Value = "Updated";
+                dataGridView1.Rows[e.RowIndex].Cells[0] = sc;
                 MessageBox.Show("result updated");
             }
         }

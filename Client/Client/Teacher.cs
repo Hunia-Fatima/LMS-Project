@@ -15,6 +15,8 @@ namespace CLient
         public Teacher()
         {
             InitializeComponent();
+            server.Service1 srvc = new server.Service1();
+            lblTeacher.Text = srvc.getLoggedInTeacher().name;
         }
 
         private void lnkTSignOut_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

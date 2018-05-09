@@ -120,6 +120,7 @@
             this.lnkSignOut.TabIndex = 26;
             this.lnkSignOut.TabStop = true;
             this.lnkSignOut.Text = "Sign Out";
+            this.lnkSignOut.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkSignOut_LinkClicked);
             // 
             // lnkUplaodAttendance
             // 

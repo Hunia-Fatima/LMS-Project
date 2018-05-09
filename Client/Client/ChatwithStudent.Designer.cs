@@ -37,27 +37,34 @@
             // 
             // Messages
             // 
+            this.Messages.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.Messages.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Messages.FormattingEnabled = true;
             this.Messages.Location = new System.Drawing.Point(8, 10);
             this.Messages.Name = "Messages";
-            this.Messages.Size = new System.Drawing.Size(384, 355);
+            this.Messages.Size = new System.Drawing.Size(482, 329);
             this.Messages.TabIndex = 0;
             // 
             // txtMsg
             // 
-            this.txtMsg.Location = new System.Drawing.Point(7, 376);
+            this.txtMsg.BackColor = System.Drawing.SystemColors.InfoText;
+            this.txtMsg.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtMsg.Location = new System.Drawing.Point(7, 368);
             this.txtMsg.Name = "txtMsg";
-            this.txtMsg.Size = new System.Drawing.Size(260, 20);
+            this.txtMsg.Size = new System.Drawing.Size(330, 20);
             this.txtMsg.TabIndex = 1;
             // 
             // cmdSend
             // 
-            this.cmdSend.Location = new System.Drawing.Point(289, 374);
+            this.cmdSend.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdSend.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdSend.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.cmdSend.Location = new System.Drawing.Point(357, 357);
             this.cmdSend.Name = "cmdSend";
-            this.cmdSend.Size = new System.Drawing.Size(95, 23);
+            this.cmdSend.Size = new System.Drawing.Size(132, 39);
             this.cmdSend.TabIndex = 2;
             this.cmdSend.Text = "Send";
-            this.cmdSend.UseVisualStyleBackColor = true;
+            this.cmdSend.UseVisualStyleBackColor = false;
             this.cmdSend.Click += new System.EventHandler(this.cmdSend_Click);
             // 
             // timer1
@@ -68,7 +75,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(406, 411);
+            this.BackgroundImage = global::CLient.Properties.Resources.zero_g_theme_logon_background_by_lilmegz97_d4sliyn3;
+            this.ClientSize = new System.Drawing.Size(629, 411);
             this.Controls.Add(this.cmdSend);
             this.Controls.Add(this.txtMsg);
             this.Controls.Add(this.Messages);

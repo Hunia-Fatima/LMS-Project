@@ -98,7 +98,9 @@ namespace CLient
 
         private void lnkUpdateResult_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            Update_Result form = new Update_Result();
+            this.Hide();
+            form.Show();
         }
     }
 }

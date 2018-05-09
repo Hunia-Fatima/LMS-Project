@@ -38,7 +38,9 @@ namespace CLient
 
         private void lnkUpdateResult_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            View_Attendance form = new View_Attendance();
+            form.Show();
+            this.Hide();
         }
 
         private void lnkRegisteUser_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
