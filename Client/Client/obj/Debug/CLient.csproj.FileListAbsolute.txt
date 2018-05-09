@@ -257,3 +257,30 @@ C:\Users\Admin\Desktop\New folder (4)\LMS-Project\Client\CLient\obj\Debug\CLient
 C:\Users\Mamuna\Desktop\asd\LMS-Project\Client\CLient\obj\Debug\CLient.PASSWORD.resources
 C:\Users\Mamuna\Desktop\asd\LMS-Project\Client\CLient\obj\Debug\CLient.PASSWORD_TEACHER.resources
 C:\Users\Mamuna\Desktop\asd\LMS-Project\Client\CLient\obj\Debug\CLient.View_Attendance.resources
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Client\CLient\bin\Debug\CLient.exe.config
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Client\CLient\obj\Debug\CLient.exe
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Client\CLient\obj\Debug\CLient.pdb
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Client\CLient\bin\Debug\CLient.exe
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Client\CLient\bin\Debug\CLient.pdb
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Client\CLient\obj\Debug\CLient.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Client\CLient\obj\Debug\CLient.AddStudentResult.resources
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Client\CLient\obj\Debug\CLient.Admin.resources
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Client\CLient\obj\Debug\CLient.ChatwithStudent.resources
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Client\CLient\obj\Debug\CLient.ChatWithTeacher.resources
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Client\CLient\obj\Debug\CLient.DMC.resources
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Client\CLient\obj\Debug\CLient.frmAdminLogin.resources
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Client\CLient\obj\Debug\CLient.frmRegisterSubject.resources
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Client\CLient\obj\Debug\CLient.frmRegisterUser.resources
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Client\CLient\obj\Debug\CLient.frmreset.resources
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Client\CLient\obj\Debug\CLient.PASSWORD.resources
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Client\CLient\obj\Debug\CLient.PASSWORD_TEACHER.resources
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Client\CLient\obj\Debug\CLient.Properties.Resources.resources
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Client\CLient\obj\Debug\CLient.Student_Data.resources
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Client\CLient\obj\Debug\CLient.Student.resources
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Client\CLient\obj\Debug\CLient.Teacher.resources
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Client\CLient\obj\Debug\CLient.Teacher_Data.resources
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Client\CLient\obj\Debug\CLient.Update_Result.resources
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Client\CLient\obj\Debug\CLient.Upload_Attendance.resources
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Client\CLient\obj\Debug\CLient.View_Attendance.resources
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Client\CLient\obj\Debug\CLient.ViewUploadedResult.resources
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Client\CLient\obj\Debug\CLient.csproj.GenerateResource.Cache

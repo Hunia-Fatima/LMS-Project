@@ -32,6 +32,30 @@
   <wsdl:message name="IService1_RESETTEACHER_OutputMessage">
     <wsdl:part name="parameters" element="tns:RESETTEACHERResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_setTeacherMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:setTeacherMessage" />
+  </wsdl:message>
+  <wsdl:message name="IService1_setTeacherMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:setTeacherMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_setStudentMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:setStudentMessage" />
+  </wsdl:message>
+  <wsdl:message name="IService1_setStudentMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:setStudentMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getTeacherMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:getTeacherMessage" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getTeacherMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getTeacherMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getStudentMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:getStudentMessage" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getStudentMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getStudentMessageResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_SearchByDepartment_InputMessage">
     <wsdl:part name="parameters" element="tns:SearchByDepartment" />
   </wsdl:message>
@@ -217,6 +241,22 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/RESETTEACHER" message="tns:IService1_RESETTEACHER_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/RESETTEACHERResponse" message="tns:IService1_RESETTEACHER_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="setTeacherMessage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/setTeacherMessage" message="tns:IService1_setTeacherMessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/setTeacherMessageResponse" message="tns:IService1_setTeacherMessage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="setStudentMessage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/setStudentMessage" message="tns:IService1_setStudentMessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/setStudentMessageResponse" message="tns:IService1_setStudentMessage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getTeacherMessage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getTeacherMessage" message="tns:IService1_getTeacherMessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getTeacherMessageResponse" message="tns:IService1_getTeacherMessage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getStudentMessage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getStudentMessage" message="tns:IService1_getStudentMessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getStudentMessageResponse" message="tns:IService1_getStudentMessage_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="SearchByDepartment">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/SearchByDepartment" message="tns:IService1_SearchByDepartment_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/SearchByDepartmentResponse" message="tns:IService1_SearchByDepartment_OutputMessage" />
@@ -361,6 +401,42 @@
     </wsdl:operation>
     <wsdl:operation name="RESETTEACHER">
       <soap:operation soapAction="http://tempuri.org/IService1/RESETTEACHER" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setTeacherMessage">
+      <soap:operation soapAction="http://tempuri.org/IService1/setTeacherMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setStudentMessage">
+      <soap:operation soapAction="http://tempuri.org/IService1/setStudentMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTeacherMessage">
+      <soap:operation soapAction="http://tempuri.org/IService1/getTeacherMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getStudentMessage">
+      <soap:operation soapAction="http://tempuri.org/IService1/getStudentMessage" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

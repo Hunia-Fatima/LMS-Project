@@ -44,5 +44,11 @@ namespace CLient
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ChatwithStudent form = new ChatwithStudent();
+            form.Show();
+        }
     }
 }

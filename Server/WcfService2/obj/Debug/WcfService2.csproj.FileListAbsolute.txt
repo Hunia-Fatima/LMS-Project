@@ -59,3 +59,8 @@ C:\Users\Admin\Desktop\New folder (4)\LMS-Project\Server\WcfService2\bin\WcfServ
 C:\Users\Admin\Desktop\New folder (4)\LMS-Project\Server\WcfService2\obj\Debug\WcfService2.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Desktop\New folder (4)\LMS-Project\Server\WcfService2\obj\Debug\WcfService2.dll
 C:\Users\Admin\Desktop\New folder (4)\LMS-Project\Server\WcfService2\obj\Debug\WcfService2.pdb
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Server\WcfService2\bin\WcfService2.dll
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Server\WcfService2\bin\WcfService2.pdb
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Server\WcfService2\obj\Debug\WcfService2.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Server\WcfService2\obj\Debug\WcfService2.dll
+C:\Users\DELL\Desktop\New folder (4)\LMS-Project\Server\WcfService2\obj\Debug\WcfService2.pdb

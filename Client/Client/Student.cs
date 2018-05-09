@@ -56,5 +56,11 @@ namespace CLient
         {
 
         }
+
+        private void cmdconvo_Click(object sender, EventArgs e)
+        {
+            ChatWithTeacher form = new ChatWithTeacher();
+            form.Show();
+        }
     }
 }

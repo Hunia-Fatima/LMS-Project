@@ -48,6 +48,7 @@
             this.cmdconvo.TabIndex = 7;
             this.cmdconvo.Text = "Conversation";
             this.cmdconvo.UseVisualStyleBackColor = false;
+            this.cmdconvo.Click += new System.EventHandler(this.cmdconvo_Click);
             // 
             // cmdVA
             // 

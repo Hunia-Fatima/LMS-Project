@@ -20,7 +20,14 @@ namespace WcfService2
         bool SETT(string name, string password);
         [OperationContract]
         bool RESETTEACHER(string name, string pincode);
-
+        [OperationContract]
+        void setTeacherMessage(string message);
+        [OperationContract]
+        void setStudentMessage(string message);
+        [OperationContract]
+        string getTeacherMessage();
+        [OperationContract]
+        string getStudentMessage();
 
         [OperationContract]
 

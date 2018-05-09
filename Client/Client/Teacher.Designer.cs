@@ -34,6 +34,7 @@
             this.cmdUpldRes = new System.Windows.Forms.Button();
             this.lnkTSignOut = new System.Windows.Forms.LinkLabel();
             this.lblTeacher = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtStatus
@@ -113,6 +114,16 @@
             this.lblTeacher.TabIndex = 10;
             this.lblTeacher.Text = "TEACHER";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Teacher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -120,6 +131,7 @@
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.BackgroundImage = global::CLient.Properties.Resources.zero_g_theme_logon_background_by_lilmegz97_d4sliyn3;
             this.ClientSize = new System.Drawing.Size(620, 389);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblTeacher);
             this.Controls.Add(this.lnkTSignOut);
             this.Controls.Add(this.txtStatus);
@@ -141,5 +153,6 @@
         private System.Windows.Forms.Button cmdUpldRes;
         private System.Windows.Forms.LinkLabel lnkTSignOut;
         private System.Windows.Forms.Label lblTeacher;
+        private System.Windows.Forms.Button button1;
     }
 }

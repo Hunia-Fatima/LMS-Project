@@ -85,6 +85,27 @@ namespace WcfService2
 
         public static Student st = null;
         public static Teacher tr = null;
+        public static string teacherMessage = null;
+        public static string studentMessage = null;
+
+        public void setTeacherMessage(string message)
+        {
+            teacherMessage = message;
+        }
+
+        public void setStudentMessage(string message)
+        {
+            studentMessage = message;
+        }
+        public string getStudentMessage()
+        {
+            return studentMessage;
+        }
+
+        public string getTeacherMessage()
+        {
+            return teacherMessage;
+        }
 
         public bool IsValid(string username, string password)
         {
