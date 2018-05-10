@@ -27,6 +27,8 @@ namespace CLient
 
                 source.DataSource = server.SearchByDepartment(cmbsearchbydep.Text);
                 dgv.DataSource = source;
+                dgv.Columns[0].Visible = false;
+                dgv.Columns[1].Visible = false;
 
             }
             else if (cmbsearchbydep.Text == "" && txtname.Text != "")
@@ -36,6 +38,8 @@ namespace CLient
 
                 source.DataSource = server.SearchByname(txtname.Text);
                 dgv.DataSource = source;
+                dgv.Columns[0].Visible = false;
+                dgv.Columns[1].Visible = false;
             }
             else if (cmbsearchbydep.Text != "" && txtname.Text != "")
             {
@@ -61,6 +65,9 @@ namespace CLient
             server.Service1 server = new server.Service1();
             source.DataSource = server.showall();
             dgv.DataSource = source;
+            dgv.Columns[0].Visible = false;
+            dgv.Columns[1].Visible = false;
+
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

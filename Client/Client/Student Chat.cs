@@ -52,5 +52,10 @@ namespace CLient
             this.Hide();
             frm.Show();
         }
+
+        private void DGVteachers_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
